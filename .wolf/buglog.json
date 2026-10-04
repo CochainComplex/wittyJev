@@ -1,0 +1,345 @@
+{
+  "version": 1,
+  "bugs": [
+    {
+      "error_message": "Significant refactor of tractatus_eval.py",
+      "file": "bench/tractatus_eval.py",
+      "root_cause": "3 lines replaced/restructured",
+      "fix": "Rewrote 4→4 lines (3 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "py"
+      ],
+      "status": "candidate",
+      "observed_worktree": ".",
+      "id": "bug-001",
+      "timestamp": "2026-09-29T08:47:56.915Z",
+      "last_seen": "2026-09-29T08:47:56.915Z",
+      "occurrences": 1,
+      "related_bugs": []
+    },
+    {
+      "error_message": "Significant refactor of tractatus_eval.py",
+      "file": "bench/tractatus_eval.py",
+      "root_cause": "2 lines replaced/restructured",
+      "fix": "Rewrote 7→12 lines (2 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "py"
+      ],
+      "status": "candidate",
+      "observed_worktree": ".",
+      "id": "bug-002",
+      "timestamp": "2026-09-29T08:48:00.260Z",
+      "last_seen": "2026-09-29T08:48:00.260Z",
+      "occurrences": 1,
+      "related_bugs": []
+    },
+    {
+      "id": "bug-003",
+      "timestamp": "2026-09-29T09:05:00Z",
+      "last_seen": "2026-09-29T09:05:00Z",
+      "occurrences": 1,
+      "status": "fixed",
+      "error_message": "atoms must be 1 to 8 non-empty strings (every LLM form rejected)",
+      "file": "jevk5/decompose.py",
+      "root_cause": "The prompt described the fields but not the JSON shape; Qwen3.8-27B wrote atoms as {\"id\", \"text\"} objects.",
+      "fix": "INSTRUCTIONS now shows the exact shapes (atoms as plain strings; atom i is a<i>). Validator left strict.",
+      "tags": [
+        "llm-output",
+        "prompt",
+        "decomposer"
+      ],
+      "related_bugs": []
+    },
+    {
+      "id": "bug-004",
+      "timestamp": "2026-09-29T09:05:00Z",
+      "last_seen": "2026-09-29T09:05:00Z",
+      "occurrences": 1,
+      "status": "fixed",
+      "error_message": "direct 27B control scored 0/2 on the standard tier in the smoke run",
+      "file": "bench/tractatus_eval.py",
+      "root_cause": "The 27B sometimes answers with the full option text 'id: description', which matched no option id.",
+      "fix": "direct() keeps the text before the first ':' (option ids contain no colon).",
+      "tags": [
+        "llm-output",
+        "eval",
+        "parsing"
+      ],
+      "related_bugs": []
+    },
+    {
+      "error_message": "Incorrect value in code",
+      "file": "bench/tractatus_eval.py",
+      "root_cause": "Had \"llm-cache.jsonl\"",
+      "fix": "Changed to \"url\"",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "py"
+      ],
+      "status": "candidate",
+      "observed_worktree": ".",
+      "id": "bug-005",
+      "timestamp": "2026-09-29T11:09:01.195Z",
+      "last_seen": "2026-09-29T11:09:01.195Z",
+      "occurrences": 1,
+      "related_bugs": []
+    },
+    {
+      "error_message": "Incorrect value in code",
+      "file": "bench/tractatus_eval.py",
+      "root_cause": "Had \"rejected_forms\"",
+      "fix": "Changed to \"form_source\"",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "py"
+      ],
+      "status": "candidate",
+      "observed_worktree": ".",
+      "id": "bug-006",
+      "timestamp": "2026-09-29T11:09:02.432Z",
+      "last_seen": "2026-09-29T11:09:02.432Z",
+      "occurrences": 1,
+      "related_bugs": []
+    },
+    {
+      "error_message": "Significant refactor of decompose.py",
+      "file": "jevk5/decompose.py",
+      "root_cause": "2 lines replaced/restructured",
+      "fix": "Rewrote 3→4 lines (2 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "py"
+      ],
+      "status": "candidate",
+      "observed_worktree": ".",
+      "id": "bug-007",
+      "timestamp": "2026-09-29T12:07:47.705Z",
+      "last_seen": "2026-09-29T12:25:36.969Z",
+      "occurrences": 2,
+      "related_bugs": []
+    },
+    {
+      "error_message": "Significant refactor of test_tractatus.py",
+      "file": "tests/test_tractatus.py",
+      "root_cause": "2 lines replaced/restructured",
+      "fix": "Rewrote 4→5 lines (2 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "py"
+      ],
+      "status": "candidate",
+      "observed_worktree": ".",
+      "id": "bug-008",
+      "timestamp": "2026-09-29T12:08:17.182Z",
+      "last_seen": "2026-09-29T12:08:17.182Z",
+      "occurrences": 1,
+      "related_bugs": []
+    },
+    {
+      "error_message": "Incorrect value in code",
+      "file": "jevk5/tractatus.py",
+      "root_cause": "Had \"] == \"",
+      "fix": "Changed to \"] in (\"",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "py"
+      ],
+      "status": "candidate",
+      "observed_worktree": ".",
+      "id": "bug-009",
+      "timestamp": "2026-09-29T12:21:37.582Z",
+      "last_seen": "2026-09-29T12:21:37.582Z",
+      "occurrences": 1,
+      "related_bugs": []
+    },
+    {
+      "error_message": "Incorrect value in code",
+      "file": "jevk5/decompose.py",
+      "root_cause": "Had \"rules\"",
+      "fix": "Changed to 's option ids are its level numbers): \"",
+      "tags": [
+        "auto-detected",
+        "wrong-value",
+        "py"
+      ],
+      "status": "candidate",
+      "observed_worktree": ".",
+      "id": "bug-010",
+      "timestamp": "2026-09-29T12:21:58.172Z",
+      "last_seen": "2026-09-29T12:21:58.172Z",
+      "occurrences": 1,
+      "related_bugs": []
+    },
+    {
+      "error_message": "Wrong return value",
+      "file": "jevk5/decompose.py",
+      "root_cause": "Was returning: None",
+      "fix": "Now returns: choice if choice in [key for key, _ in decision_op",
+      "tags": [
+        "auto-detected",
+        "return-value",
+        "py"
+      ],
+      "status": "candidate",
+      "observed_worktree": ".",
+      "id": "bug-011",
+      "timestamp": "2026-09-29T12:22:02.694Z",
+      "last_seen": "2026-09-29T12:22:02.694Z",
+      "occurrences": 1,
+      "related_bugs": []
+    },
+    {
+      "error_message": "Significant refactor of tractatus_eval.py",
+      "file": "bench/tractatus_eval.py",
+      "root_cause": "6 lines replaced/restructured",
+      "fix": "Rewrote 9→5 lines (6 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "py"
+      ],
+      "status": "candidate",
+      "observed_worktree": ".",
+      "id": "bug-012",
+      "timestamp": "2026-09-29T12:22:12.409Z",
+      "last_seen": "2026-09-29T12:22:12.409Z",
+      "occurrences": 1,
+      "related_bugs": []
+    },
+    {
+      "error_message": "Significant refactor of test_tractatus.py",
+      "file": "tests/test_tractatus.py",
+      "root_cause": "6 lines replaced/restructured",
+      "fix": "Rewrote 7→17 lines (6 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "py"
+      ],
+      "status": "candidate",
+      "observed_worktree": ".",
+      "id": "bug-013",
+      "timestamp": "2026-09-29T12:22:18.641Z",
+      "last_seen": "2026-09-29T12:22:18.641Z",
+      "occurrences": 1,
+      "related_bugs": []
+    },
+    {
+      "error_message": "Wrong return value",
+      "file": "jevk5/decompose.py",
+      "root_cause": "Was returning: json.loads(response.read())[\"choices\"][0][\"message",
+      "fix": "Now returns: data[\"choices\"][0][\"message\"]",
+      "tags": [
+        "auto-detected",
+        "return-value",
+        "py"
+      ],
+      "status": "candidate",
+      "observed_worktree": ".",
+      "id": "bug-014",
+      "timestamp": "2026-09-29T12:25:31.053Z",
+      "last_seen": "2026-09-29T12:25:31.053Z",
+      "occurrences": 1,
+      "related_bugs": []
+    },
+    {
+      "id": "bug-015",
+      "timestamp": "2026-09-29T12:40:00Z",
+      "last_seen": "2026-09-29T12:40:00Z",
+      "occurrences": 1,
+      "status": "fixed",
+      "error_message": "KeyError('choices') from the teacher server for Mistral Small 4",
+      "file": "jevk5/decompose.py",
+      "root_cause": "the teacher server's Mistral rejects chat_template_kwargs ('chat_template is not supported for Mistral tokenizers') and returns the error inside a 200 response.",
+      "fix": "Decomposer(template=False) omits chat_template_kwargs; reply() raises a clear RuntimeError when a response has no choices.",
+      "tags": [
+        "teacher",
+        "mistral",
+        "api"
+      ],
+      "related_bugs": []
+    },
+    {
+      "error_message": "Significant refactor of lora.py",
+      "file": "training/lora.py",
+      "root_cause": "3 lines replaced/restructured",
+      "fix": "Rewrote 5→7 lines (3 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "py"
+      ],
+      "status": "candidate",
+      "observed_worktree": ".",
+      "id": "bug-016",
+      "timestamp": "2026-09-29T12:31:16.786Z",
+      "last_seen": "2026-09-29T12:31:16.786Z",
+      "occurrences": 1,
+      "related_bugs": []
+    },
+    {
+      "error_message": "Significant refactor of lora.py",
+      "file": "training/lora.py",
+      "root_cause": "5 lines replaced/restructured",
+      "fix": "Rewrote 20→28 lines (5 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "py"
+      ],
+      "status": "candidate",
+      "observed_worktree": ".",
+      "id": "bug-017",
+      "timestamp": "2026-09-29T12:31:23.555Z",
+      "last_seen": "2026-09-29T12:31:23.555Z",
+      "occurrences": 1,
+      "related_bugs": []
+    },
+    {
+      "error_message": "Significant refactor of lora.py",
+      "file": "training/lora.py",
+      "root_cause": "6 lines replaced/restructured",
+      "fix": "Rewrote 9→8 lines (6 removed)",
+      "tags": [
+        "auto-detected",
+        "refactor",
+        "py"
+      ],
+      "status": "candidate",
+      "observed_worktree": ".",
+      "id": "bug-018",
+      "timestamp": "2026-09-29T12:33:58.621Z",
+      "last_seen": "2026-09-29T12:33:58.621Z",
+      "occurrences": 1,
+      "related_bugs": []
+    }
+  ],
+  "applied_observations": {
+    "812617f0-9a8d-490d-abb3-51600f8b9449": true,
+    "a1ffba63-9797-43b8-b7cf-16a0dbb218bf": true,
+    "92a90506-07b7-4ad9-9641-335ae6358775": true,
+    "729d125e-393d-4acf-9a96-372d7ed17669": true,
+    "34b533d5-574d-4c62-b8f1-befa8f6619f8": true,
+    "e94c60fa-bbe9-4dad-b94c-e797953a5b5c": true,
+    "af86a050-e084-4281-ab21-2f8c0ad433ed": true,
+    "7213b508-5c88-4778-9853-9f838481f798": true,
+    "db7d92a5-8af4-40a3-a6e8-2cfbc73862f5": true,
+    "9e42238f-d567-405e-948f-5bdd07f70266": true,
+    "2e42f802-8e01-4512-88ca-3481fd53fb41": true,
+    "27cf97b4-e483-4d11-a929-7895047f09f6": true,
+    "77672594-142b-4f64-9978-61350c2e5a77": true,
+    "233d7664-eb5d-46b7-9cae-bf359c99bad3": true,
+    "47f34509-c03c-45d7-aaeb-b31f188fb34f": true,
+    "7526ab10-9745-4065-8fed-b0cbe6489c4b": true
+  },
+  "next_id": 19
+}

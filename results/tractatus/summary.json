@@ -1,0 +1,106 @@
+{
+ "holistic": {
+  "n": 231,
+  "accuracy": 0.883,
+  "easy": 1.0,
+  "original": 0.944,
+  "hard": 0.793,
+  "hard_families": {
+   "adversarial": 1.0,
+   "ambiguous": 0.857,
+   "judge_hard": 0.647,
+   "long_policy": 0.737,
+   "multi_hop": 0.833,
+   "probability": 1.0,
+   "routing_hard": 1.0,
+   "temporal_numeric": 0.467,
+   "tradeoff": 1.0,
+   "trap": 1.0
+  },
+  "hard_ece": 0.063,
+  "brier": 0.182,
+  "with_form": 0,
+  "fixed_vs_holistic": 0,
+  "broken_vs_holistic": 0,
+  "mcnemar_p": 1.0
+ },
+ "checklist": {
+  "n": 231,
+  "accuracy": 0.931,
+  "easy": 1.0,
+  "original": 1.0,
+  "hard": 0.856,
+  "hard_families": {
+   "adversarial": 1.0,
+   "ambiguous": 0.857,
+   "judge_hard": 0.882,
+   "long_policy": 0.842,
+   "multi_hop": 0.722,
+   "probability": 1.0,
+   "routing_hard": 1.0,
+   "temporal_numeric": 0.667,
+   "tradeoff": 1.0,
+   "trap": 1.0
+  },
+  "hard_ece": 0.084,
+  "brier": 0.115,
+  "with_form": 189,
+  "fixed_vs_holistic": 15,
+  "broken_vs_holistic": 4,
+  "mcnemar_p": 0.019
+ },
+ "compose": {
+  "n": 231,
+  "accuracy": 0.87,
+  "easy": 1.0,
+  "original": 0.889,
+  "hard": 0.802,
+  "hard_families": {
+   "adversarial": 1.0,
+   "ambiguous": 0.857,
+   "judge_hard": 0.941,
+   "long_policy": 0.632,
+   "multi_hop": 0.667,
+   "probability": 1.0,
+   "routing_hard": 0.8,
+   "temporal_numeric": 0.667,
+   "tradeoff": 0.833,
+   "trap": 1.0
+  },
+  "hard_ece": 0.055,
+  "brier": 0.194,
+  "with_form": 189,
+  "fixed_vs_holistic": 17,
+  "broken_vs_holistic": 20,
+  "mcnemar_p": 0.743
+ },
+ "direct": {
+  "n": 231,
+  "accuracy": 0.987,
+  "easy": 1.0,
+  "original": 1.0,
+  "hard": 0.973,
+  "hard_families": {
+   "adversarial": 1.0,
+   "ambiguous": 1.0,
+   "judge_hard": 0.941,
+   "long_policy": 1.0,
+   "multi_hop": 0.944,
+   "probability": 1.0,
+   "routing_hard": 1.0,
+   "temporal_numeric": 0.933,
+   "tradeoff": 1.0,
+   "trap": 1.0
+  },
+  "hard_ece": 0.027,
+  "brier": 0.026,
+  "with_form": 0,
+  "fixed_vs_holistic": 25,
+  "broken_vs_holistic": 1,
+  "mcnemar_p": 0.0
+ },
+ "rejected_forms": {
+  "Which shirt size does the customer ask for?": "rule {'option': 'XL: Extra large', 'when': 'a1'} names no option of ['L', 'M', 'S', 'XL']",
+  "Select the single best primary handler for this request.": "rule {'option': 'payment_disputes: Handles chargebacks, bank disputes, and multiple distinct captured charges.', 'when': 'not a1'} names no option of ['customer_support', 'fraud_review', 'ledger_reconciliation', 'mobile_app', 'payment_disputes']"
+ }
+}

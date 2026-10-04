@@ -1,0 +1,86 @@
+{
+ "holistic": {
+  "n": 231,
+  "accuracy": 0.883,
+  "easy": 1.0,
+  "original": 0.944,
+  "hard": 0.793,
+  "hard_families": {
+   "adversarial": 1.0,
+   "ambiguous": 0.857,
+   "judge_hard": 0.647,
+   "long_policy": 0.737,
+   "multi_hop": 0.833,
+   "probability": 1.0,
+   "routing_hard": 1.0,
+   "temporal_numeric": 0.467,
+   "tradeoff": 1.0,
+   "trap": 1.0
+  },
+  "hard_ece": 0.063,
+  "brier": 0.182,
+  "with_form": 0,
+  "fixed_vs_holistic": 0,
+  "broken_vs_holistic": 0,
+  "mcnemar_p": 1.0
+ },
+ "checklist": {
+  "n": 231,
+  "accuracy": 0.848,
+  "easy": 1.0,
+  "original": 0.972,
+  "hard": 0.703,
+  "hard_families": {
+   "adversarial": 1.0,
+   "ambiguous": 0.857,
+   "judge_hard": 0.588,
+   "long_policy": 0.632,
+   "multi_hop": 0.556,
+   "probability": 1.0,
+   "routing_hard": 1.0,
+   "temporal_numeric": 0.4,
+   "tradeoff": 0.833,
+   "trap": 1.0
+  },
+  "hard_ece": 0.139,
+  "brier": 0.203,
+  "with_form": 190,
+  "fixed_vs_holistic": 2,
+  "broken_vs_holistic": 10,
+  "mcnemar_p": 0.039
+ },
+ "compose": {
+  "n": 231,
+  "accuracy": 0.723,
+  "easy": 0.938,
+  "original": 0.792,
+  "hard": 0.586,
+  "hard_families": {
+   "adversarial": 0.667,
+   "ambiguous": 0.857,
+   "judge_hard": 0.588,
+   "long_policy": 0.526,
+   "multi_hop": 0.444,
+   "probability": 0.6,
+   "routing_hard": 1.0,
+   "temporal_numeric": 0.333,
+   "tradeoff": 0.667,
+   "trap": 0.875
+  },
+  "hard_ece": 0.185,
+  "brier": 0.397,
+  "with_form": 190,
+  "fixed_vs_holistic": 12,
+  "broken_vs_holistic": 49,
+  "mcnemar_p": 0.0
+ },
+ "form_source": {
+  "url": "<teacher server>",
+  "model": "Qwen3.8 27B",
+  "blind": true,
+  "effort": "medium"
+ },
+ "rejected_forms": {
+  "Which shirt size does the customer ask for?": "rule {'option': 'L: Large', 'when': 'a1'} names no option of ['L', 'M', 'S', 'XL']"
+ }
+}

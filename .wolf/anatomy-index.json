@@ -1,0 +1,5497 @@
+{
+  "version": 1,
+  "meta": {
+    "lastScanned": "2026-09-29T14:15:38.781Z",
+    "fileCount": 137,
+    "hits": 0,
+    "misses": 0,
+    "renderedHash": "addde9860db12549a360dfb8c3efec199bcea93562a56a3b3ff5c1a0ae8996ae",
+    "storeUpdatedAt": "2026-09-29T14:15:38.791Z",
+    "rootHash": "50abd7136af0fb65"
+  },
+  "files": {
+    ".gitignore": {
+      "description": "Git ignore rules",
+      "tokens": 34,
+      "hash": "73216545efe9819e",
+      "size": 125,
+      "mtimeMs": 1790665417679.3735,
+      "updatedAt": "2026-09-29T07:03:54.113Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    ".gitmodules": {
+      "description": "",
+      "tokens": 34,
+      "hash": "7f442fbe503294fe",
+      "size": 124,
+      "mtimeMs": 1790665424771.5444,
+      "updatedAt": "2026-09-29T07:03:54.114Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "AGENTS.md": {
+      "description": "OpenWolf",
+      "tokens": 75,
+      "hash": "e401f79554a8d796",
+      "size": 297,
+      "mtimeMs": 1790665434096.6057,
+      "updatedAt": "2026-09-29T07:03:54.114Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "bench/gguf_check.py": {
+      "description": "Check a GGUF build against the bf16 model on JevBench's public items.",
+      "tokens": 1322,
+      "hash": "00cdaa6a5a4280b1",
+      "size": 4627,
+      "mtimeMs": 1790665417679.832,
+      "updatedAt": "2026-09-29T07:03:54.115Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "ece",
+          "kind": "fn",
+          "startLine": 25,
+          "endLine": 34,
+          "tokens": 110
+        },
+        {
+          "name": "main",
+          "kind": "fn",
+          "startLine": 37,
+          "endLine": 108,
+          "tokens": 966
+        }
+      ],
+      "symbolSource": "ts",
+      "imports": [
+        "jevk5/gguf.py"
+      ],
+      "importance": 0.0378
+    },
+    "bench/jevbench-registration.patch": {
+      "description": "",
+      "tokens": 1006,
+      "hash": "acda3fefc5a90947",
+      "size": 3772,
+      "mtimeMs": 1790665417679.832,
+      "updatedAt": "2026-09-29T07:03:54.115Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "bench/jevk5_direct.py": {
+      "description": "In-process JevBench adapter for JevK5 (Qwen3.5-4B + distilled LoRA, one forward pass).",
+      "tokens": 1022,
+      "hash": "62d1f93a64d5e213",
+      "size": 3577,
+      "mtimeMs": 1790665417679.832,
+      "updatedAt": "2026-09-29T07:03:54.115Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "JevK5DirectAdapter",
+          "kind": "class",
+          "startLine": 23,
+          "endLine": 82,
+          "tokens": 710
+        },
+        {
+          "name": "JevK5DirectAdapter.__init__",
+          "kind": "method",
+          "startLine": 27,
+          "endLine": 36,
+          "tokens": 143
+        },
+        {
+          "name": "JevK5DirectAdapter.load",
+          "kind": "method",
+          "startLine": 38,
+          "endLine": 50,
+          "tokens": 131
+        },
+        {
+          "name": "JevK5DirectAdapter.run",
+          "kind": "method",
+          "startLine": 52,
+          "endLine": 79,
+          "tokens": 392
+        },
+        {
+          "name": "JevK5DirectAdapter.reserve_estimate",
+          "kind": "method",
+          "startLine": 81,
+          "endLine": 82,
+          "tokens": 19
+        }
+      ],
+      "symbolSource": "ts",
+      "imports": [
+        "jevk5/__init__.py"
+      ],
+      "importance": 0.0378
+    },
+    "bench/jevk5_lite.py": {
+      "description": "In-process JevBench adapter for JevK5-Lite (a CPU label-conditioned encoder; preview).",
+      "tokens": 1536,
+      "hash": "d5f24d5e8f83f991",
+      "size": 5373,
+      "mtimeMs": 1790665417679.832,
+      "updatedAt": "2026-09-29T07:03:54.115Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "lite_head",
+          "kind": "fn",
+          "startLine": 32,
+          "endLine": 46,
+          "tokens": 230
+        },
+        {
+          "name": "state_text",
+          "kind": "fn",
+          "startLine": 49,
+          "endLine": 50,
+          "tokens": 33
+        },
+        {
+          "name": "JevK5LiteAdapter",
+          "kind": "class",
+          "startLine": 53,
+          "endLine": 116,
+          "tokens": 825
+        },
+        {
+          "name": "JevK5LiteAdapter.__init__",
+          "kind": "method",
+          "startLine": 57,
+          "endLine": 64,
+          "tokens": 124
+        },
+        {
+          "name": "JevK5LiteAdapter.load",
+          "kind": "method",
+          "startLine": 66,
+          "endLine": 79,
+          "tokens": 163
+        },
+        {
+          "name": "JevK5LiteAdapter.run",
+          "kind": "method",
+          "startLine": 81,
+          "endLine": 113,
+          "tokens": 495
+        },
+        {
+          "name": "JevK5LiteAdapter.reserve_estimate",
+          "kind": "method",
+          "startLine": 115,
+          "endLine": 116,
+          "tokens": 19
+        }
+      ],
+      "symbolSource": "ts",
+      "imports": [
+        "jevk5/__init__.py"
+      ],
+      "importance": 0.0378
+    },
+    "bench/many_options.py": {
+      "description": "Questions with more than 16 options: BANKING77, CLINC150+OOS and MASSIVE, train splits only.",
+      "tokens": 5853,
+      "hash": "990aac28d4b5be92",
+      "size": 20484,
+      "mtimeMs": 1790665417679.832,
+      "updatedAt": "2026-09-29T07:03:54.116Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "fetch",
+          "kind": "fn",
+          "startLine": 48,
+          "endLine": 50,
+          "tokens": 36
+        },
+        {
+          "name": "norm",
+          "kind": "fn",
+          "startLine": 53,
+          "endLine": 54,
+          "tokens": 20
+        },
+        {
+          "name": "order",
+          "kind": "fn",
+          "startLine": 57,
+          "endLine": 58,
+          "tokens": 30
+        },
+        {
+          "name": "round_robin",
+          "kind": "fn",
+          "startLine": 61,
+          "endLine": 74,
+          "tokens": 220
+        },
+        {
+          "name": "item",
+          "kind": "fn",
+          "startLine": 77,
+          "endLine": 88,
+          "tokens": 121
+        },
+        {
+          "name": "build",
+          "kind": "fn",
+          "startLine": 91,
+          "endLine": 201,
+          "tokens": 1222
+        },
+        {
+          "name": "write",
+          "kind": "fn",
+          "startLine": 204,
+          "endLine": 207,
+          "tokens": 48
+        },
+        {
+          "name": "recorder",
+          "kind": "fn",
+          "startLine": 214,
+          "endLine": 233,
+          "tokens": 214
+        },
+        {
+          "name": "derived",
+          "kind": "fn",
+          "startLine": 236,
+          "endLine": 257,
+          "tokens": 294
+        },
+        {
+          "name": "run",
+          "kind": "fn",
+          "startLine": 260,
+          "endLine": 321,
+          "tokens": 755
+        },
+        {
+          "name": "ece",
+          "kind": "fn",
+          "startLine": 328,
+          "endLine": 336,
+          "tokens": 92
+        },
+        {
+          "name": "macro_f1",
+          "kind": "fn",
+          "startLine": 339,
+          "endLine": 347,
+          "tokens": 140
+        },
+        {
+          "name": "summarize",
+          "kind": "fn",
+          "startLine": 350,
+          "endLine": 380,
+          "tokens": 462
+        },
+        {
+          "name": "table",
+          "kind": "fn",
+          "startLine": 383,
+          "endLine": 438,
+          "tokens": 704
+        },
+        {
+          "name": "agree",
+          "kind": "fn",
+          "startLine": 441,
+          "endLine": 465,
+          "tokens": 351
+        },
+        {
+          "name": "main",
+          "kind": "fn",
+          "startLine": 468,
+          "endLine": 493,
+          "tokens": 373
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "def fetch(url: str) -> bytes:\ndef norm(text: str) -> str:\ndef order(text: str, seed: int) -> str:\ndef round_robin(by_label: dict[str, list[str]], count: int, seed: int) -> list[tuple[str, str]]:\ndef item(dataset: str, i: int, instructions: str, descriptions: list[str], gold: int) -> dict:\ndef build(args) -> int:\ndef write(path: Path, rows: list[dict]) -> None:\ndef recorder(model):\ndef derived(row: dict) -> dict[str, list[float]]:\ndef run(args) -> int:\ndef ece(conf: np.ndarray, hit: np.ndarray, bins: int = 10) -> float:\ndef macro_f1(gold: list[int], pred: list[int]) -> float:\ndef summarize(rows: list[dict], design: str) -> dict:\ndef table(args) -> int:\ndef agree(args) -> int:\ndef main() -> int:",
+      "importance": 0.0378
+    },
+    "bench/parity.py": {
+      "description": "Check that a runtime change leaves questions of up to 16 options bit-identical.",
+      "tokens": 1088,
+      "hash": "fb8d0f1218e7ed34",
+      "size": 3807,
+      "mtimeMs": 1790665417679.832,
+      "updatedAt": "2026-09-29T07:03:54.116Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "dump",
+          "kind": "fn",
+          "startLine": 22,
+          "endLine": 49,
+          "tokens": 293
+        },
+        {
+          "name": "load",
+          "kind": "fn",
+          "startLine": 52,
+          "endLine": 60,
+          "tokens": 89
+        },
+        {
+          "name": "compare",
+          "kind": "fn",
+          "startLine": 63,
+          "endLine": 76,
+          "tokens": 213
+        },
+        {
+          "name": "main",
+          "kind": "fn",
+          "startLine": 79,
+          "endLine": 92,
+          "tokens": 221
+        }
+      ],
+      "symbolSource": "ts",
+      "imports": [
+        "jevk5/__init__.py"
+      ],
+      "importance": 0.0378
+    },
+    "bench/SUBMISSION.md": {
+      "description": "Running JevK5 on JevBench",
+      "tokens": 1195,
+      "hash": "df5f16f9bb52925a",
+      "size": 4783,
+      "mtimeMs": 1790665417679.4978,
+      "updatedAt": "2026-09-29T07:03:54.116Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "bench/vision_probe.py": {
+      "description": "Probe whether JevK5 text weights can make image decisions with Qwen3.5's vision tower.",
+      "tokens": 1793,
+      "hash": "8a937650458db9b2",
+      "size": 6273,
+      "mtimeMs": 1790665417679.832,
+      "updatedAt": "2026-09-29T07:03:54.116Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "make_invoice",
+          "kind": "fn",
+          "startLine": 35,
+          "endLine": 56,
+          "tokens": 266
+        },
+        {
+          "name": "decide",
+          "kind": "fn",
+          "startLine": 59,
+          "endLine": 106,
+          "tokens": 550
+        },
+        {
+          "name": "transplant_jevk5_text",
+          "kind": "fn",
+          "startLine": 109,
+          "endLine": 124,
+          "tokens": 226
+        },
+        {
+          "name": "main",
+          "kind": "fn",
+          "startLine": 127,
+          "endLine": 156,
+          "tokens": 402
+        }
+      ],
+      "symbolSource": "ts",
+      "importance": 0.0378
+    },
+    "CHANGELOG.md": {
+      "description": "Change log",
+      "tokens": 2967,
+      "hash": "12a8968eb46d9645",
+      "size": 11932,
+      "mtimeMs": 1790665417679.3735,
+      "updatedAt": "2026-09-29T07:03:54.116Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "CLAUDE.md": {
+      "description": "OpenWolf",
+      "tokens": 99,
+      "hash": "074d6b42b583729a",
+      "size": 395,
+      "mtimeMs": 1790665434092.287,
+      "updatedAt": "2026-09-29T07:03:54.116Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "docs/game-demos/ARENA-LICENSE.txt": {
+      "description": "",
+      "tokens": 269,
+      "hash": "fb275c4b437ca72f",
+      "size": 1075,
+      "mtimeMs": 1790665417680.287,
+      "updatedAt": "2026-09-29T07:03:54.117Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "examples/README.md": {
+      "description": "Project documentation",
+      "tokens": 767,
+      "hash": "73ddf672deb20591",
+      "size": 3076,
+      "mtimeMs": 1790665417684.4978,
+      "updatedAt": "2026-09-29T07:03:54.117Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "examples/tetris.py": {
+      "description": "JevK5 plays Tetris: every placement is two typed decisions about a board drawn as text.",
+      "tokens": 4764,
+      "hash": "9c03eda29cb28c7e",
+      "size": 16671,
+      "mtimeMs": 1790665417684.8494,
+      "updatedAt": "2026-09-29T07:03:54.117Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "Board",
+          "kind": "class",
+          "startLine": 58,
+          "endLine": 103,
+          "tokens": 505
+        },
+        {
+          "name": "Board.__init__",
+          "kind": "method",
+          "startLine": 59,
+          "endLine": 61,
+          "tokens": 32
+        },
+        {
+          "name": "Board.draw",
+          "kind": "method",
+          "startLine": 63,
+          "endLine": 65,
+          "tokens": 62
+        },
+        {
+          "name": "Board.heights",
+          "kind": "method",
+          "startLine": 67,
+          "endLine": 72,
+          "tokens": 69
+        },
+        {
+          "name": "Board.holes",
+          "kind": "method",
+          "startLine": 74,
+          "endLine": 83,
+          "tokens": 86
+        },
+        {
+          "name": "Board.landing_row",
+          "kind": "method",
+          "startLine": 85,
+          "endLine": 94,
+          "tokens": 147
+        },
+        {
+          "name": "Board.place",
+          "kind": "method",
+          "startLine": 96,
+          "endLine": 103,
+          "tokens": 105
+        },
+        {
+          "name": "legal",
+          "kind": "fn",
+          "startLine": 106,
+          "endLine": 113,
+          "tokens": 101
+        },
+        {
+          "name": "state_text",
+          "kind": "fn",
+          "startLine": 116,
+          "endLine": 123,
+          "tokens": 138
+        },
+        {
+          "name": "ModelPlayer",
+          "kind": "class",
+          "startLine": 126,
+          "endLine": 159,
+          "tokens": 427
+        },
+        {
+          "name": "ModelPlayer.__init__",
+          "kind": "method",
+          "startLine": 131,
+          "endLine": 134,
+          "tokens": 34
+        },
+        {
+          "name": "ModelPlayer.ask",
+          "kind": "method",
+          "startLine": 136,
+          "endLine": 143,
+          "tokens": 119
+        },
+        {
+          "name": "ModelPlayer.move",
+          "kind": "method",
+          "startLine": 145,
+          "endLine": 159,
+          "tokens": 237
+        },
+        {
+          "name": "shape_art",
+          "kind": "fn",
+          "startLine": 162,
+          "endLine": 169,
+          "tokens": 93
+        },
+        {
+          "name": "JevClient",
+          "kind": "class",
+          "startLine": 172,
+          "endLine": 214,
+          "tokens": 535
+        },
+        {
+          "name": "JevClient.__init__",
+          "kind": "method",
+          "startLine": 178,
+          "endLine": 189,
+          "tokens": 154
+        },
+        {
+          "name": "JevClient.decide",
+          "kind": "method",
+          "startLine": 191,
+          "endLine": 214,
+          "tokens": 318
+        },
+        {
+          "name": "BriefedPlayer",
+          "kind": "class",
+          "startLine": 217,
+          "endLine": 275,
+          "tokens": 818
+        },
+        {
+          "name": "BriefedPlayer.__init__",
+          "kind": "method",
+          "startLine": 228,
+          "endLine": 232,
+          "tokens": 47
+        },
+        {
+          "name": "BriefedPlayer.describe",
+          "kind": "method",
+          "startLine": 234,
+          "endLine": 244,
+          "tokens": 198
+        },
+        {
+          "name": "BriefedPlayer.ask",
+          "kind": "method",
+          "startLine": 246,
+          "endLine": 257,
+          "tokens": 164
+        },
+        {
+          "name": "BriefedPlayer.move",
+          "kind": "method",
+          "startLine": 259,
+          "endLine": 275,
+          "tokens": 263
+        },
+        {
+          "name": "RandomPlayer",
+          "kind": "class",
+          "startLine": 278,
+          "endLine": 289,
+          "tokens": 113
+        },
+        {
+          "name": "RandomPlayer.__init__",
+          "kind": "method",
+          "startLine": 281,
+          "endLine": 284,
+          "tokens": 37
+        },
+        {
+          "name": "RandomPlayer.move",
+          "kind": "method",
+          "startLine": 286,
+          "endLine": 289,
+          "tokens": 64
+        },
+        {
+          "name": "GreedyPlayer",
+          "kind": "class",
+          "startLine": 292,
+          "endLine": 313,
+          "tokens": 243
+        },
+        {
+          "name": "GreedyPlayer.__init__",
+          "kind": "method",
+          "startLine": 297,
+          "endLine": 299,
+          "tokens": 25
+        },
+        {
+          "name": "GreedyPlayer.move",
+          "kind": "method",
+          "startLine": 301,
+          "endLine": 313,
+          "tokens": 184
+        },
+        {
+          "name": "play",
+          "kind": "fn",
+          "startLine": 316,
+          "endLine": 342,
+          "tokens": 389
+        },
+        {
+          "name": "main",
+          "kind": "fn",
+          "startLine": 345,
+          "endLine": 392,
+          "tokens": 742
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "class Board:\n    def __init__(self) -> None:\n    def draw(self) -> str:\n    def heights(self) -> list[int]:\n    def holes(self) -> int:\n    def landing_row(self, cells: list[tuple[int, int]], column: int) -> int | None:\n    def place(self, cells: list[tuple[int, int]], column: int, top: int) -> int:\ndef legal(board: Board, piece: str) -> dict[int, list[int]]:\ndef state_text(board: Board, piece: str, nxt: str) -> str:\nclass ModelPlayer:\n    def __init__(self, model) -> None:\n    def ask(self, state: str, instructions: str, criteria: dict[str, str]) -> str:\n    def move(self, board: Board, piece: str, nxt: str) -> tuple[int, int]:\ndef shape_art(piece: str, rotation: int) -> str:\nclass JevClient:\n    def __init__(self, model: str = \"jev-latest\") -> None:\n    def decide(self, state: str, question: dict) -> dict:\nclass BriefedPlayer:\n    def __init__(self, model, chunk: int = 8) -> None:\n    def describe(self, board: Board, cells, column: int) -> tuple[str, Board]:\n    def ask(self, state: str, criteria: dict[str, str]) -> str:\n    def move(self, board: Board, piece: str, nxt: str) -> tuple[int, int]:\nclass RandomPlayer:\n    def __init__(self, rng: random.Random) -> None:\n    def move(self, board: Board, piece: str, nxt: str) -> tuple[int, int]:\nclass GreedyPlayer:\n    def __init__(self) -> None:\n    def move(self, board: Board, piece: str, nxt: str) -> tuple[int, int]:",
+      "importance": 0.0378
+    },
+    "jevk5/__init__.py": {
+      "description": "JevK5: a fast, calibrated, open decision model (Qwen3.5-4B + distilled LoRA, one pass).",
+      "tokens": 212,
+      "hash": "3ec8170fe224e7b9",
+      "size": 739,
+      "mtimeMs": 1790665417684.8494,
+      "updatedAt": "2026-09-29T07:03:54.117Z",
+      "source": "scan",
+      "imports": [
+        "jevk5/prompt.py",
+        "jevk5/runtime.py",
+        "jevk5/gguf.py",
+        "jevk5/lite.py"
+      ],
+      "importance": 0.459
+    },
+    "jevk5/gguf.py": {
+      "description": "JevK5 on llama.cpp: the same option-letter readout from a GGUF, on Apple silicon or CPU.",
+      "tokens": 2255,
+      "hash": "650613852666dafc",
+      "size": 7890,
+      "mtimeMs": 1790683745385.3423,
+      "updatedAt": "2026-09-29T12:09:05.445Z",
+      "source": "hook",
+      "symbols": [
+        {
+          "name": "JevK5GGUF",
+          "kind": "class",
+          "startLine": 40,
+          "endLine": 159,
+          "tokens": 1579
+        },
+        {
+          "name": "main",
+          "kind": "fn",
+          "startLine": 160,
+          "endLine": 175,
+          "tokens": 146
+        }
+      ]
+    },
+    "jevk5/lite.py": {
+      "description": "JevK5-Lite (preview): a CPU encoder that scores every label of every head in one forward pass.",
+      "tokens": 2230,
+      "hash": "8ca027ea70e9ddb3",
+      "size": 7802,
+      "mtimeMs": 1790665417684.9082,
+      "updatedAt": "2026-09-29T07:03:54.117Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "Scorer",
+          "kind": "class",
+          "startLine": 36,
+          "endLine": 45,
+          "tokens": 139
+        },
+        {
+          "name": "Scorer.__init__",
+          "kind": "method",
+          "startLine": 39,
+          "endLine": 41,
+          "tokens": 46
+        },
+        {
+          "name": "Scorer.forward",
+          "kind": "method",
+          "startLine": 43,
+          "endLine": 45,
+          "tokens": 58
+        },
+        {
+          "name": "_heads",
+          "kind": "fn",
+          "startLine": 48,
+          "endLine": 69,
+          "tokens": 313
+        },
+        {
+          "name": "JevK5Lite",
+          "kind": "class",
+          "startLine": 72,
+          "endLine": 173,
+          "tokens": 1342
+        },
+        {
+          "name": "JevK5Lite.__init__",
+          "kind": "method",
+          "startLine": 73,
+          "endLine": 86,
+          "tokens": 214
+        },
+        {
+          "name": "JevK5Lite._piece",
+          "kind": "method",
+          "startLine": 115,
+          "endLine": 116,
+          "tokens": 33
+        },
+        {
+          "name": "JevK5Lite.encode",
+          "kind": "method",
+          "startLine": 118,
+          "endLine": 144,
+          "tokens": 331
+        },
+        {
+          "name": "JevK5Lite.classify",
+          "kind": "method",
+          "startLine": 157,
+          "endLine": 173,
+          "tokens": 274
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "class Scorer(nn.Module):\n    def __init__(self, hidden: int):\n    def forward(self, labels: torch.Tensor, text: torch.Tensor) -> torch.Tensor:\ndef _heads(tasks: dict) -> list[tuple[str, list[str], bool, float | None]]:\nclass JevK5Lite:\n    def __init__(self, encoder: nn.Module, scorer: Scorer, tokenizer, config: dict) -> None:\n    def _piece(self, text: str) -> list[int]:\n    def encode(\n    def classify(self, text: str, tasks: dict, threshold: float = 0.5) -> dict:",
+      "imports": [
+        "jevk5/__init__.py"
+      ],
+      "importance": 0.1675
+    },
+    "jevk5/prompt.py": {
+      "description": "The prompt, the option mapping and the many-option readout, with no heavy dependencies.",
+      "tokens": 2187,
+      "hash": "322d69ba6abea836",
+      "size": 7652,
+      "mtimeMs": 1790665417684.9082,
+      "updatedAt": "2026-09-29T07:03:54.117Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "messages",
+          "kind": "fn",
+          "startLine": 35,
+          "endLine": 44,
+          "tokens": 112
+        },
+        {
+          "name": "prompt_text",
+          "kind": "fn",
+          "startLine": 47,
+          "endLine": 50,
+          "tokens": 86
+        },
+        {
+          "name": "decision_options",
+          "kind": "fn",
+          "startLine": 53,
+          "endLine": 65,
+          "tokens": 204
+        },
+        {
+          "name": "groups",
+          "kind": "fn",
+          "startLine": 71,
+          "endLine": 79,
+          "tokens": 98
+        },
+        {
+          "name": "spread",
+          "kind": "fn",
+          "startLine": 82,
+          "endLine": 111,
+          "tokens": 476
+        },
+        {
+          "name": "_combine",
+          "kind": "fn",
+          "startLine": 114,
+          "endLine": 124,
+          "tokens": 122
+        },
+        {
+          "name": "_knockout",
+          "kind": "fn",
+          "startLine": 127,
+          "endLine": 151,
+          "tokens": 378
+        },
+        {
+          "name": "_tree",
+          "kind": "fn",
+          "startLine": 154,
+          "endLine": 160,
+          "tokens": 110
+        },
+        {
+          "name": "answer",
+          "kind": "fn",
+          "startLine": 163,
+          "endLine": 173,
+          "tokens": 157
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "def messages(state, criterion: str, options: list[str]) -> list[dict]:\ndef prompt_text(state, criterion: str, options: list[str]) -> str:\ndef decision_options(question: dict) -> list[tuple[str, str]]:\ndef groups(n: int, count: int) -> list[range]:\ndef spread(\ndef _combine(read: Reader, texts: list[str], method: str) -> list[float]:\ndef _knockout(read: Reader, texts: list[str]) -> list[float]:\ndef _tree(read: Reader, texts: list[str]) -> list[float]:\ndef answer(question: dict, probs: dict[str, float], tokens: int) -> dict:",
+      "importance": 0.3606
+    },
+    "jevk5/runtime.py": {
+      "description": "JevK5: typed decisions from Qwen3.5-4B (+ a distilled LoRA, merged) in one forward pass.",
+      "tokens": 2204,
+      "hash": "b05f2816135237b3",
+      "size": 7714,
+      "mtimeMs": 1790665417684.9082,
+      "updatedAt": "2026-09-29T07:03:54.118Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "_load_config",
+          "kind": "fn",
+          "startLine": 39,
+          "endLine": 49,
+          "tokens": 138
+        },
+        {
+          "name": "_load_temperature",
+          "kind": "fn",
+          "startLine": 52,
+          "endLine": 54,
+          "tokens": 57
+        },
+        {
+          "name": "JevK5",
+          "kind": "class",
+          "startLine": 57,
+          "endLine": 171,
+          "tokens": 1627
+        },
+        {
+          "name": "JevK5.__init__",
+          "kind": "method",
+          "startLine": 58,
+          "endLine": 101,
+          "tokens": 628
+        },
+        {
+          "name": "JevK5._slot_logits",
+          "kind": "method",
+          "startLine": 103,
+          "endLine": 105,
+          "tokens": 75
+        },
+        {
+          "name": "JevK5.encode",
+          "kind": "method",
+          "startLine": 125,
+          "endLine": 132,
+          "tokens": 101
+        },
+        {
+          "name": "JevK5.probabilities",
+          "kind": "method",
+          "startLine": 148,
+          "endLine": 166,
+          "tokens": 300
+        },
+        {
+          "name": "JevK5.decide",
+          "kind": "method",
+          "startLine": 168,
+          "endLine": 171,
+          "tokens": 67
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "def _load_config(source: str) -> dict:\ndef _load_temperature(source: str) -> float:\nclass JevK5:\n    def __init__(\n    def _slot_logits(self, ids: torch.Tensor, last: torch.Tensor) -> torch.Tensor:\n    def encode(self, state, criterion: str, options: list[str]) -> list[int]:\n    def probabilities(self, state, question: dict) -> tuple[dict[str, float], int]:\n    def decide(self, state, question: dict) -> dict:",
+      "imports": [
+        "jevk5/__init__.py",
+        "jevk5/prompt.py"
+      ],
+      "importance": 0.2508
+    },
+    "jevk5/server.py": {
+      "description": "A TypeSafe-style /v1/systemone server for JevK5.",
+      "tokens": 1164,
+      "hash": "2ebde38db58a1603",
+      "size": 4071,
+      "mtimeMs": 1790665417684.9082,
+      "updatedAt": "2026-09-29T07:03:54.118Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "normalized",
+          "kind": "fn",
+          "startLine": 23,
+          "endLine": 36,
+          "tokens": 228
+        },
+        {
+          "name": "make_handler",
+          "kind": "fn",
+          "startLine": 39,
+          "endLine": 86,
+          "tokens": 534
+        },
+        {
+          "name": "main",
+          "kind": "fn",
+          "startLine": 89,
+          "endLine": 99,
+          "tokens": 169
+        }
+      ],
+      "symbolSource": "ts",
+      "imports": [
+        "jevk5/runtime.py"
+      ],
+      "importance": 0.0378
+    },
+    "LICENSE": {
+      "description": "Project license",
+      "tokens": 3029,
+      "hash": "cfc7749b96f63bd3",
+      "size": 11358,
+      "mtimeMs": 1790665417679.3735,
+      "updatedAt": "2026-09-29T07:03:54.118Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "MODEL_CARD.md": {
+      "description": "JevK5 v0.3 — open-weight Jev alternative",
+      "tokens": 3731,
+      "hash": "ae04e164af42c708",
+      "size": 14966,
+      "mtimeMs": 1790665417679.3735,
+      "updatedAt": "2026-09-29T07:03:54.118Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "NOTICE": {
+      "description": "Declares calling",
+      "tokens": 638,
+      "hash": "fb52b3763d991b0f",
+      "size": 2389,
+      "mtimeMs": 1790665417679.3735,
+      "updatedAt": "2026-09-29T07:03:54.118Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "pyproject.toml": {
+      "description": "Python project configuration",
+      "tokens": 190,
+      "hash": "67492863970ab97f",
+      "size": 663,
+      "mtimeMs": 1790665417684.9082,
+      "updatedAt": "2026-09-29T07:03:54.118Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "README.md": {
+      "description": "Project documentation",
+      "tokens": 6582,
+      "hash": "8a2a6379efea5c32",
+      "size": 26332,
+      "mtimeMs": 1790665417679.4978,
+      "updatedAt": "2026-09-29T07:03:54.118Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "results/l40s_probe_20260924.json": {
+      "description": "",
+      "tokens": 11663,
+      "hash": "b250c83f275c41ec",
+      "size": 40819,
+      "mtimeMs": 1790665417684.9082,
+      "updatedAt": "2026-09-29T07:03:54.118Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "results/mmlu_pro_training_ids.json": {
+      "description": "",
+      "tokens": 3438,
+      "hash": "1c72be4015caf6d5",
+      "size": 12031,
+      "mtimeMs": 1790665417685.1218,
+      "updatedAt": "2026-09-29T07:03:54.118Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "results/public231/jevk5-9b-v0.3.3.jsonl": {
+      "description": "",
+      "tokens": 75781,
+      "hash": "5b080f3a74fd20af",
+      "size": 284177,
+      "mtimeMs": 1790665417685.1218,
+      "updatedAt": "2026-09-29T07:03:54.119Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "results/public231/jevk5-9b-v0.3.jsonl": {
+      "description": "",
+      "tokens": 75340,
+      "hash": "89b2bd57e6d5d31f",
+      "size": 282522,
+      "mtimeMs": 1790665417685.4978,
+      "updatedAt": "2026-09-29T07:03:54.120Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "results/public231/jevk5-lite-preview1.jsonl": {
+      "description": "",
+      "tokens": 59538,
+      "hash": "58a573394aecdfc7",
+      "size": 223264,
+      "mtimeMs": 1790665417685.4978,
+      "updatedAt": "2026-09-29T07:03:54.120Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "results/public231/jevk5-lite-preview1.summary.json": {
+      "description": "",
+      "tokens": 14303,
+      "hash": "be2cbaba1c6aecf2",
+      "size": 50058,
+      "mtimeMs": 1790665417685.4978,
+      "updatedAt": "2026-09-29T07:03:54.120Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "results/public231/jevk5-v0.1.jsonl": {
+      "description": "",
+      "tokens": 59178,
+      "hash": "f0d517e3b7246d53",
+      "size": 221917,
+      "mtimeMs": 1790665417685.4978,
+      "updatedAt": "2026-09-29T07:03:54.121Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "results/public231/jevk5-v0.1.summary.json": {
+      "description": "",
+      "tokens": 14177,
+      "hash": "917fb50dfbd48fbd",
+      "size": 49618,
+      "mtimeMs": 1790665417685.4978,
+      "updatedAt": "2026-09-29T07:03:54.121Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "results/public231/jevk5-v0.2.jsonl": {
+      "description": "",
+      "tokens": 59093,
+      "hash": "571872b233bb48d2",
+      "size": 221596,
+      "mtimeMs": 1790665417685.4978,
+      "updatedAt": "2026-09-29T07:03:54.121Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "results/public231/jevk5-v0.2.summary.json": {
+      "description": "",
+      "tokens": 14166,
+      "hash": "10ea870f6b4f583e",
+      "size": 49579,
+      "mtimeMs": 1790665417686.4978,
+      "updatedAt": "2026-09-29T07:03:54.121Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "results/public231/jevk5-v0.3.jsonl": {
+      "description": "",
+      "tokens": 75162,
+      "hash": "17f20cce05d3e280",
+      "size": 281855,
+      "mtimeMs": 1790665417686.4978,
+      "updatedAt": "2026-09-29T07:03:54.122Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "results/public231/untrained-qwen3.5-4b.jsonl": {
+      "description": "",
+      "tokens": 74290,
+      "hash": "e3ad67b149b33080",
+      "size": 278586,
+      "mtimeMs": 1790665417686.4978,
+      "updatedAt": "2026-09-29T07:03:54.122Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tests/test_lite_bench.py": {
+      "description": "bench/jevk5_lite.py's mapping from JevBench questions to JevK5-Lite heads (no JevBench install needed).",
+      "tokens": 747,
+      "hash": "79a3da4d765fce94",
+      "size": 2614,
+      "mtimeMs": 1790665417687.136,
+      "updatedAt": "2026-09-29T07:03:54.123Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "adapter",
+          "kind": "fn",
+          "startLine": 15,
+          "endLine": 39,
+          "tokens": 243
+        },
+        {
+          "name": "test_noul",
+          "kind": "fn",
+          "startLine": 42,
+          "endLine": 48,
+          "tokens": 76
+        },
+        {
+          "name": "test_choice_uses_descriptions_or_keys",
+          "kind": "fn",
+          "startLine": 51,
+          "endLine": 63,
+          "tokens": 164
+        },
+        {
+          "name": "test_duplicate_labels_get_their_ids",
+          "kind": "fn",
+          "startLine": 66,
+          "endLine": 68,
+          "tokens": 58
+        },
+        {
+          "name": "test_score_levels_in_order",
+          "kind": "fn",
+          "startLine": 71,
+          "endLine": 73,
+          "tokens": 66
+        },
+        {
+          "name": "test_state_serialization",
+          "kind": "fn",
+          "startLine": 76,
+          "endLine": 78,
+          "tokens": 49
+        }
+      ],
+      "symbolSource": "ts",
+      "importance": 0.0378
+    },
+    "tests/test_lite.py": {
+      "description": "JevK5-Lite's runtime on a tiny random model built offline (no download, CPU).",
+      "tokens": 1569,
+      "hash": "0b3247cd64bd86fc",
+      "size": 5491,
+      "mtimeMs": 1790665417686.4978,
+      "updatedAt": "2026-09-29T07:03:54.123Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "folder",
+          "kind": "fn",
+          "startLine": 21,
+          "endLine": 50,
+          "tokens": 340
+        },
+        {
+          "name": "lite",
+          "kind": "fn",
+          "startLine": 54,
+          "endLine": 55,
+          "tokens": 23
+        },
+        {
+          "name": "test_every_task_answered",
+          "kind": "fn",
+          "startLine": 64,
+          "endLine": 74,
+          "tokens": 187
+        },
+        {
+          "name": "test_one_encoder_pass_for_all_heads",
+          "kind": "fn",
+          "startLine": 77,
+          "endLine": 84,
+          "tokens": 83
+        },
+        {
+          "name": "test_sequence_layout",
+          "kind": "fn",
+          "startLine": 87,
+          "endLine": 94,
+          "tokens": 142
+        },
+        {
+          "name": "test_long_label_schema_is_answered_as_trained",
+          "kind": "fn",
+          "startLine": 97,
+          "endLine": 104,
+          "tokens": 170
+        },
+        {
+          "name": "test_probabilities_match_a_manual_readout",
+          "kind": "fn",
+          "startLine": 107,
+          "endLine": 122,
+          "tokens": 211
+        },
+        {
+          "name": "test_threshold_per_task",
+          "kind": "fn",
+          "startLine": 125,
+          "endLine": 129,
+          "tokens": 102
+        },
+        {
+          "name": "test_bad_tasks_are_refused",
+          "kind": "fn",
+          "startLine": 135,
+          "endLine": 137,
+          "tokens": 34
+        },
+        {
+          "name": "test_lazy_export",
+          "kind": "fn",
+          "startLine": 140,
+          "endLine": 143,
+          "tokens": 24
+        }
+      ],
+      "symbolSource": "ts",
+      "imports": [
+        "jevk5/lite.py"
+      ],
+      "importance": 0.0378
+    },
+    "tests/test_prompt.py": {
+      "description": "The many-option readout in jevk5.prompt, checked against readers with known answers.",
+      "tokens": 2081,
+      "hash": "6b65f68e538b96a7",
+      "size": 7283,
+      "mtimeMs": 1790665417687.136,
+      "updatedAt": "2026-09-29T07:03:54.123Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "luce_reader",
+          "kind": "fn",
+          "startLine": 15,
+          "endLine": 31,
+          "tokens": 199
+        },
+        {
+          "name": "options",
+          "kind": "fn",
+          "startLine": 34,
+          "endLine": 35,
+          "tokens": 26
+        },
+        {
+          "name": "test_groups_cover_in_order_with_near_equal_sizes",
+          "kind": "fn",
+          "startLine": 39,
+          "endLine": 42,
+          "tokens": 61
+        },
+        {
+          "name": "test_up_to_16_options_is_one_untouched_pass",
+          "kind": "fn",
+          "startLine": 47,
+          "endLine": 57,
+          "tokens": 84
+        },
+        {
+          "name": "strengths",
+          "kind": "fn",
+          "startLine": 60,
+          "endLine": 63,
+          "tokens": 50
+        },
+        {
+          "name": "test_tree_recovers_a_luce_model_exactly",
+          "kind": "fn",
+          "startLine": 67,
+          "endLine": 75,
+          "tokens": 148
+        },
+        {
+          "name": "test_knockout_keeps_the_final_and_the_groups",
+          "kind": "fn",
+          "startLine": 79,
+          "endLine": 99,
+          "tokens": 347
+        },
+        {
+          "name": "test_knockout_temperature_only_sharpens",
+          "kind": "fn",
+          "startLine": 103,
+          "endLine": 112,
+          "tokens": 162
+        },
+        {
+          "name": "test_recursion_beyond_256",
+          "kind": "fn",
+          "startLine": 117,
+          "endLine": 122,
+          "tokens": 82
+        },
+        {
+          "name": "test_passes_and_every_option_scored",
+          "kind": "fn",
+          "startLine": 127,
+          "endLine": 134,
+          "tokens": 106
+        },
+        {
+          "name": "test_knockout_final_takes_the_top_options_of_each_group",
+          "kind": "fn",
+          "startLine": 137,
+          "endLine": 148,
+          "tokens": 179
+        },
+        {
+          "name": "test_free_places_fill_the_final_to_16",
+          "kind": "fn",
+          "startLine": 151,
+          "endLine": 160,
+          "tokens": 126
+        },
+        {
+          "name": "test_ties_go_to_the_earlier_option",
+          "kind": "fn",
+          "startLine": 163,
+          "endLine": 168,
+          "tokens": 108
+        },
+        {
+          "name": "test_unknown_method",
+          "kind": "fn",
+          "startLine": 171,
+          "endLine": 173,
+          "tokens": 41
+        },
+        {
+          "name": "test_index_shaped_question_maps_every_option",
+          "kind": "fn",
+          "startLine": 176,
+          "endLine": 183,
+          "tokens": 110
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "def luce_reader(strength: dict[str, float], calls: list[list[str]] | None = None):\ndef options(n: int) -> list[str]:\ndef test_groups_cover_in_order_with_near_equal_sizes(n, count):\ndef test_up_to_16_options_is_one_untouched_pass(method, n):\ndef strengths(n: int) -> tuple[list[str], dict[str, float]]:\ndef test_tree_recovers_a_luce_model_exactly(n):\ndef test_knockout_keeps_the_final_and_the_groups(n):\ndef test_knockout_temperature_only_sharpens(n):\ndef test_recursion_beyond_256(method, n):\ndef test_passes_and_every_option_scored(method, n, passes):\ndef test_knockout_final_takes_the_top_options_of_each_group():\ndef test_free_places_fill_the_final_to_16():\ndef test_ties_go_to_the_earlier_option():\ndef test_unknown_method():\ndef test_index_shaped_question_maps_every_option():",
+      "imports": [
+        "jevk5/prompt.py"
+      ],
+      "importance": 0.0378
+    },
+    "tests/test_runtimes.py": {
+      "description": "The CUDA runtime and the llama.cpp client read the same passes and combine them the same way.",
+      "tokens": 1918,
+      "hash": "7c850b31d7b977e9",
+      "size": 6710,
+      "mtimeMs": 1790665417687.136,
+      "updatedAt": "2026-09-29T07:03:54.123Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "logit",
+          "kind": "fn",
+          "startLine": 21,
+          "endLine": 22,
+          "tokens": 36
+        },
+        {
+          "name": "descriptions",
+          "kind": "fn",
+          "startLine": 25,
+          "endLine": 27,
+          "tokens": 54
+        },
+        {
+          "name": "FakeGGUF",
+          "kind": "class",
+          "startLine": 30,
+          "endLine": 41,
+          "tokens": 135
+        },
+        {
+          "name": "FakeGGUF.__init__",
+          "kind": "method",
+          "startLine": 31,
+          "endLine": 34,
+          "tokens": 41
+        },
+        {
+          "name": "FakeGGUF._logprobs",
+          "kind": "method",
+          "startLine": 36,
+          "endLine": 41,
+          "tokens": 86
+        },
+        {
+          "name": "fake_cuda",
+          "kind": "fn",
+          "startLine": 44,
+          "endLine": 62,
+          "tokens": 234
+        },
+        {
+          "name": "question",
+          "kind": "fn",
+          "startLine": 65,
+          "endLine": 70,
+          "tokens": 68
+        },
+        {
+          "name": "test_cuda_and_gguf_agree",
+          "kind": "fn",
+          "startLine": 75,
+          "endLine": 84,
+          "tokens": 159
+        },
+        {
+          "name": "test_gguf_prompt_matches_prompt_text",
+          "kind": "fn",
+          "startLine": 87,
+          "endLine": 91,
+          "tokens": 78
+        },
+        {
+          "name": "test_tokens_add_up_over_passes",
+          "kind": "fn",
+          "startLine": 95,
+          "endLine": 100,
+          "tokens": 94
+        },
+        {
+          "name": "test_unknown_method_is_refused_up_front",
+          "kind": "fn",
+          "startLine": 103,
+          "endLine": 105,
+          "tokens": 33
+        },
+        {
+          "name": "write_config",
+          "kind": "fn",
+          "startLine": 111,
+          "endLine": 114,
+          "tokens": 39
+        },
+        {
+          "name": "test_gguf_reads_knockout_temperature_from_config",
+          "kind": "fn",
+          "startLine": 117,
+          "endLine": 121,
+          "tokens": 76
+        },
+        {
+          "name": "test_gguf_argument_overrides_config",
+          "kind": "fn",
+          "startLine": 124,
+          "endLine": 127,
+          "tokens": 69
+        },
+        {
+          "name": "test_config_without_the_key_keeps_the_default",
+          "kind": "fn",
+          "startLine": 130,
+          "endLine": 134,
+          "tokens": 101
+        },
+        {
+          "name": "test_cuda_config_reader",
+          "kind": "fn",
+          "startLine": 137,
+          "endLine": 143,
+          "tokens": 102
+        },
+        {
+          "name": "test_knockout_temperature_touches_only_wide_questions",
+          "kind": "fn",
+          "startLine": 147,
+          "endLine": 162,
+          "tokens": 210
+        },
+        {
+          "name": "test_cuda_and_gguf_agree_with_a_knockout_temperature",
+          "kind": "fn",
+          "startLine": 166,
+          "endLine": 171,
+          "tokens": 103
+        },
+        {
+          "name": "test_tree_ignores_the_knockout_temperature",
+          "kind": "fn",
+          "startLine": 174,
+          "endLine": 176,
+          "tokens": 68
+        }
+      ],
+      "symbolSource": "ts",
+      "imports": [
+        "jevk5/gguf.py",
+        "jevk5/prompt.py",
+        "jevk5/runtime.py"
+      ],
+      "importance": 0.0378
+    },
+    "tractatus-thinking/.eslintrc.json": {
+      "description": "ESLint configuration",
+      "tokens": 517,
+      "hash": "5f2ce85516e58920",
+      "size": 1808,
+      "mtimeMs": 1790665424712.5442,
+      "updatedAt": "2026-09-29T07:03:54.130Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/.gitignore": {
+      "description": "Git ignore rules",
+      "tokens": 1022,
+      "hash": "5d36e6c221a99a40",
+      "size": 3832,
+      "mtimeMs": 1790665424712.5442,
+      "updatedAt": "2026-09-29T07:03:54.133Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/.husky/pre-commit": {
+      "description": "Run lint-staged",
+      "tokens": 10,
+      "hash": "e599af0d16368514",
+      "size": 34,
+      "mtimeMs": 1790665424712.5442,
+      "updatedAt": "2026-09-29T07:03:54.133Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/.husky/pre-push": {
+      "description": "Run core quality check - focus on production code precision",
+      "tokens": 24,
+      "hash": "7dc0519e82ac7f2e",
+      "size": 88,
+      "mtimeMs": 1790665424713.2476,
+      "updatedAt": "2026-09-29T07:03:54.133Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/.prettierignore": {
+      "description": "",
+      "tokens": 9,
+      "hash": "4f76432446484794",
+      "size": 31,
+      "mtimeMs": 1790665424713.2476,
+      "updatedAt": "2026-09-29T07:03:54.133Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/.prettierrc": {
+      "description": "Prettier configuration",
+      "tokens": 46,
+      "hash": "9a7c199853e30dd0",
+      "size": 172,
+      "mtimeMs": 1790665424713.2476,
+      "updatedAt": "2026-09-29T07:03:54.133Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/.vscodium/launch.json": {
+      "description": "",
+      "tokens": 371,
+      "hash": "5e7a3b71966fb9e9",
+      "size": 1296,
+      "mtimeMs": 1790665424713.2476,
+      "updatedAt": "2026-09-29T07:03:54.133Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/.vscodium/settings.json": {
+      "description": "",
+      "tokens": 145,
+      "hash": "52640ac5f174e32f",
+      "size": 507,
+      "mtimeMs": 1790665424713.3232,
+      "updatedAt": "2026-09-29T07:03:54.134Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/claude_desktop_config.example.json": {
+      "description": "",
+      "tokens": 44,
+      "hash": "a353a2db26b3dac7",
+      "size": 154,
+      "mtimeMs": 1790665424713.3232,
+      "updatedAt": "2026-09-29T07:03:54.134Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/claude-desktop-developer-config.json": {
+      "description": "",
+      "tokens": 102,
+      "hash": "56d73ca796ef4f9b",
+      "size": 357,
+      "mtimeMs": 1790665424713.3232,
+      "updatedAt": "2026-09-29T07:03:54.134Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/comprehensive-performance-test.mjs": {
+      "description": "Declares runPerformanceTests",
+      "tokens": 2849,
+      "hash": "b703078058d45982",
+      "size": 10681,
+      "mtimeMs": 1790665424713.3232,
+      "updatedAt": "2026-09-29T07:03:54.134Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "runPerformanceTests",
+          "kind": "fn",
+          "startLine": 5,
+          "endLine": 299,
+          "tokens": 3013
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "async function runPerformanceTests() {",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/examples/advanced-features.md": {
+      "description": "Advanced Features Examples",
+      "tokens": 1061,
+      "hash": "b97a78c15a1edb58",
+      "size": 4241,
+      "mtimeMs": 1790665424713.3232,
+      "updatedAt": "2026-09-29T07:03:54.135Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/examples/basic-usage.md": {
+      "description": "Basic Usage Examples",
+      "tokens": 687,
+      "hash": "260896e39d5d029d",
+      "size": 2746,
+      "mtimeMs": 1790665424713.596,
+      "updatedAt": "2026-09-29T07:03:54.135Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/examples/mcp-integration.md": {
+      "description": "MCP Integration Guide",
+      "tokens": 1413,
+      "hash": "bc444da057588e72",
+      "size": 5649,
+      "mtimeMs": 1790665424713.596,
+      "updatedAt": "2026-09-29T07:03:54.135Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/LICENSE": {
+      "description": "Project license",
+      "tokens": 286,
+      "hash": "fe9aa537e641ace9",
+      "size": 1071,
+      "mtimeMs": 1790665424713.3232,
+      "updatedAt": "2026-09-29T07:03:54.135Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/mcp-config.json": {
+      "description": "",
+      "tokens": 61,
+      "hash": "69581befbf555867",
+      "size": 211,
+      "mtimeMs": 1790665424713.596,
+      "updatedAt": "2026-09-29T07:03:54.135Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/package.json": {
+      "description": "Node.js package manifest",
+      "tokens": 867,
+      "hash": "054e714b94398677",
+      "size": 3032,
+      "mtimeMs": 1790665424713.596,
+      "updatedAt": "2026-09-29T07:03:54.135Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/performance-test.mjs": {
+      "description": "Declares startTime",
+      "tokens": 625,
+      "hash": "9ab82a8e3f5418a2",
+      "size": 2343,
+      "mtimeMs": 1790665424713.596,
+      "updatedAt": "2026-09-29T07:03:54.136Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/PUBLISH_CHECKLIST.md": {
+      "description": "IMPROVED Ready to Publish - Final Checklist",
+      "tokens": 863,
+      "hash": "ba46656447b9b7ce",
+      "size": 3452,
+      "mtimeMs": 1790665424713.3232,
+      "updatedAt": "2026-09-29T07:03:54.136Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/QUICK_REFERENCE.md": {
+      "description": "MANDATORY Wittgenstein Thinking - Quick Reference Card",
+      "tokens": 709,
+      "hash": "af20dff3e5e07bcf",
+      "size": 2849,
+      "mtimeMs": 1790665424713.3232,
+      "updatedAt": "2026-09-29T07:03:54.136Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/QUICKSTART.md": {
+      "description": "IMPROVED Wittgenstein Thinking - Quick Start Guide",
+      "tokens": 2170,
+      "hash": "d56734a46f79f7c7",
+      "size": 8696,
+      "mtimeMs": 1790665424713.3232,
+      "updatedAt": "2026-09-29T07:03:54.136Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/README.md": {
+      "description": "Project documentation",
+      "tokens": 2860,
+      "hash": "5814d624e55045fb",
+      "size": 11497,
+      "mtimeMs": 1790665424713.3232,
+      "updatedAt": "2026-09-29T07:03:54.136Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/src/handlers/add-proposition.ts": {
+      "description": "MCP tool handler for the add_insight tool.",
+      "tokens": 3530,
+      "hash": "590b4aab479c05e9",
+      "size": 12352,
+      "mtimeMs": 1790665424755.3503,
+      "updatedAt": "2026-09-29T07:03:54.136Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "AddInsightHandler",
+          "kind": "class",
+          "startLine": 25,
+          "endLine": 396,
+          "tokens": 3284
+        },
+        {
+          "name": "AddInsightHandler.constructor",
+          "kind": "method",
+          "startLine": 34,
+          "endLine": 37,
+          "tokens": 38
+        },
+        {
+          "name": "AddInsightHandler.handle",
+          "kind": "method",
+          "startLine": 58,
+          "endLine": 66,
+          "tokens": 86
+        },
+        {
+          "name": "AddInsightHandler.validateParameters",
+          "kind": "method",
+          "startLine": 68,
+          "endLine": 79,
+          "tokens": 124
+        },
+        {
+          "name": "AddInsightHandler.getValidSession",
+          "kind": "method",
+          "startLine": 81,
+          "endLine": 87,
+          "tokens": 74
+        },
+        {
+          "name": "AddInsightHandler.processInsight",
+          "kind": "method",
+          "startLine": 89,
+          "endLine": 153,
+          "tokens": 526
+        },
+        {
+          "name": "AddInsightHandler.handleError",
+          "kind": "method",
+          "startLine": 155,
+          "endLine": 170,
+          "tokens": 125
+        },
+        {
+          "name": "AddInsightHandler.generateNumberingGuidance",
+          "kind": "method",
+          "startLine": 176,
+          "endLine": 213,
+          "tokens": 362
+        },
+        {
+          "name": "AddInsightHandler.performPreValidationAnalysis",
+          "kind": "method",
+          "startLine": 218,
+          "endLine": 258,
+          "tokens": 370
+        },
+        {
+          "name": "AddInsightHandler.performPostValidationAnalysis",
+          "kind": "method",
+          "startLine": 263,
+          "endLine": 304,
+          "tokens": 337
+        },
+        {
+          "name": "AddInsightHandler.buildEnhancedFeedbackResponse",
+          "kind": "method",
+          "startLine": 309,
+          "endLine": 374,
+          "tokens": 648
+        },
+        {
+          "name": "AddInsightHandler.getSiblings",
+          "kind": "method",
+          "startLine": 379,
+          "endLine": 395,
+          "tokens": 144
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "export class AddInsightHandler {\n  constructor(sessionManager: SessionManager) {\n  async handle(params: AddPropositionParams): Promise<MCPToolResponse> {\n  private validateParameters(params: AddPropositionParams): void {\n  private getValidSession(sessionId: string): TractusTree {\n  private processInsight(params: AddPropositionParams, tree: TractusTree): MCPToolResponse {\n  private handleError(error: unknown): MCPToolResponse {\n  private generateNumberingGuidance(\n  private performPreValidationAnalysis(\n  private performPostValidationAnalysis(\n  private buildEnhancedFeedbackResponse(\n  private getSiblings(proposition: any, tree: TractusTree): any[] {",
+      "imports": [
+        "tractatus-thinking/src/tractatus/engine.ts",
+        "tractatus-thinking/src/handlers/session-manager.ts",
+        "tractatus-thinking/src/utils/bundling-detector.ts",
+        "tractatus-thinking/src/utils/decomposition-advisor.ts",
+        "tractatus-thinking/src/utils/independence-validator.ts"
+      ],
+      "importance": 0.0534
+    },
+    "tractatus-thinking/src/handlers/clear_thinking.ts": {
+      "description": "MCP tool handler for the clear_thinking tool.",
+      "tokens": 2091,
+      "hash": "c1d3495c239d4409",
+      "size": 7317,
+      "mtimeMs": 1790665424755.4324,
+      "updatedAt": "2026-09-29T07:03:54.137Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "ClearThinkingParams",
+          "kind": "section",
+          "startLine": 13,
+          "endLine": 19,
+          "tokens": 52
+        },
+        {
+          "name": "ClearThinkingHandler",
+          "kind": "class",
+          "startLine": 39,
+          "endLine": 252,
+          "tokens": 1782
+        },
+        {
+          "name": "ClearThinkingHandler.constructor",
+          "kind": "method",
+          "startLine": 50,
+          "endLine": 54,
+          "tokens": 42
+        },
+        {
+          "name": "ClearThinkingHandler.handle",
+          "kind": "method",
+          "startLine": 68,
+          "endLine": 124,
+          "tokens": 477
+        },
+        {
+          "name": "ClearThinkingHandler.handleQuickAnalysis",
+          "kind": "method",
+          "startLine": 129,
+          "endLine": 176,
+          "tokens": 394
+        },
+        {
+          "name": "ClearThinkingHandler.parseThoughtsIntoInsights",
+          "kind": "method",
+          "startLine": 181,
+          "endLine": 205,
+          "tokens": 203
+        },
+        {
+          "name": "ClearThinkingHandler.buildGuidanceResponse",
+          "kind": "method",
+          "startLine": 211,
+          "endLine": 218,
+          "tokens": 109
+        },
+        {
+          "name": "ClearThinkingHandler.buildGuidanceHeader",
+          "kind": "method",
+          "startLine": 220,
+          "endLine": 226,
+          "tokens": 62
+        },
+        {
+          "name": "ClearThinkingHandler.buildNumberingGuide",
+          "kind": "method",
+          "startLine": 228,
+          "endLine": 230,
+          "tokens": 18
+        },
+        {
+          "name": "ClearThinkingHandler.buildQuickStartGuide",
+          "kind": "method",
+          "startLine": 232,
+          "endLine": 239,
+          "tokens": 59
+        },
+        {
+          "name": "ClearThinkingHandler.buildStructureRules",
+          "kind": "method",
+          "startLine": 241,
+          "endLine": 243,
+          "tokens": 18
+        },
+        {
+          "name": "ClearThinkingHandler.getSessionManager",
+          "kind": "method",
+          "startLine": 249,
+          "endLine": 251,
+          "tokens": 22
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "interface ClearThinkingParams {\nexport class ClearThinkingHandler {\n  constructor() {\n  async handle(params: ClearThinkingParams): Promise<MCPToolResponse> {\n  private async handleQuickAnalysis(\n  private parseThoughtsIntoInsights(\n  private buildGuidanceResponse(topic: string, sessionId: string): string {\n  private buildGuidanceHeader(topic: string, sessionId: string): string {\n  private buildNumberingGuide(): string {\n  private buildQuickStartGuide(_topic: string, sessionId: string): string {\n  private buildStructureRules(): string {\n  getSessionManager(): SessionManager {",
+      "imports": [
+        "tractatus-thinking/src/tractatus/engine.ts",
+        "tractatus-thinking/src/utils/formatter.ts",
+        "tractatus-thinking/src/handlers/session-manager.ts"
+      ],
+      "importance": 0.0775
+    },
+    "tractatus-thinking/src/handlers/export.ts": {
+      "description": "Generates enhanced structure visualization for export.",
+      "tokens": 1961,
+      "hash": "cf94b7b6a8f6a20d",
+      "size": 6861,
+      "mtimeMs": 1790665424755.4324,
+      "updatedAt": "2026-09-29T07:03:54.137Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "ExportHandler",
+          "kind": "class",
+          "startLine": 14,
+          "endLine": 205,
+          "tokens": 1867
+        },
+        {
+          "name": "ExportHandler.constructor",
+          "kind": "method",
+          "startLine": 18,
+          "endLine": 21,
+          "tokens": 38
+        },
+        {
+          "name": "ExportHandler.handle",
+          "kind": "method",
+          "startLine": 23,
+          "endLine": 100,
+          "tokens": 732
+        },
+        {
+          "name": "ExportHandler.generateEnhancedVisualization",
+          "kind": "method",
+          "startLine": 105,
+          "endLine": 121,
+          "tokens": 120
+        },
+        {
+          "name": "ExportHandler.generateHybridGuidance",
+          "kind": "method",
+          "startLine": 126,
+          "endLine": 188,
+          "tokens": 760
+        },
+        {
+          "name": "ExportHandler.calculateLogicalCompleteness",
+          "kind": "method",
+          "startLine": 190,
+          "endLine": 204,
+          "tokens": 148
+        }
+      ],
+      "symbolSource": "ts",
+      "imports": [
+        "tractatus-thinking/src/handlers/session-manager.ts",
+        "tractatus-thinking/src/utils/formatter.ts",
+        "tractatus-thinking/src/utils/structure-visualizer.ts"
+      ],
+      "importance": 0.0534
+    },
+    "tractatus-thinking/src/handlers/hypothesis-test.ts": {
+      "description": "Handler for hypothesis testing operations in enhanced Tractatus thinking.",
+      "tokens": 3161,
+      "hash": "37d8ceee75214dad",
+      "size": 11061,
+      "mtimeMs": 1790665424755.4324,
+      "updatedAt": "2026-09-29T07:03:54.137Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "HypothesisTestHandler",
+          "kind": "class",
+          "startLine": 16,
+          "endLine": 370,
+          "tokens": 3040
+        },
+        {
+          "name": "HypothesisTestHandler.constructor",
+          "kind": "method",
+          "startLine": 17,
+          "endLine": 17,
+          "tokens": 16
+        },
+        {
+          "name": "HypothesisTestHandler.createTest",
+          "kind": "method",
+          "startLine": 22,
+          "endLine": 30,
+          "tokens": 72
+        },
+        {
+          "name": "HypothesisTestHandler.doCreateTest",
+          "kind": "method",
+          "startLine": 33,
+          "endLine": 117,
+          "tokens": 728
+        },
+        {
+          "name": "HypothesisTestHandler.runTest",
+          "kind": "method",
+          "startLine": 122,
+          "endLine": 133,
+          "tokens": 87
+        },
+        {
+          "name": "HypothesisTestHandler.doRunTest",
+          "kind": "method",
+          "startLine": 136,
+          "endLine": 258,
+          "tokens": 1066
+        },
+        {
+          "name": "HypothesisTestHandler.listTests",
+          "kind": "method",
+          "startLine": 263,
+          "endLine": 336,
+          "tokens": 645
+        },
+        {
+          "name": "HypothesisTestHandler.getStatusEmoji",
+          "kind": "method",
+          "startLine": 338,
+          "endLine": 347,
+          "tokens": 83
+        },
+        {
+          "name": "HypothesisTestHandler.getOutcomeEmoji",
+          "kind": "method",
+          "startLine": 349,
+          "endLine": 356,
+          "tokens": 68
+        },
+        {
+          "name": "HypothesisTestHandler.getStatusGuidance",
+          "kind": "method",
+          "startLine": 358,
+          "endLine": 369,
+          "tokens": 182
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "export class HypothesisTestHandler {\n  constructor(private sessionManager: SessionManager) {}\n  async createTest(params: {\n  private doCreateTest(params: {\n  async runTest(params: {\n  private doRunTest(params: {\n  async listTests(params: {\n  private getStatusEmoji(status: string): string {\n  private getOutcomeEmoji(outcome: string): string {\n  private getStatusGuidance(status: PropositionStatus): string {",
+      "imports": [
+        "tractatus-thinking/src/handlers/session-manager.ts"
+      ],
+      "importance": 0.0378
+    },
+    "tractatus-thinking/src/handlers/index.ts": {
+      "description": "",
+      "tokens": 33,
+      "hash": "7c4e1c7e0c4e1dd4",
+      "size": 115,
+      "mtimeMs": 1790665424755.4324,
+      "updatedAt": "2026-09-29T07:03:54.137Z",
+      "source": "scan",
+      "imports": [
+        "tractatus-thinking/src/handlers/session-manager.ts",
+        "tractatus-thinking/src/handlers/tractatus-think.ts"
+      ],
+      "importance": 0.07
+    },
+    "tractatus-thinking/src/handlers/move.ts": {
+      "description": "Handler for moving propositions to reflect evolved understanding.",
+      "tokens": 2260,
+      "hash": "0d38d810c4c5359e",
+      "size": 7914,
+      "mtimeMs": 1790665424755.4324,
+      "updatedAt": "2026-09-29T07:03:54.137Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "MoveHandler",
+          "kind": "class",
+          "startLine": 18,
+          "endLine": 262,
+          "tokens": 2116
+        },
+        {
+          "name": "MoveHandler.constructor",
+          "kind": "method",
+          "startLine": 22,
+          "endLine": 25,
+          "tokens": 38
+        },
+        {
+          "name": "MoveHandler.handle",
+          "kind": "method",
+          "startLine": 27,
+          "endLine": 69,
+          "tokens": 350
+        },
+        {
+          "name": "MoveHandler.validateParameters",
+          "kind": "method",
+          "startLine": 71,
+          "endLine": 79,
+          "tokens": 97
+        },
+        {
+          "name": "MoveHandler.getValidSession",
+          "kind": "method",
+          "startLine": 81,
+          "endLine": 87,
+          "tokens": 74
+        },
+        {
+          "name": "MoveHandler.performPreMoveAnalysis",
+          "kind": "method",
+          "startLine": 89,
+          "endLine": 117,
+          "tokens": 236
+        },
+        {
+          "name": "MoveHandler.calculateSubtreeSize",
+          "kind": "method",
+          "startLine": 119,
+          "endLine": 129,
+          "tokens": 97
+        },
+        {
+          "name": "MoveHandler.performPostMoveAnalysis",
+          "kind": "method",
+          "startLine": 131,
+          "endLine": 178,
+          "tokens": 378
+        },
+        {
+          "name": "MoveHandler.buildMoveResponse",
+          "kind": "method",
+          "startLine": 180,
+          "endLine": 249,
+          "tokens": 709
+        },
+        {
+          "name": "MoveHandler.handleError",
+          "kind": "method",
+          "startLine": 251,
+          "endLine": 261,
+          "tokens": 106
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "export class MoveHandler {\n  constructor(sessionManager: SessionManager) {\n  async handle(params: MoveParams): Promise<MCPToolResponse> {\n  private validateParameters(params: MoveParams): void {\n  private getValidSession(sessionId: string): TractusTree {\n  private performPreMoveAnalysis(\n  private calculateSubtreeSize(tree: TractusTree, rootNumber: string): number {\n  private performPostMoveAnalysis(\n  private buildMoveResponse(\n  private handleError(error: unknown): MCPToolResponse {",
+      "imports": [
+        "tractatus-thinking/src/tractatus/engine.ts",
+        "tractatus-thinking/src/handlers/session-manager.ts",
+        "tractatus-thinking/src/utils/independence-validator.ts"
+      ],
+      "importance": 0.0454
+    },
+    "tractatus-thinking/src/handlers/navigate.ts": {
+      "description": "Exports NavigationHandler",
+      "tokens": 2337,
+      "hash": "d1d42aba4fd27510",
+      "size": 8180,
+      "mtimeMs": 1790665424755.4324,
+      "updatedAt": "2026-09-29T07:03:54.137Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "NavigationHandler",
+          "kind": "class",
+          "startLine": 13,
+          "endLine": 248,
+          "tokens": 2257
+        },
+        {
+          "name": "NavigationHandler.constructor",
+          "kind": "method",
+          "startLine": 17,
+          "endLine": 20,
+          "tokens": 41
+        },
+        {
+          "name": "NavigationHandler.handle",
+          "kind": "method",
+          "startLine": 22,
+          "endLine": 101,
+          "tokens": 673
+        },
+        {
+          "name": "NavigationHandler.navigateToParent",
+          "kind": "method",
+          "startLine": 103,
+          "endLine": 112,
+          "tokens": 96
+        },
+        {
+          "name": "NavigationHandler.navigateToChild",
+          "kind": "method",
+          "startLine": 114,
+          "endLine": 132,
+          "tokens": 187
+        },
+        {
+          "name": "NavigationHandler.navigateToSibling",
+          "kind": "method",
+          "startLine": 134,
+          "endLine": 154,
+          "tokens": 211
+        },
+        {
+          "name": "NavigationHandler.buildNavigationResult",
+          "kind": "method",
+          "startLine": 156,
+          "endLine": 168,
+          "tokens": 135
+        },
+        {
+          "name": "NavigationHandler.formatNavigationResponse",
+          "kind": "method",
+          "startLine": 170,
+          "endLine": 247,
+          "tokens": 878
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "export class NavigationHandler {\n  constructor(sessionManager: SessionManager) {\n  async handle(params: NavigateParams): Promise<MCPToolResponse> {\n  private navigateToParent(currentPosition: string): string {\n  private navigateToChild(currentPosition: string, tree: TractusTree, childIndex?: number): string {\n  private navigateToSibling(currentPosition: string, tree: TractusTree): string {\n  private buildNavigationResult(proposition: Proposition, tree: TractusTree): NavigationResult {\n  private formatNavigationResponse(result: NavigationResult, tree: TractusTree): string {",
+      "imports": [
+        "tractatus-thinking/src/handlers/session-manager.ts",
+        "tractatus-thinking/src/utils/numbering-system.ts"
+      ],
+      "importance": 0.0534
+    },
+    "tractatus-thinking/src/handlers/revise.ts": {
+      "description": "Handler for revising proposition content while preserving logical structure.",
+      "tokens": 1726,
+      "hash": "bebc104f87f93851",
+      "size": 6041,
+      "mtimeMs": 1790665424755.4324,
+      "updatedAt": "2026-09-29T07:03:54.138Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "ReviseHandler",
+          "kind": "class",
+          "startLine": 19,
+          "endLine": 201,
+          "tokens": 1549
+        },
+        {
+          "name": "ReviseHandler.constructor",
+          "kind": "method",
+          "startLine": 23,
+          "endLine": 26,
+          "tokens": 38
+        },
+        {
+          "name": "ReviseHandler.handle",
+          "kind": "method",
+          "startLine": 28,
+          "endLine": 71,
+          "tokens": 368
+        },
+        {
+          "name": "ReviseHandler.validateParameters",
+          "kind": "method",
+          "startLine": 73,
+          "endLine": 88,
+          "tokens": 148
+        },
+        {
+          "name": "ReviseHandler.getValidSession",
+          "kind": "method",
+          "startLine": 90,
+          "endLine": 96,
+          "tokens": 74
+        },
+        {
+          "name": "ReviseHandler.performPreRevisionAnalysis",
+          "kind": "method",
+          "startLine": 98,
+          "endLine": 126,
+          "tokens": 248
+        },
+        {
+          "name": "ReviseHandler.buildRevisionResponse",
+          "kind": "method",
+          "startLine": 128,
+          "endLine": 188,
+          "tokens": 534
+        },
+        {
+          "name": "ReviseHandler.handleError",
+          "kind": "method",
+          "startLine": 190,
+          "endLine": 200,
+          "tokens": 107
+        }
+      ],
+      "symbolSource": "ts",
+      "imports": [
+        "tractatus-thinking/src/tractatus/engine.ts",
+        "tractatus-thinking/src/handlers/session-manager.ts",
+        "tractatus-thinking/src/utils/bundling-detector.ts"
+      ],
+      "importance": 0.0454
+    },
+    "tractatus-thinking/src/handlers/session-manager.ts": {
+      "description": "Manages persistent thinking sessions with lifecycle controls.",
+      "tokens": 1085,
+      "hash": "3e4a7b602b11eb22",
+      "size": 3796,
+      "mtimeMs": 1790665424755.4324,
+      "updatedAt": "2026-09-29T07:03:54.138Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "SessionManager",
+          "kind": "class",
+          "startLine": 23,
+          "endLine": 128,
+          "tokens": 872
+        },
+        {
+          "name": "SessionManager.createSession",
+          "kind": "method",
+          "startLine": 46,
+          "endLine": 58,
+          "tokens": 90
+        },
+        {
+          "name": "SessionManager.getSession",
+          "kind": "method",
+          "startLine": 80,
+          "endLine": 93,
+          "tokens": 107
+        },
+        {
+          "name": "SessionManager.listSessions",
+          "kind": "method",
+          "startLine": 95,
+          "endLine": 99,
+          "tokens": 41
+        },
+        {
+          "name": "SessionManager.cleanupSessions",
+          "kind": "method",
+          "startLine": 101,
+          "endLine": 110,
+          "tokens": 81
+        },
+        {
+          "name": "SessionManager.updateSession",
+          "kind": "method",
+          "startLine": 112,
+          "endLine": 119,
+          "tokens": 69
+        },
+        {
+          "name": "SessionManager.deleteSession",
+          "kind": "method",
+          "startLine": 121,
+          "endLine": 123,
+          "tokens": 27
+        },
+        {
+          "name": "SessionManager.getSessionCount",
+          "kind": "method",
+          "startLine": 125,
+          "endLine": 127,
+          "tokens": 19
+        }
+      ],
+      "symbolSource": "ts",
+      "imports": [
+        "tractatus-thinking/src/types/index.ts"
+      ],
+      "importance": 0.2373
+    },
+    "tractatus-thinking/src/handlers/tractatus-think.ts": {
+      "description": "Unified handler for the tractatus_thinking tool.",
+      "tokens": 4740,
+      "hash": "55ecc9b5b2415cd8",
+      "size": 16592,
+      "mtimeMs": 1790665424755.4324,
+      "updatedAt": "2026-09-29T07:03:54.138Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "TractusThinkHandler",
+          "kind": "class",
+          "startLine": 29,
+          "endLine": 520,
+          "tokens": 4444
+        },
+        {
+          "name": "TractusThinkHandler.constructor",
+          "kind": "method",
+          "startLine": 40,
+          "endLine": 53,
+          "tokens": 176
+        },
+        {
+          "name": "TractusThinkHandler.handle",
+          "kind": "method",
+          "startLine": 59,
+          "endLine": 92,
+          "tokens": 284
+        },
+        {
+          "name": "TractusThinkHandler.validateOperation",
+          "kind": "method",
+          "startLine": 94,
+          "endLine": 98,
+          "tokens": 54
+        },
+        {
+          "name": "TractusThinkHandler.handleStart",
+          "kind": "method",
+          "startLine": 103,
+          "endLine": 119,
+          "tokens": 159
+        },
+        {
+          "name": "TractusThinkHandler.handleAdd",
+          "kind": "method",
+          "startLine": 124,
+          "endLine": 151,
+          "tokens": 283
+        },
+        {
+          "name": "TractusThinkHandler.handleNavigate",
+          "kind": "method",
+          "startLine": 156,
+          "endLine": 174,
+          "tokens": 157
+        },
+        {
+          "name": "TractusThinkHandler.handleExport",
+          "kind": "method",
+          "startLine": 179,
+          "endLine": 198,
+          "tokens": 188
+        },
+        {
+          "name": "TractusThinkHandler.handleAnalyze",
+          "kind": "method",
+          "startLine": 203,
+          "endLine": 260,
+          "tokens": 506
+        },
+        {
+          "name": "TractusThinkHandler.generateAnalysisInsights",
+          "kind": "method",
+          "startLine": 265,
+          "endLine": 305,
+          "tokens": 435
+        },
+        {
+          "name": "TractusThinkHandler.analyzeBundlingPatterns",
+          "kind": "method",
+          "startLine": 310,
+          "endLine": 344,
+          "tokens": 366
+        },
+        {
+          "name": "TractusThinkHandler.analyzeDecompositionOpportunities",
+          "kind": "method",
+          "startLine": 349,
+          "endLine": 391,
+          "tokens": 412
+        },
+        {
+          "name": "TractusThinkHandler.analyzeIndependenceViolations",
+          "kind": "method",
+          "startLine": 396,
+          "endLine": 432,
+          "tokens": 366
+        },
+        {
+          "name": "TractusThinkHandler.handleRevise",
+          "kind": "method",
+          "startLine": 437,
+          "endLine": 458,
+          "tokens": 233
+        },
+        {
+          "name": "TractusThinkHandler.handleUndo",
+          "kind": "method",
+          "startLine": 463,
+          "endLine": 479,
+          "tokens": 143
+        },
+        {
+          "name": "TractusThinkHandler.handleMove",
+          "kind": "method",
+          "startLine": 484,
+          "endLine": 502,
+          "tokens": 198
+        },
+        {
+          "name": "TractusThinkHandler.handleError",
+          "kind": "method",
+          "startLine": 504,
+          "endLine": 519,
+          "tokens": 121
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "export class TractusThinkHandler {\n  constructor() {\n  async handle(params: TractusThinkParams): Promise<MCPToolResponse> {\n  private validateOperation(params: TractusThinkParams): void {\n  private async handleStart(params: TractusThinkParams): Promise<MCPToolResponse> {\n  private async handleAdd(params: TractusThinkParams): Promise<MCPToolResponse> {\n  private async handleNavigate(params: TractusThinkParams): Promise<MCPToolResponse> {\n  private async handleExport(params: TractusThinkParams): Promise<MCPToolResponse> {\n  private async handleAnalyze(params: TractusThinkParams): Promise<MCPToolResponse> {\n  private generateAnalysisInsights(\n  private analyzeBundlingPatterns(tree: TractusTree): string {\n  private analyzeDecompositionOpportunities(tree: TractusTree): string {\n  private analyzeIndependenceViolations(tree: TractusTree): string {\n  private async handleRevise(params: TractusThinkParams): Promise<MCPToolResponse> {\n  private async handleUndo(params: TractusThinkParams): Promise<MCPToolResponse> {\n  private async handleMove(params: TractusThinkParams): Promise<MCPToolResponse> {\n  private handleError(error: unknown): MCPToolResponse {",
+      "imports": [
+        "tractatus-thinking/src/tractatus/engine.ts",
+        "tractatus-thinking/src/handlers/session-manager.ts",
+        "tractatus-thinking/src/handlers/clear_thinking.ts",
+        "tractatus-thinking/src/handlers/add-proposition.ts",
+        "tractatus-thinking/src/handlers/navigate.ts",
+        "tractatus-thinking/src/handlers/export.ts",
+        "tractatus-thinking/src/handlers/revise.ts",
+        "tractatus-thinking/src/handlers/undo.ts",
+        "tractatus-thinking/src/handlers/move.ts",
+        "tractatus-thinking/src/utils/bundling-detector.ts",
+        "tractatus-thinking/src/utils/decomposition-advisor.ts",
+        "tractatus-thinking/src/utils/independence-validator.ts",
+        "tractatus-thinking/src/utils/structure-visualizer.ts"
+      ],
+      "importance": 0.1158
+    },
+    "tractatus-thinking/src/handlers/undo.ts": {
+      "description": "Handler for undoing the last structural operation.",
+      "tokens": 1470,
+      "hash": "be241cb53c285c69",
+      "size": 5144,
+      "mtimeMs": 1790665424755.4324,
+      "updatedAt": "2026-09-29T07:03:54.138Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "UndoHandler",
+          "kind": "class",
+          "startLine": 17,
+          "endLine": 164,
+          "tokens": 1346
+        },
+        {
+          "name": "UndoHandler.constructor",
+          "kind": "method",
+          "startLine": 21,
+          "endLine": 24,
+          "tokens": 38
+        },
+        {
+          "name": "UndoHandler.handle",
+          "kind": "method",
+          "startLine": 26,
+          "endLine": 80,
+          "tokens": 438
+        },
+        {
+          "name": "UndoHandler.validateParameters",
+          "kind": "method",
+          "startLine": 82,
+          "endLine": 86,
+          "tokens": 55
+        },
+        {
+          "name": "UndoHandler.getValidSession",
+          "kind": "method",
+          "startLine": 88,
+          "endLine": 94,
+          "tokens": 74
+        },
+        {
+          "name": "UndoHandler.generateUndoPreview",
+          "kind": "method",
+          "startLine": 96,
+          "endLine": 111,
+          "tokens": 132
+        },
+        {
+          "name": "UndoHandler.buildOrphaningWarning",
+          "kind": "method",
+          "startLine": 113,
+          "endLine": 122,
+          "tokens": 179
+        },
+        {
+          "name": "UndoHandler.getPropositionContent",
+          "kind": "method",
+          "startLine": 124,
+          "endLine": 130,
+          "tokens": 87
+        },
+        {
+          "name": "UndoHandler.buildUndoResponse",
+          "kind": "method",
+          "startLine": 132,
+          "endLine": 151,
+          "tokens": 206
+        },
+        {
+          "name": "UndoHandler.handleError",
+          "kind": "method",
+          "startLine": 153,
+          "endLine": 163,
+          "tokens": 106
+        }
+      ],
+      "symbolSource": "ts",
+      "imports": [
+        "tractatus-thinking/src/tractatus/engine.ts",
+        "tractatus-thinking/src/handlers/session-manager.ts"
+      ],
+      "importance": 0.0454
+    },
+    "tractatus-thinking/src/index-modern.ts": {
+      "description": "Import unified handler",
+      "tokens": 2437,
+      "hash": "ad377fce47776921",
+      "size": 8535,
+      "mtimeMs": 1790665424755.4324,
+      "updatedAt": "2026-09-29T07:03:54.138Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "main",
+          "kind": "fn",
+          "startLine": 235,
+          "endLine": 241,
+          "tokens": 72
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "async function main(): Promise<void> {",
+      "imports": [
+        "tractatus-thinking/src/handlers/index.ts",
+        "tractatus-thinking/src/types/index.ts"
+      ],
+      "importance": 0.0378
+    },
+    "tractatus-thinking/src/index.ts": {
+      "description": "tractusHandler: createCoreProperties, createStartProperties, createAddProperties + 5 more",
+      "tokens": 2867,
+      "hash": "a8235d5073f8aad1",
+      "size": 10040,
+      "mtimeMs": 1790665424755.4324,
+      "updatedAt": "2026-09-29T07:03:54.138Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "createCoreProperties",
+          "kind": "fn",
+          "startLine": 93,
+          "endLine": 101,
+          "tokens": 73
+        },
+        {
+          "name": "createStartProperties",
+          "kind": "fn",
+          "startLine": 103,
+          "endLine": 134,
+          "tokens": 253
+        },
+        {
+          "name": "createAddProperties",
+          "kind": "fn",
+          "startLine": 136,
+          "endLine": 168,
+          "tokens": 272
+        },
+        {
+          "name": "createEnhancedOperationProperties",
+          "kind": "fn",
+          "startLine": 170,
+          "endLine": 208,
+          "tokens": 344
+        },
+        {
+          "name": "createNavigateAndExportProperties",
+          "kind": "fn",
+          "startLine": 210,
+          "endLine": 234,
+          "tokens": 199
+        },
+        {
+          "name": "createSchemaProperties",
+          "kind": "fn",
+          "startLine": 236,
+          "endLine": 244,
+          "tokens": 74
+        },
+        {
+          "name": "createTractusThinkTool",
+          "kind": "fn",
+          "startLine": 247,
+          "endLine": 258,
+          "tokens": 98
+        },
+        {
+          "name": "main",
+          "kind": "fn",
+          "startLine": 296,
+          "endLine": 299,
+          "tokens": 36
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "function createCoreProperties(): Record<string, unknown> {\nfunction createStartProperties(): Record<string, unknown> {\nfunction createAddProperties(): Record<string, unknown> {\nfunction createEnhancedOperationProperties(): Record<string, unknown> {\nfunction createNavigateAndExportProperties(): Record<string, unknown> {\nfunction createSchemaProperties(): Record<string, unknown> {\nfunction createTractusThinkTool(): unknown {\nasync function main(): Promise<void> {",
+      "imports": [
+        "tractatus-thinking/src/handlers/index.ts",
+        "tractatus-thinking/src/types/index.ts"
+      ],
+      "importance": 0.0378
+    },
+    "tractatus-thinking/src/tractatus/engine.ts": {
+      "description": "The core philosophical reasoning engine that implements Wittgenstein's Tractatus method.",
+      "tokens": 20279,
+      "hash": "ea2d6c2b053c1b72",
+      "size": 70975,
+      "mtimeMs": 1790665424755.5444,
+      "updatedAt": "2026-09-29T07:03:54.139Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "TractusEngine",
+          "kind": "class",
+          "startLine": 34,
+          "endLine": 2155,
+          "tokens": 19987
+        },
+        {
+          "name": "TractusEngine.constructor",
+          "kind": "method",
+          "startLine": 44,
+          "endLine": 47,
+          "tokens": 35
+        },
+        {
+          "name": "TractusEngine.think",
+          "kind": "method",
+          "startLine": 89,
+          "endLine": 92,
+          "tokens": 55
+        },
+        {
+          "name": "TractusEngine.detectContradiction",
+          "kind": "method",
+          "startLine": 111,
+          "endLine": 136,
+          "tokens": 263
+        },
+        {
+          "name": "TractusEngine.detectTautology",
+          "kind": "method",
+          "startLine": 138,
+          "endLine": 154,
+          "tokens": 143
+        },
+        {
+          "name": "TractusEngine.checkForLogicalContradictions",
+          "kind": "method",
+          "startLine": 156,
+          "endLine": 166,
+          "tokens": 144
+        },
+        {
+          "name": "TractusEngine.areLogicallyContradictory",
+          "kind": "method",
+          "startLine": 168,
+          "endLine": 189,
+          "tokens": 181
+        },
+        {
+          "name": "TractusEngine.isDirectNegation",
+          "kind": "method",
+          "startLine": 191,
+          "endLine": 216,
+          "tokens": 300
+        },
+        {
+          "name": "TractusEngine.isUniversalParticularContradiction",
+          "kind": "method",
+          "startLine": 218,
+          "endLine": 232,
+          "tokens": 205
+        },
+        {
+          "name": "TractusEngine.isAlwaysNeverContradiction",
+          "kind": "method",
+          "startLine": 234,
+          "endLine": 248,
+          "tokens": 167
+        },
+        {
+          "name": "TractusEngine.sameSubject",
+          "kind": "method",
+          "startLine": 250,
+          "endLine": 260,
+          "tokens": 138
+        },
+        {
+          "name": "TractusEngine.areSimilarSubjects",
+          "kind": "method",
+          "startLine": 262,
+          "endLine": 266,
+          "tokens": 79
+        },
+        {
+          "name": "TractusEngine.isAtomicProposition",
+          "kind": "method",
+          "startLine": 268,
+          "endLine": 287,
+          "tokens": 168
+        },
+        {
+          "name": "TractusEngine.isSimpleAtomicPattern",
+          "kind": "method",
+          "startLine": 289,
+          "endLine": 299,
+          "tokens": 128
+        },
+        {
+          "name": "TractusEngine.hasAbstractConcepts",
+          "kind": "method",
+          "startLine": 301,
+          "endLine": 326,
+          "tokens": 163
+        },
+        {
+          "name": "TractusEngine.hasComplexPredicates",
+          "kind": "method",
+          "startLine": 328,
+          "endLine": 347,
+          "tokens": 136
+        },
+        {
+          "name": "TractusEngine.hasDefinitionalLanguage",
+          "kind": "method",
+          "startLine": 349,
+          "endLine": 363,
+          "tokens": 104
+        },
+        {
+          "name": "TractusEngine.hasLogicalOperators",
+          "kind": "method",
+          "startLine": 365,
+          "endLine": 379,
+          "tokens": 92
+        },
+        {
+          "name": "TractusEngine.ensureLogicalIndependence",
+          "kind": "method",
+          "startLine": 381,
+          "endLine": 398,
+          "tokens": 180
+        },
+        {
+          "name": "TractusEngine.hasSubstantialContentOverlap",
+          "kind": "method",
+          "startLine": 400,
+          "endLine": 445,
+          "tokens": 409
+        },
+        {
+          "name": "TractusEngine.areSimilarConcepts",
+          "kind": "method",
+          "startLine": 447,
+          "endLine": 460,
+          "tokens": 185
+        },
+        {
+          "name": "TractusEngine.updateTreeMetadata",
+          "kind": "method",
+          "startLine": 465,
+          "endLine": 469,
+          "tokens": 76
+        },
+        {
+          "name": "TractusEngine.initializeSession",
+          "kind": "method",
+          "startLine": 480,
+          "endLine": 506,
+          "tokens": 233
+        },
+        {
+          "name": "TractusEngine.addProposition",
+          "kind": "method",
+          "startLine": 512,
+          "endLine": 570,
+          "tokens": 523
+        },
+        {
+          "name": "TractusEngine.generatePropositionNumber",
+          "kind": "method",
+          "startLine": 572,
+          "endLine": 589,
+          "tokens": 200
+        },
+        {
+          "name": "TractusEngine.checkSilenceBoundaries",
+          "kind": "method",
+          "startLine": 591,
+          "endLine": 602,
+          "tokens": 117
+        },
+        {
+          "name": "TractusEngine.createProposition",
+          "kind": "method",
+          "startLine": 604,
+          "endLine": 628,
+          "tokens": 256
+        },
+        {
+          "name": "TractusEngine.updateTreeStructure",
+          "kind": "method",
+          "startLine": 630,
+          "endLine": 642,
+          "tokens": 100
+        },
+        {
+          "name": "TractusEngine.validateProposition",
+          "kind": "method",
+          "startLine": 648,
+          "endLine": 688,
+          "tokens": 410
+        },
+        {
+          "name": "TractusEngine.suggestNextSteps",
+          "kind": "method",
+          "startLine": 694,
+          "endLine": 729,
+          "tokens": 340
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "export class TractusEngine {\n  constructor() {\n  think(concept: string, options: ThinkOptions = {}): TractusTree {\n  private detectContradiction(content: string, tree?: TractusTree): boolean {\n  private detectTautology(content: string): boolean {\n  private checkForLogicalContradictions(newContent: string, tree: TractusTree): boolean {\n  private areLogicallyContradictory(content1: string, content2: string): boolean {\n  private isDirectNegation(content1: string, content2: string): boolean {\n  private isUniversalParticularContradiction(content1: string, content2: string): boolean {\n  private isAlwaysNeverContradiction(content1: string, content2: string): boolean {\n  private sameSubject(match1: RegExpMatchArray, match2: RegExpMatchArray): boolean {\n  private areSimilarSubjects(subject1: string, subject2: string): boolean {\n  private isAtomicProposition(content: string): boolean {\n  private isSimpleAtomicPattern(content: string): boolean {\n  private hasAbstractConcepts(lowerContent: string): boolean {\n  private hasComplexPredicates(lowerContent: string): boolean {\n  private hasDefinitionalLanguage(lowerContent: string): boolean {\n  private hasLogicalOperators(lowerContent: string): boolean {\n  private ensureLogicalIndependence(decompositions: string[]): string[] {\n  private hasSubstantialContentOverlap(content1: string, content2: string): boolean {",
+      "imports": [
+        "tractatus-thinking/src/utils/silence-detector.ts",
+        "tractatus-thinking/src/utils/numbering-system.ts",
+        "tractatus-thinking/src/utils/validation.ts",
+        "tractatus-thinking/src/utils/bundling-detector.ts"
+      ],
+      "importance": 0.2929
+    },
+    "tractatus-thinking/src/types/index.ts": {
+      "description": "Parameters for the add_proposition tool.",
+      "tokens": 3498,
+      "hash": "43ef03f565bf2b5c",
+      "size": 12243,
+      "mtimeMs": 1790665424755.5444,
+      "updatedAt": "2026-09-29T07:03:54.139Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "ConfidenceModel",
+          "kind": "section",
+          "startLine": 2,
+          "endLine": 7,
+          "tokens": 74
+        },
+        {
+          "name": "PropositionStatus",
+          "kind": "section",
+          "startLine": 10,
+          "endLine": 17,
+          "tokens": 90
+        },
+        {
+          "name": "PropositionRelationships",
+          "kind": "section",
+          "startLine": 20,
+          "endLine": 28,
+          "tokens": 126
+        },
+        {
+          "name": "Proposition",
+          "kind": "section",
+          "startLine": 30,
+          "endLine": 80,
+          "tokens": 394
+        },
+        {
+          "name": "DecompositionType",
+          "kind": "section",
+          "startLine": 82,
+          "endLine": 88,
+          "tokens": 48
+        },
+        {
+          "name": "ThinkingMode",
+          "kind": "section",
+          "startLine": 91,
+          "endLine": 96,
+          "tokens": 91
+        },
+        {
+          "name": "HypothesisTest",
+          "kind": "section",
+          "startLine": 99,
+          "endLine": 114,
+          "tokens": 118
+        },
+        {
+          "name": "TractusTree",
+          "kind": "section",
+          "startLine": 116,
+          "endLine": 176,
+          "tokens": 556
+        },
+        {
+          "name": "NavigationResult",
+          "kind": "section",
+          "startLine": 178,
+          "endLine": 182,
+          "tokens": 32
+        },
+        {
+          "name": "WittgensteinError",
+          "kind": "class",
+          "startLine": 185,
+          "endLine": 194,
+          "tokens": 64
+        },
+        {
+          "name": "WittgensteinError.constructor",
+          "kind": "method",
+          "startLine": 186,
+          "endLine": 193,
+          "tokens": 50
+        },
+        {
+          "name": "ErrorCode",
+          "kind": "section",
+          "startLine": 196,
+          "endLine": 208,
+          "tokens": 195
+        },
+        {
+          "name": "SilenceBoundaryError",
+          "kind": "class",
+          "startLine": 210,
+          "endLine": 217,
+          "tokens": 76
+        },
+        {
+          "name": "SilenceBoundaryError.constructor",
+          "kind": "method",
+          "startLine": 211,
+          "endLine": 216,
+          "tokens": 57
+        },
+        {
+          "name": "AddPropositionParams",
+          "kind": "section",
+          "startLine": 225,
+          "endLine": 232,
+          "tokens": 58
+        },
+        {
+          "name": "PropositionResult",
+          "kind": "section",
+          "startLine": 237,
+          "endLine": 240,
+          "tokens": 23
+        },
+        {
+          "name": "PropositionValidationResult",
+          "kind": "section",
+          "startLine": 245,
+          "endLine": 248,
+          "tokens": 26
+        },
+        {
+          "name": "SuggestionResult",
+          "kind": "section",
+          "startLine": 253,
+          "endLine": 257,
+          "tokens": 32
+        },
+        {
+          "name": "StructureAnalysis",
+          "kind": "section",
+          "startLine": 262,
+          "endLine": 268,
+          "tokens": 51
+        },
+        {
+          "name": "SessionManager",
+          "kind": "section",
+          "startLine": 271,
+          "endLine": 276,
+          "tokens": 57
+        },
+        {
+          "name": "Formatter",
+          "kind": "section",
+          "startLine": 279,
+          "endLine": 282,
+          "tokens": 33
+        },
+        {
+          "name": "ExportOptions",
+          "kind": "section",
+          "startLine": 284,
+          "endLine": 289,
+          "tokens": 44
+        },
+        {
+          "name": "ExportResult",
+          "kind": "section",
+          "startLine": 291,
+          "endLine": 299,
+          "tokens": 48
+        },
+        {
+          "name": "MCPToolResponse",
+          "kind": "section",
+          "startLine": 302,
+          "endLine": 308,
+          "tokens": 34
+        },
+        {
+          "name": "TractusOperation",
+          "kind": "section",
+          "startLine": 311,
+          "endLine": 319,
+          "tokens": 38
+        },
+        {
+          "name": "TractusThinkParams",
+          "kind": "section",
+          "startLine": 321,
+          "endLine": 361,
+          "tokens": 288
+        },
+        {
+          "name": "ReviseParams",
+          "kind": "section",
+          "startLine": 366,
+          "endLine": 372,
+          "tokens": 58
+        },
+        {
+          "name": "UndoParams",
+          "kind": "section",
+          "startLine": 375,
+          "endLine": 378,
+          "tokens": 36
+        },
+        {
+          "name": "MoveParams",
+          "kind": "section",
+          "startLine": 381,
+          "endLine": 386,
+          "tokens": 56
+        },
+        {
+          "name": "RevisionRecord",
+          "kind": "section",
+          "startLine": 391,
+          "endLine": 397,
+          "tokens": 41
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "export interface ConfidenceModel {\nexport type PropositionStatus =\nexport interface PropositionRelationships {\nexport interface Proposition {\nexport enum DecompositionType {\nexport enum ThinkingMode {\nexport interface HypothesisTest {\nexport interface TractusTree {\nexport interface NavigationResult {\nexport class WittgensteinError extends Error {\n  constructor(\nexport enum ErrorCode {\nexport class SilenceBoundaryError extends WittgensteinError {\n  constructor(reason: string, tractatusRef?: string) {\nexport interface AddPropositionParams {\nexport interface PropositionResult {\nexport interface PropositionValidationResult {\nexport interface SuggestionResult {\nexport interface StructureAnalysis {\nexport interface SessionManager {\nexport interface Formatter {\nexport interface ExportOptions {\nexport interface ExportResult {\nexport interface MCPToolResponse {\nexport type TractusOperation =\nexport interface TractusThinkParams {\nexport interface ReviseParams {\nexport interface UndoParams {\nexport interface MoveParams {\nexport interface RevisionRecord {",
+      "importance": 1
+    },
+    "tractatus-thinking/src/utils/bundling-detector.ts": {
+      "description": "Bundling detection utilities for helping LLMs identify compound concepts",
+      "tokens": 1968,
+      "hash": "f91e9107bd47176a",
+      "size": 6885,
+      "mtimeMs": 1790665424755.5444,
+      "updatedAt": "2026-09-29T07:03:54.140Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "BundlingAlert",
+          "kind": "section",
+          "startLine": 15,
+          "endLine": 20,
+          "tokens": 34
+        },
+        {
+          "name": "BundlingType",
+          "kind": "section",
+          "startLine": 25,
+          "endLine": 36,
+          "tokens": 115
+        },
+        {
+          "name": "detectBundling",
+          "kind": "fn",
+          "startLine": 98,
+          "endLine": 125,
+          "tokens": 210
+        },
+        {
+          "name": "calculateBundlingConfidence",
+          "kind": "fn",
+          "startLine": 135,
+          "endLine": 148,
+          "tokens": 184
+        },
+        {
+          "name": "hasBundling",
+          "kind": "fn",
+          "startLine": 156,
+          "endLine": 158,
+          "tokens": 30
+        },
+        {
+          "name": "getPrimaryBundlingAlert",
+          "kind": "fn",
+          "startLine": 166,
+          "endLine": 177,
+          "tokens": 96
+        },
+        {
+          "name": "validateAtomicity",
+          "kind": "fn",
+          "startLine": 188,
+          "endLine": 225,
+          "tokens": 354
+        }
+      ],
+      "symbolSource": "ts",
+      "imports": [
+        "tractatus-thinking/src/types/index.ts"
+      ],
+      "importance": 0.1664
+    },
+    "tractatus-thinking/src/utils/cross-reference-manager.ts": {
+      "description": "Manages cross-references between propositions, enabling richer",
+      "tokens": 2946,
+      "hash": "7369cde42c62ae77",
+      "size": 10325,
+      "mtimeMs": 1790665424755.9136,
+      "updatedAt": "2026-09-29T07:03:54.140Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "CrossReferenceManager",
+          "kind": "class",
+          "startLine": 11,
+          "endLine": 337,
+          "tokens": 2832
+        },
+        {
+          "name": "CrossReferenceManager.constructor",
+          "kind": "method",
+          "startLine": 14,
+          "endLine": 16,
+          "tokens": 36
+        },
+        {
+          "name": "CrossReferenceManager.addReference",
+          "kind": "method",
+          "startLine": 25,
+          "endLine": 32,
+          "tokens": 80
+        },
+        {
+          "name": "CrossReferenceManager.removeReference",
+          "kind": "method",
+          "startLine": 41,
+          "endLine": 49,
+          "tokens": 77
+        },
+        {
+          "name": "CrossReferenceManager.getReferences",
+          "kind": "method",
+          "startLine": 57,
+          "endLine": 72,
+          "tokens": 131
+        },
+        {
+          "name": "CrossReferenceManager.getIncomingReferences",
+          "kind": "method",
+          "startLine": 80,
+          "endLine": 95,
+          "tokens": 140
+        },
+        {
+          "name": "CrossReferenceManager.detectCycles",
+          "kind": "method",
+          "startLine": 103,
+          "endLine": 144,
+          "tokens": 281
+        },
+        {
+          "name": "CrossReferenceManager.validateReferences",
+          "kind": "method",
+          "startLine": 152,
+          "endLine": 195,
+          "tokens": 413
+        },
+        {
+          "name": "CrossReferenceManager.suggestReferences",
+          "kind": "method",
+          "startLine": 205,
+          "endLine": 279,
+          "tokens": 724
+        },
+        {
+          "name": "CrossReferenceManager.export",
+          "kind": "method",
+          "startLine": 284,
+          "endLine": 286,
+          "tokens": 23
+        },
+        {
+          "name": "CrossReferenceManager.visualize",
+          "kind": "method",
+          "startLine": 294,
+          "endLine": 323,
+          "tokens": 281
+        },
+        {
+          "name": "CrossReferenceManager.getRelationshipArrow",
+          "kind": "method",
+          "startLine": 325,
+          "endLine": 336,
+          "tokens": 125
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "export class CrossReferenceManager {\n  constructor(tree?: TractusTree) {\n  addReference(from: string, to: string, type: keyof PropositionRelationships): void {\n  removeReference(from: string, to: string, type: keyof PropositionRelationships): void {\n  getReferences(from: string): PropositionRelationships {\n  getIncomingReferences(\n  detectCycles(allowCycles: boolean = false): string[][] {\n  validateReferences(tree: TractusTree): { isValid: boolean; issues: string[] } {\n  suggestReferences(\n  export(): Map<string, Set<string>> {\n  visualize(tree: TractusTree): string {\n  private getRelationshipArrow(type: keyof PropositionRelationships): string {",
+      "imports": [
+        "tractatus-thinking/src/types/index.ts"
+      ],
+      "importance": 0.0378
+    },
+    "tractatus-thinking/src/utils/decomposition-advisor.ts": {
+      "description": "Decomposition advisor utilities for helping LLMs determine when and how",
+      "tokens": 3247,
+      "hash": "23f9f8f6e84877c7",
+      "size": 11362,
+      "mtimeMs": 1790665424755.9348,
+      "updatedAt": "2026-09-29T07:03:54.140Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "DecompositionSuggestion",
+          "kind": "section",
+          "startLine": 15,
+          "endLine": 22,
+          "tokens": 58
+        },
+        {
+          "name": "DecompositionReason",
+          "kind": "section",
+          "startLine": 27,
+          "endLine": 42,
+          "tokens": 176
+        },
+        {
+          "name": "analyzeDecomposition",
+          "kind": "fn",
+          "startLine": 66,
+          "endLine": 134,
+          "tokens": 585
+        },
+        {
+          "name": "createBundlingBasedSuggestion",
+          "kind": "fn",
+          "startLine": 140,
+          "endLine": 211,
+          "tokens": 669
+        },
+        {
+          "name": "analyzeComplexity",
+          "kind": "fn",
+          "startLine": 217,
+          "endLine": 292,
+          "tokens": 679
+        },
+        {
+          "name": "isLikelyAtomic",
+          "kind": "fn",
+          "startLine": 297,
+          "endLine": 318,
+          "tokens": 176
+        },
+        {
+          "name": "analyzePropositionInContext",
+          "kind": "fn",
+          "startLine": 327,
+          "endLine": 352,
+          "tokens": 211
+        },
+        {
+          "name": "getSiblings",
+          "kind": "fn",
+          "startLine": 357,
+          "endLine": 374,
+          "tokens": 162
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "export interface DecompositionSuggestion {\nexport enum DecompositionReason {\nexport function analyzeDecomposition(\nfunction createBundlingBasedSuggestion(alert: {\nfunction analyzeComplexity(content: string): {\nfunction isLikelyAtomic(content: string, depth: number): boolean {\nexport function analyzePropositionInContext(\nfunction getSiblings(proposition: Proposition, tree: TractusTree): Proposition[] {",
+      "imports": [
+        "tractatus-thinking/src/types/index.ts",
+        "tractatus-thinking/src/utils/bundling-detector.ts"
+      ],
+      "importance": 0.0866
+    },
+    "tractatus-thinking/src/utils/formatter.ts": {
+      "description": "Formats TractusTree structures for export in various formats.",
+      "tokens": 1934,
+      "hash": "cbc67ebb89192da0",
+      "size": 6767,
+      "mtimeMs": 1790665424755.9348,
+      "updatedAt": "2026-09-29T07:03:54.141Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "Formatter",
+          "kind": "class",
+          "startLine": 24,
+          "endLine": 221,
+          "tokens": 1743
+        },
+        {
+          "name": "Formatter.format",
+          "kind": "method",
+          "startLine": 57,
+          "endLine": 68,
+          "tokens": 114
+        },
+        {
+          "name": "Formatter.formatMarkdown",
+          "kind": "method",
+          "startLine": 70,
+          "endLine": 78,
+          "tokens": 88
+        },
+        {
+          "name": "Formatter.addMetadataSection",
+          "kind": "method",
+          "startLine": 80,
+          "endLine": 91,
+          "tokens": 128
+        },
+        {
+          "name": "Formatter.addPropositionsSection",
+          "kind": "method",
+          "startLine": 93,
+          "endLine": 115,
+          "tokens": 184
+        },
+        {
+          "name": "Formatter.addSilenceBoundariesSection",
+          "kind": "method",
+          "startLine": 117,
+          "endLine": 130,
+          "tokens": 129
+        },
+        {
+          "name": "Formatter.formatProposition",
+          "kind": "method",
+          "startLine": 132,
+          "endLine": 145,
+          "tokens": 137
+        },
+        {
+          "name": "Formatter.formatJSON",
+          "kind": "method",
+          "startLine": 147,
+          "endLine": 163,
+          "tokens": 169
+        },
+        {
+          "name": "Formatter.formatGraphviz",
+          "kind": "method",
+          "startLine": 165,
+          "endLine": 185,
+          "tokens": 189
+        },
+        {
+          "name": "Formatter.compareNumbers",
+          "kind": "method",
+          "startLine": 187,
+          "endLine": 198,
+          "tokens": 126
+        },
+        {
+          "name": "Formatter.isComplete",
+          "kind": "method",
+          "startLine": 200,
+          "endLine": 206,
+          "tokens": 70
+        },
+        {
+          "name": "Formatter.export",
+          "kind": "method",
+          "startLine": 208,
+          "endLine": 220,
+          "tokens": 104
+        }
+      ],
+      "symbolSource": "ts",
+      "imports": [
+        "tractatus-thinking/src/types/index.ts"
+      ],
+      "importance": 0.0749
+    },
+    "tractatus-thinking/src/utils/independence-validator.ts": {
+      "description": "Independence validation utilities for ensuring logical independence",
+      "tokens": 4002,
+      "hash": "1c5aef32108a4791",
+      "size": 14005,
+      "mtimeMs": 1790665424755.9348,
+      "updatedAt": "2026-09-29T07:03:54.141Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "DependenceIssue",
+          "kind": "section",
+          "startLine": 15,
+          "endLine": 21,
+          "tokens": 49
+        },
+        {
+          "name": "DependenceType",
+          "kind": "section",
+          "startLine": 26,
+          "endLine": 39,
+          "tokens": 165
+        },
+        {
+          "name": "validateIndependence",
+          "kind": "fn",
+          "startLine": 59,
+          "endLine": 96,
+          "tokens": 356
+        },
+        {
+          "name": "checkDirectReferences",
+          "kind": "fn",
+          "startLine": 101,
+          "endLine": 126,
+          "tokens": 295
+        },
+        {
+          "name": "checkLogicalDependencies",
+          "kind": "fn",
+          "startLine": 131,
+          "endLine": 170,
+          "tokens": 399
+        },
+        {
+          "name": "checkConceptualOverlap",
+          "kind": "fn",
+          "startLine": 175,
+          "endLine": 199,
+          "tokens": 271
+        },
+        {
+          "name": "checkContradictions",
+          "kind": "fn",
+          "startLine": 204,
+          "endLine": 219,
+          "tokens": 156
+        },
+        {
+          "name": "checkSequentialDependencies",
+          "kind": "fn",
+          "startLine": 224,
+          "endLine": 248,
+          "tokens": 235
+        },
+        {
+          "name": "checkCircularReferences",
+          "kind": "fn",
+          "startLine": 253,
+          "endLine": 278,
+          "tokens": 258
+        },
+        {
+          "name": "extractKeyTerms",
+          "kind": "fn",
+          "startLine": 283,
+          "endLine": 324,
+          "tokens": 199
+        },
+        {
+          "name": "isSignificantReference",
+          "kind": "fn",
+          "startLine": 329,
+          "endLine": 336,
+          "tokens": 118
+        },
+        {
+          "name": "hasConceptualOverlap",
+          "kind": "fn",
+          "startLine": 341,
+          "endLine": 343,
+          "tokens": 41
+        },
+        {
+          "name": "calculateConceptualOverlap",
+          "kind": "fn",
+          "startLine": 348,
+          "endLine": 360,
+          "tokens": 120
+        },
+        {
+          "name": "isDirectContradiction",
+          "kind": "fn",
+          "startLine": 365,
+          "endLine": 377,
+          "tokens": 155
+        },
+        {
+          "name": "findReferences",
+          "kind": "fn",
+          "startLine": 382,
+          "endLine": 384,
+          "tokens": 49
+        },
+        {
+          "name": "validateTreeBranchIndependence",
+          "kind": "fn",
+          "startLine": 393,
+          "endLine": 420,
+          "tokens": 234
+        },
+        {
+          "name": "enforceIndependence",
+          "kind": "fn",
+          "startLine": 430,
+          "endLine": 450,
+          "tokens": 186
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "export interface DependenceIssue {\nexport enum DependenceType {\nexport function validateIndependence(\nfunction checkDirectReferences(newContent: string, sibling: Proposition): DependenceIssue[] {\nfunction checkLogicalDependencies(newContent: string, sibling: Proposition): DependenceIssue[] {\nfunction checkConceptualOverlap(newContent: string, sibling: Proposition): DependenceIssue[] {\nfunction checkContradictions(newContent: string, sibling: Proposition): DependenceIssue[] {\nfunction checkSequentialDependencies(newContent: string, sibling: Proposition): DependenceIssue[] {\nfunction checkCircularReferences(newContent: string, siblings: Proposition[]): DependenceIssue[] {\nfunction extractKeyTerms(content: string): string[] {\nfunction isSignificantReference(term: string, newContent: string, siblingContent: string): boolean {\nfunction hasConceptualOverlap(content1: string, content2: string): boolean {\nfunction calculateConceptualOverlap(content1: string, content2: string): number {\nfunction isDirectContradiction(content1: string, content2: string): boolean {\nfunction findReferences(content: string, siblings: Proposition[]): Proposition[] {\nexport function validateTreeBranchIndependence(\nexport function enforceIndependence(",
+      "imports": [
+        "tractatus-thinking/src/types/index.ts"
+      ],
+      "importance": 0.0834
+    },
+    "tractatus-thinking/src/utils/numbering-system.ts": {
+      "description": "Generate child proposition number following configured format.",
+      "tokens": 2656,
+      "hash": "9fecc325d1b4e028",
+      "size": 9293,
+      "mtimeMs": 1790665424755.9348,
+      "updatedAt": "2026-09-29T07:03:54.141Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "NumberingMode",
+          "kind": "section",
+          "startLine": 1,
+          "endLine": 6,
+          "tokens": 78
+        },
+        {
+          "name": "NumberingSystem",
+          "kind": "class",
+          "startLine": 8,
+          "endLine": 309,
+          "tokens": 2577
+        },
+        {
+          "name": "NumberingSystem.constructor",
+          "kind": "method",
+          "startLine": 12,
+          "endLine": 15,
+          "tokens": 44
+        },
+        {
+          "name": "NumberingSystem.generateChildNumber",
+          "kind": "method",
+          "startLine": 33,
+          "endLine": 75,
+          "tokens": 428
+        },
+        {
+          "name": "NumberingSystem.getParentNumber",
+          "kind": "method",
+          "startLine": 83,
+          "endLine": 104,
+          "tokens": 206
+        },
+        {
+          "name": "NumberingSystem.getSiblings",
+          "kind": "method",
+          "startLine": 109,
+          "endLine": 122,
+          "tokens": 139
+        },
+        {
+          "name": "NumberingSystem.getLevel",
+          "kind": "method",
+          "startLine": 131,
+          "endLine": 175,
+          "tokens": 419
+        },
+        {
+          "name": "NumberingSystem.isValidNumber",
+          "kind": "method",
+          "startLine": 183,
+          "endLine": 214,
+          "tokens": 273
+        },
+        {
+          "name": "NumberingSystem.convertToMode",
+          "kind": "method",
+          "startLine": 223,
+          "endLine": 254,
+          "tokens": 269
+        },
+        {
+          "name": "NumberingSystem.getPathSegments",
+          "kind": "method",
+          "startLine": 262,
+          "endLine": 288,
+          "tokens": 250
+        },
+        {
+          "name": "NumberingSystem.getMode",
+          "kind": "method",
+          "startLine": 293,
+          "endLine": 295,
+          "tokens": 16
+        },
+        {
+          "name": "NumberingSystem.setMode",
+          "kind": "method",
+          "startLine": 303,
+          "endLine": 308,
+          "tokens": 49
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "export enum NumberingMode {\nexport class NumberingSystem {\n  constructor(mode: NumberingMode = NumberingMode.TRACTATUS, separator: string = '.') {\n  generateChildNumber(parentNumber: string, childIndex: number): string {\n  getParentNumber(number: string): string | null {\n  getSiblings(number: string, allNumbers: string[]): string[] {\n  getLevel(number: string): number {\n  isValidNumber(number: string): boolean {\n  convertToMode(number: string, targetMode: NumberingMode): string | null {\n  private getPathSegments(number: string): string[] | null {\n  getMode(): NumberingMode {\n  setMode(newMode: NumberingMode, separator?: string): void {",
+      "importance": 0.1656
+    },
+    "tractatus-thinking/src/utils/silence-detector.ts": {
+      "description": "Exports SilenceDetector",
+      "tokens": 1834,
+      "hash": "ce0c9a4f8dc8dce3",
+      "size": 6419,
+      "mtimeMs": 1790665424755.9348,
+      "updatedAt": "2026-09-29T07:03:54.141Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "SilenceDetector",
+          "kind": "class",
+          "startLine": 3,
+          "endLine": 236,
+          "tokens": 1817
+        },
+        {
+          "name": "SilenceDetector.detect",
+          "kind": "method",
+          "startLine": 81,
+          "endLine": 92,
+          "tokens": 120
+        },
+        {
+          "name": "SilenceDetector.checkPhilosophicalBoundaries",
+          "kind": "method",
+          "startLine": 94,
+          "endLine": 108,
+          "tokens": 189
+        },
+        {
+          "name": "SilenceDetector.checkEthicalBoundary",
+          "kind": "method",
+          "startLine": 110,
+          "endLine": 119,
+          "tokens": 96
+        },
+        {
+          "name": "SilenceDetector.checkMetaphysicalBoundary",
+          "kind": "method",
+          "startLine": 121,
+          "endLine": 130,
+          "tokens": 108
+        },
+        {
+          "name": "SilenceDetector.checkAestheticBoundary",
+          "kind": "method",
+          "startLine": 132,
+          "endLine": 141,
+          "tokens": 103
+        },
+        {
+          "name": "SilenceDetector.checkMysticalBoundary",
+          "kind": "method",
+          "startLine": 143,
+          "endLine": 152,
+          "tokens": 103
+        },
+        {
+          "name": "SilenceDetector.checkTechnicalBoundaries",
+          "kind": "method",
+          "startLine": 154,
+          "endLine": 165,
+          "tokens": 147
+        },
+        {
+          "name": "SilenceDetector.checkCircularReference",
+          "kind": "method",
+          "startLine": 167,
+          "endLine": 176,
+          "tokens": 100
+        },
+        {
+          "name": "SilenceDetector.checkDepthBoundary",
+          "kind": "method",
+          "startLine": 178,
+          "endLine": 187,
+          "tokens": 94
+        },
+        {
+          "name": "SilenceDetector.checkAbstractionBoundary",
+          "kind": "method",
+          "startLine": 189,
+          "endLine": 199,
+          "tokens": 126
+        },
+        {
+          "name": "SilenceDetector.createBoundaryResult",
+          "kind": "method",
+          "startLine": 201,
+          "endLine": 212,
+          "tokens": 69
+        },
+        {
+          "name": "SilenceDetector.containsTerms",
+          "kind": "method",
+          "startLine": 214,
+          "endLine": 216,
+          "tokens": 37
+        },
+        {
+          "name": "SilenceDetector.calculateAbstractness",
+          "kind": "method",
+          "startLine": 218,
+          "endLine": 235,
+          "tokens": 125
+        }
+      ],
+      "symbolSource": "ts",
+      "imports": [
+        "tractatus-thinking/src/types/index.ts"
+      ],
+      "importance": 0.1001
+    },
+    "tractatus-thinking/src/utils/structure-visualizer.ts": {
+      "description": "Structure visualization utilities for helping LLMs understand the logical",
+      "tokens": 4243,
+      "hash": "681a7e91101fa587",
+      "size": 15001,
+      "mtimeMs": 1790665424755.9348,
+      "updatedAt": "2026-09-29T07:03:54.141Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "VisualizationOptions",
+          "kind": "section",
+          "startLine": 14,
+          "endLine": 29,
+          "tokens": 142
+        },
+        {
+          "name": "visualizeTree",
+          "kind": "fn",
+          "startLine": 83,
+          "endLine": 127,
+          "tokens": 401
+        },
+        {
+          "name": "renderProposition",
+          "kind": "fn",
+          "startLine": 133,
+          "endLine": 221,
+          "tokens": 740
+        },
+        {
+          "name": "visualizeCompactTree",
+          "kind": "fn",
+          "startLine": 230,
+          "endLine": 245,
+          "tokens": 149
+        },
+        {
+          "name": "buildCompactLine",
+          "kind": "fn",
+          "startLine": 250,
+          "endLine": 275,
+          "tokens": 227
+        },
+        {
+          "name": "generateStructuralInsights",
+          "kind": "fn",
+          "startLine": 280,
+          "endLine": 332,
+          "tokens": 551
+        },
+        {
+          "name": "getBranchingFactors",
+          "kind": "fn",
+          "startLine": 337,
+          "endLine": 341,
+          "tokens": 53
+        },
+        {
+          "name": "calculateVariance",
+          "kind": "fn",
+          "startLine": 346,
+          "endLine": 350,
+          "tokens": 74
+        },
+        {
+          "name": "visualizeNavigation",
+          "kind": "fn",
+          "startLine": 359,
+          "endLine": 405,
+          "tokens": 374
+        },
+        {
+          "name": "getSiblings",
+          "kind": "fn",
+          "startLine": 410,
+          "endLine": 430,
+          "tokens": 212
+        },
+        {
+          "name": "truncateContent",
+          "kind": "fn",
+          "startLine": 435,
+          "endLine": 440,
+          "tokens": 54
+        },
+        {
+          "name": "visualizeTreeSummary",
+          "kind": "fn",
+          "startLine": 448,
+          "endLine": 502,
+          "tokens": 508
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "export interface VisualizationOptions {\nexport function visualizeTree(\nfunction renderProposition(\nexport function visualizeCompactTree(tree: TractusTree, maxWidth: number = 80): string {\nfunction buildCompactLine(tree: TractusTree, propNumber: string, maxWidth: number): string {\nfunction generateStructuralInsights(tree: TractusTree): string[] {\nfunction getBranchingFactors(tree: TractusTree): number[] {\nfunction calculateVariance(numbers: number[]): number {\nexport function visualizeNavigation(tree: TractusTree, currentPosition: string): string {\nfunction getSiblings(proposition: Proposition, tree: TractusTree): Proposition[] {\nfunction truncateContent(content: string, maxLength: number): string {\nexport function visualizeTreeSummary(tree: TractusTree): string {",
+      "imports": [
+        "tractatus-thinking/src/types/index.ts"
+      ],
+      "importance": 0.0605
+    },
+    "tractatus-thinking/src/utils/validation.ts": {
+      "description": "Validation utilities for the Clear Thinking tool.",
+      "tokens": 2166,
+      "hash": "c03fffc8d6b2bdd8",
+      "size": 7594,
+      "mtimeMs": 1790665424755.9348,
+      "updatedAt": "2026-09-29T07:03:54.141Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "validateConfidence",
+          "kind": "fn",
+          "startLine": 16,
+          "endLine": 40,
+          "tokens": 166
+        },
+        {
+          "name": "validateDecompositionType",
+          "kind": "fn",
+          "startLine": 49,
+          "endLine": 66,
+          "tokens": 169
+        },
+        {
+          "name": "validateDepthLimit",
+          "kind": "fn",
+          "startLine": 77,
+          "endLine": 98,
+          "tokens": 204
+        },
+        {
+          "name": "validateConfidenceThreshold",
+          "kind": "fn",
+          "startLine": 108,
+          "endLine": 118,
+          "tokens": 94
+        },
+        {
+          "name": "validateParent",
+          "kind": "fn",
+          "startLine": 128,
+          "endLine": 160,
+          "tokens": 316
+        },
+        {
+          "name": "getPropositionDepth",
+          "kind": "fn",
+          "startLine": 174,
+          "endLine": 194,
+          "tokens": 191
+        },
+        {
+          "name": "ValidatedPropositionParams",
+          "kind": "section",
+          "startLine": 205,
+          "endLine": 211,
+          "tokens": 52
+        },
+        {
+          "name": "validatePropositionParams",
+          "kind": "fn",
+          "startLine": 213,
+          "endLine": 257,
+          "tokens": 343
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "export function validateConfidence(value: number | undefined): number {\nexport function validateDecompositionType(type: string | undefined): DecompositionType {\nexport function validateDepthLimit(parentNumber: string | null, maxDepth: number): boolean {\nexport function validateConfidenceThreshold(confidence: number, threshold: number): boolean {\nexport function validateParent(parentNumber: string, tree: TractusTree): boolean {\nexport function getPropositionDepth(number: string): number {\nexport interface ValidatedPropositionParams {\nexport function validatePropositionParams(",
+      "imports": [
+        "tractatus-thinking/src/types/index.ts"
+      ],
+      "importance": 0.1108
+    },
+    "tractatus-thinking/test-modern.js": {
+      "description": "__filename: testModernServer",
+      "tokens": 795,
+      "hash": "4e6889bd4307a997",
+      "size": 2782,
+      "mtimeMs": 1790665424755.9348,
+      "updatedAt": "2026-09-29T07:03:54.141Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "testModernServer",
+          "kind": "fn",
+          "startLine": 10,
+          "endLine": 104,
+          "tokens": 598
+        }
+      ],
+      "symbolSource": "ts",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/tests/enhancements/enhanced-operations.test.ts": {
+      "description": "Declares startParams",
+      "tokens": 3418,
+      "hash": "e25395afac4d95f1",
+      "size": 11961,
+      "mtimeMs": 1790665424756.1274,
+      "updatedAt": "2026-09-29T07:03:54.142Z",
+      "source": "scan",
+      "imports": [
+        "tractatus-thinking/src/handlers/tractatus-think.ts",
+        "tractatus-thinking/src/types/index.ts"
+      ],
+      "importance": 0.0378
+    },
+    "tractatus-thinking/tests/integration/full-workflow.test.ts": {
+      "description": "Declares const",
+      "tokens": 1968,
+      "hash": "0a7a36caf5c5513a",
+      "size": 6885,
+      "mtimeMs": 1790665424756.1584,
+      "updatedAt": "2026-09-29T07:03:54.142Z",
+      "source": "scan",
+      "imports": [
+        "tractatus-thinking/src/handlers/tractatus-think.ts",
+        "tractatus-thinking/src/types/index.ts"
+      ],
+      "importance": 0.0378
+    },
+    "tractatus-thinking/tests/integration/tractatus-think-unified.test.ts": {
+      "description": "Declares startParams",
+      "tokens": 2196,
+      "hash": "8b613acbd23e756b",
+      "size": 7686,
+      "mtimeMs": 1790665424756.2063,
+      "updatedAt": "2026-09-29T07:03:54.142Z",
+      "source": "scan",
+      "imports": [
+        "tractatus-thinking/src/handlers/tractatus-think.ts",
+        "tractatus-thinking/src/types/index.ts"
+      ],
+      "importance": 0.0378
+    },
+    "tractatus-thinking/tests/philosophy/wittgenstein-principles.test.ts": {
+      "description": "API routes: GET (2 endpoints)",
+      "tokens": 3972,
+      "hash": "d168f25c6de4596b",
+      "size": 13901,
+      "mtimeMs": 1790665424756.2063,
+      "updatedAt": "2026-09-29T07:03:54.142Z",
+      "source": "scan",
+      "imports": [
+        "tractatus-thinking/src/tractatus/engine.ts"
+      ],
+      "importance": 0.0378
+    },
+    "tractatus-thinking/tests/unit/depth-consistency.test.ts": {
+      "description": "Declares engine",
+      "tokens": 377,
+      "hash": "94a418be07fb6fec",
+      "size": 1319,
+      "mtimeMs": 1790665424756.2063,
+      "updatedAt": "2026-09-29T07:03:54.142Z",
+      "source": "scan",
+      "imports": [
+        "tractatus-thinking/src/tractatus/engine.ts",
+        "tractatus-thinking/src/utils/numbering-system.ts",
+        "tractatus-thinking/src/utils/validation.ts"
+      ],
+      "importance": 0.0378
+    },
+    "tractatus-thinking/tests/unit/handlers/clear-thinking.test.ts": {
+      "description": "Declares params",
+      "tokens": 2133,
+      "hash": "5b0b9c8ef843efe0",
+      "size": 7464,
+      "mtimeMs": 1790665424756.2854,
+      "updatedAt": "2026-09-29T07:03:54.143Z",
+      "source": "scan",
+      "imports": [
+        "tractatus-thinking/src/handlers/clear_thinking.ts",
+        "tractatus-thinking/src/types/index.ts"
+      ],
+      "importance": 0.0378
+    },
+    "tractatus-thinking/tests/unit/handlers/export.test.ts": {
+      "description": "Declares sessionManager",
+      "tokens": 3599,
+      "hash": "afb0b972b05f35e2",
+      "size": 12594,
+      "mtimeMs": 1790665424756.3162,
+      "updatedAt": "2026-09-29T07:03:54.143Z",
+      "source": "scan",
+      "imports": [
+        "tractatus-thinking/src/handlers/export.ts",
+        "tractatus-thinking/src/handlers/clear_thinking.ts",
+        "tractatus-thinking/src/handlers/add-proposition.ts",
+        "tractatus-thinking/src/tractatus/engine.ts"
+      ],
+      "importance": 0.0378
+    },
+    "tractatus-thinking/tests/unit/handlers/navigate.test.ts": {
+      "description": "Declares sessionManager",
+      "tokens": 2596,
+      "hash": "6c662daef8adde39",
+      "size": 9085,
+      "mtimeMs": 1790665424756.3162,
+      "updatedAt": "2026-09-29T07:03:54.143Z",
+      "source": "scan",
+      "imports": [
+        "tractatus-thinking/src/handlers/navigate.ts",
+        "tractatus-thinking/src/handlers/clear_thinking.ts",
+        "tractatus-thinking/src/types/index.ts",
+        "tractatus-thinking/src/tractatus/engine.ts"
+      ],
+      "importance": 0.0378
+    },
+    "tractatus-thinking/tests/unit/handlers/session-manager.test.ts": {
+      "description": "Declares tree",
+      "tokens": 2846,
+      "hash": "c1c9ed0d2f7040ac",
+      "size": 9960,
+      "mtimeMs": 1790665424756.3162,
+      "updatedAt": "2026-09-29T07:03:54.143Z",
+      "source": "scan",
+      "imports": [
+        "tractatus-thinking/src/handlers/session-manager.ts",
+        "tractatus-thinking/src/tractatus/engine.ts"
+      ],
+      "importance": 0.0378
+    },
+    "tractatus-thinking/tests/unit/logic-detection.test.ts": {
+      "description": "Declares tree",
+      "tokens": 1243,
+      "hash": "e0074912099821d2",
+      "size": 4350,
+      "mtimeMs": 1790665424756.3162,
+      "updatedAt": "2026-09-29T07:03:54.143Z",
+      "source": "scan",
+      "imports": [
+        "tractatus-thinking/src/tractatus/engine.ts"
+      ],
+      "importance": 0.0378
+    },
+    "tractatus-thinking/tests/unit/numbering-fix.test.ts": {
+      "description": "Declares ns",
+      "tokens": 457,
+      "hash": "da3042e290a353c4",
+      "size": 1598,
+      "mtimeMs": 1790665424756.3162,
+      "updatedAt": "2026-09-29T07:03:54.143Z",
+      "source": "scan",
+      "imports": [
+        "tractatus-thinking/src/utils/numbering-system.ts"
+      ],
+      "importance": 0.0378
+    },
+    "tractatus-thinking/tests/unit/threshold-enforcement.test.ts": {
+      "description": "Declares tree",
+      "tokens": 1281,
+      "hash": "040b9d43ec1ec939",
+      "size": 4483,
+      "mtimeMs": 1790665424756.3162,
+      "updatedAt": "2026-09-29T07:03:54.143Z",
+      "source": "scan",
+      "imports": [
+        "tractatus-thinking/src/tractatus/engine.ts",
+        "tractatus-thinking/src/types/index.ts"
+      ],
+      "importance": 0.0378
+    },
+    "tractatus-thinking/tests/unit/tractatus-engine.test.ts": {
+      "description": "API routes: GET (6 endpoints)",
+      "tokens": 2961,
+      "hash": "9904055b8cd0723c",
+      "size": 10363,
+      "mtimeMs": 1790665424756.3162,
+      "updatedAt": "2026-09-29T07:03:54.143Z",
+      "source": "scan",
+      "imports": [
+        "tractatus-thinking/src/tractatus/engine.ts"
+      ],
+      "importance": 0.0378
+    },
+    "tractatus-thinking/tests/unit/utils/bundling-detector.test.ts": {
+      "description": "Declares content",
+      "tokens": 1043,
+      "hash": "58956ce2d9a448bb",
+      "size": 3649,
+      "mtimeMs": 1790665424756.3162,
+      "updatedAt": "2026-09-29T07:03:54.143Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/tests/unit/utils/decomposition-advisor.test.ts": {
+      "description": "Declares content",
+      "tokens": 1087,
+      "hash": "6630602131c0b816",
+      "size": 3804,
+      "mtimeMs": 1790665424756.4683,
+      "updatedAt": "2026-09-29T07:03:54.144Z",
+      "source": "scan",
+      "imports": [
+        "tractatus-thinking/src/utils/decomposition-advisor.ts"
+      ],
+      "importance": 0.0378
+    },
+    "tractatus-thinking/tests/unit/utils/independence-validator.test.ts": {
+      "description": "Declares createMockProposition",
+      "tokens": 1685,
+      "hash": "cf56676250e2fea5",
+      "size": 5895,
+      "mtimeMs": 1790665424756.4817,
+      "updatedAt": "2026-09-29T07:03:54.144Z",
+      "source": "scan",
+      "imports": [
+        "tractatus-thinking/src/utils/independence-validator.ts",
+        "tractatus-thinking/src/types/index.ts"
+      ],
+      "importance": 0.0378
+    },
+    "tractatus-thinking/tests/unit/utils/structure-visualizer.test.ts": {
+      "description": "Declares createMockTree",
+      "tokens": 2406,
+      "hash": "af109c299ea37366",
+      "size": 8435,
+      "mtimeMs": 1790665424756.4817,
+      "updatedAt": "2026-09-29T07:03:54.144Z",
+      "source": "scan",
+      "imports": [
+        "tractatus-thinking/src/types/index.ts"
+      ],
+      "importance": 0.0378
+    },
+    "tractatus-thinking/tests/unit/validation-fixes.test.ts": {
+      "description": "Declares tree",
+      "tokens": 1958,
+      "hash": "f9d629b85b3a79e6",
+      "size": 6851,
+      "mtimeMs": 1790665424756.4817,
+      "updatedAt": "2026-09-29T07:03:54.144Z",
+      "source": "scan",
+      "imports": [
+        "tractatus-thinking/src/tractatus/engine.ts",
+        "tractatus-thinking/src/types/index.ts"
+      ],
+      "importance": 0.0378
+    },
+    "tractatus-thinking/tests/utils/test-utilities.ts": {
+      "description": "Shared test utilities for Wittgenstein MCP Server tests",
+      "tokens": 261,
+      "hash": "92d3ad69c299d176",
+      "size": 913,
+      "mtimeMs": 1790665424756.4817,
+      "updatedAt": "2026-09-29T07:03:54.144Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/tsconfig.base.json": {
+      "description": "",
+      "tokens": 118,
+      "hash": "f6c65768c05e76fe",
+      "size": 410,
+      "mtimeMs": 1790665424756.4817,
+      "updatedAt": "2026-09-29T07:03:54.144Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/tsconfig.json": {
+      "description": "TypeScript configuration",
+      "tokens": 174,
+      "hash": "ed85e7655c07c728",
+      "size": 609,
+      "mtimeMs": 1790665424756.4817,
+      "updatedAt": "2026-09-29T07:03:54.144Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/tsconfig.src.json": {
+      "description": "",
+      "tokens": 175,
+      "hash": "cc6380e49cb5c91d",
+      "size": 610,
+      "mtimeMs": 1790665424756.4817,
+      "updatedAt": "2026-09-29T07:03:54.144Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/tsconfig.tests.json": {
+      "description": "/*\", \"src/**/*.test.ts\", \"src/**/*.spec.ts\", \"vitest.config.ts\"]",
+      "tokens": 173,
+      "hash": "4dccbefce73f8678",
+      "size": 605,
+      "mtimeMs": 1790665424756.4817,
+      "updatedAt": "2026-09-29T07:03:54.144Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "tractatus-thinking/vitest.config.ts": {
+      "description": "Vitest test configuration",
+      "tokens": 176,
+      "hash": "3008dd2043679888",
+      "size": 613,
+      "mtimeMs": 1790665424756.4817,
+      "updatedAt": "2026-09-29T07:03:54.144Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "training/batching.py": {
+      "description": "Group sequences into length-sorted, token-budgeted batches with a small set of shapes.",
+      "tokens": 448,
+      "hash": "58b1a9e1d6d8b4fd",
+      "size": 1566,
+      "mtimeMs": 1790665417687.2231,
+      "updatedAt": "2026-09-29T07:03:54.144Z",
+      "source": "scan",
+      "importance": 0.0584
+    },
+    "training/build_train.py": {
+      "description": "Assemble a training folder for laya_turbo.cuda.lora from teacher output plus a general replay.",
+      "tokens": 1246,
+      "hash": "9ad81f8f51124f84",
+      "size": 4359,
+      "mtimeMs": 1790665417687.2231,
+      "updatedAt": "2026-09-29T07:03:54.144Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "neutral_keys",
+          "kind": "fn",
+          "startLine": 23,
+          "endLine": 35,
+          "tokens": 171
+        },
+        {
+          "name": "teacher_items",
+          "kind": "fn",
+          "startLine": 38,
+          "endLine": 60,
+          "tokens": 254
+        },
+        {
+          "name": "main",
+          "kind": "fn",
+          "startLine": 63,
+          "endLine": 100,
+          "tokens": 513
+        }
+      ],
+      "symbolSource": "ts",
+      "importance": 0.0378
+    },
+    "training/hard_dev_items.py": {
+      "description": "A small hand-written calibration set in the style of JevBench's hard tier (not its items).",
+      "tokens": 7854,
+      "hash": "5cf17437ce8fb480",
+      "size": 27521,
+      "mtimeMs": 1790665417687.2231,
+      "updatedAt": "2026-09-29T07:03:54.144Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "noul",
+          "kind": "fn",
+          "startLine": 20,
+          "endLine": 21,
+          "tokens": 40
+        },
+        {
+          "name": "choice",
+          "kind": "fn",
+          "startLine": 24,
+          "endLine": 25,
+          "tokens": 33
+        },
+        {
+          "name": "main",
+          "kind": "fn",
+          "startLine": 280,
+          "endLine": 286,
+          "tokens": 100
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "def noul(instructions, true, false):\ndef choice(instructions, options):\ndef main() -> None:",
+      "importance": 0.0378
+    },
+    "training/lora.py": {
+      "description": "LoRA-tune a causal LM as a one-pass decision model: cross-entropy on the option-letter logits.",
+      "tokens": 3588,
+      "hash": "203783355fcfc061",
+      "size": 12557,
+      "mtimeMs": 1790686419445.2192,
+      "updatedAt": "2026-09-29T12:53:39.498Z",
+      "source": "hook",
+      "symbols": [
+        {
+          "name": "fla_backward_ok",
+          "kind": "fn",
+          "startLine": 44,
+          "endLine": 53,
+          "tokens": 87
+        },
+        {
+          "name": "encode_items",
+          "kind": "fn",
+          "startLine": 54,
+          "endLine": 81,
+          "tokens": 277
+        },
+        {
+          "name": "encode_lm",
+          "kind": "fn",
+          "startLine": 82,
+          "endLine": 95,
+          "tokens": 201
+        },
+        {
+          "name": "lm_loss",
+          "kind": "fn",
+          "startLine": 96,
+          "endLine": 111,
+          "tokens": 221
+        },
+        {
+          "name": "batch_logits",
+          "kind": "fn",
+          "startLine": 112,
+          "endLine": 119,
+          "tokens": 106
+        },
+        {
+          "name": "loss_of",
+          "kind": "fn",
+          "startLine": 120,
+          "endLine": 133,
+          "tokens": 163
+        },
+        {
+          "name": "evaluate",
+          "kind": "fn",
+          "startLine": 134,
+          "endLine": 173,
+          "tokens": 455
+        },
+        {
+          "name": "main",
+          "kind": "fn",
+          "startLine": 174,
+          "endLine": 295,
+          "tokens": 1756
+        }
+      ]
+    },
+    "training/mmlu_leak.py": {
+      "description": "Did training on MMLU-Pro test items inflate JevK5's MMLU-Pro accuracy?",
+      "tokens": 768,
+      "hash": "265f4eaba9e30b7c",
+      "size": 2688,
+      "mtimeMs": 1790665417687.2231,
+      "updatedAt": "2026-09-29T07:03:54.144Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "key",
+          "kind": "fn",
+          "startLine": 16,
+          "endLine": 17,
+          "tokens": 15
+        },
+        {
+          "name": "hits",
+          "kind": "fn",
+          "startLine": 29,
+          "endLine": 39,
+          "tokens": 130
+        }
+      ],
+      "symbolSource": "ts",
+      "importance": 0.0378
+    },
+    "training/order_avg.py": {
+      "description": "Does reading each question in two option orders and averaging help? (never on JevBench items)",
+      "tokens": 1056,
+      "hash": "d902f883e6249f65",
+      "size": 3693,
+      "mtimeMs": 1790665417687.2231,
+      "updatedAt": "2026-09-29T07:03:54.145Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "ece",
+          "kind": "fn",
+          "startLine": 23,
+          "endLine": 33,
+          "tokens": 134
+        },
+        {
+          "name": "order_probs",
+          "kind": "fn",
+          "startLine": 36,
+          "endLine": 47,
+          "tokens": 174
+        },
+        {
+          "name": "report",
+          "kind": "fn",
+          "startLine": 50,
+          "endLine": 54,
+          "tokens": 123
+        },
+        {
+          "name": "main",
+          "kind": "fn",
+          "startLine": 57,
+          "endLine": 79,
+          "tokens": 383
+        }
+      ],
+      "symbolSource": "ts",
+      "imports": [
+        "jevk5/runtime.py"
+      ],
+      "importance": 0.0485
+    },
+    "training/README.md": {
+      "description": "Project documentation",
+      "tokens": 470,
+      "hash": "9b67312926813549",
+      "size": 1879,
+      "mtimeMs": 1790665417687.136,
+      "updatedAt": "2026-09-29T07:03:54.145Z",
+      "source": "scan",
+      "importance": 0.0378
+    },
+    "training/teacher.py": {
+      "description": "Hard decisions written and checked by a teacher LLM (any OpenAI-compatible server, e.g. vLLM).",
+      "tokens": 14697,
+      "hash": "08a79d0099ccfde3",
+      "size": 51440,
+      "mtimeMs": 1790665417687.2231,
+      "updatedAt": "2026-09-29T07:03:54.145Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "Client",
+          "kind": "class",
+          "startLine": 255,
+          "endLine": 308,
+          "tokens": 510
+        },
+        {
+          "name": "Client.__init__",
+          "kind": "method",
+          "startLine": 256,
+          "endLine": 258,
+          "tokens": 57
+        },
+        {
+          "name": "Client._get",
+          "kind": "method",
+          "startLine": 260,
+          "endLine": 265,
+          "tokens": 82
+        },
+        {
+          "name": "Client.begin_doc",
+          "kind": "method",
+          "startLine": 267,
+          "endLine": 268,
+          "tokens": 13
+        },
+        {
+          "name": "Client.end_doc",
+          "kind": "method",
+          "startLine": 270,
+          "endLine": 271,
+          "tokens": 15
+        },
+        {
+          "name": "Client.doc_tiers",
+          "kind": "method",
+          "startLine": 273,
+          "endLine": 274,
+          "tokens": 15
+        },
+        {
+          "name": "Client.chat",
+          "kind": "method",
+          "startLine": 276,
+          "endLine": 308,
+          "tokens": 323
+        },
+        {
+          "name": "request_usd",
+          "kind": "fn",
+          "startLine": 316,
+          "endLine": 325,
+          "tokens": 124
+        },
+        {
+          "name": "BudgetReached",
+          "kind": "class",
+          "startLine": 328,
+          "endLine": 329,
+          "tokens": 13
+        },
+        {
+          "name": "Spend",
+          "kind": "class",
+          "startLine": 332,
+          "endLine": 352,
+          "tokens": 269
+        },
+        {
+          "name": "Spend.__init__",
+          "kind": "method",
+          "startLine": 336,
+          "endLine": 339,
+          "tokens": 59
+        },
+        {
+          "name": "Spend.add",
+          "kind": "method",
+          "startLine": 341,
+          "endLine": 343,
+          "tokens": 39
+        },
+        {
+          "name": "Spend.usd",
+          "kind": "method",
+          "startLine": 345,
+          "endLine": 352,
+          "tokens": 114
+        },
+        {
+          "name": "OpenAIClient",
+          "kind": "class",
+          "startLine": 355,
+          "endLine": 492,
+          "tokens": 1602
+        },
+        {
+          "name": "OpenAIClient.__init__",
+          "kind": "method",
+          "startLine": 359,
+          "endLine": 381,
+          "tokens": 216
+        },
+        {
+          "name": "OpenAIClient.begin_doc",
+          "kind": "method",
+          "startLine": 383,
+          "endLine": 384,
+          "tokens": 25
+        },
+        {
+          "name": "OpenAIClient.end_doc",
+          "kind": "method",
+          "startLine": 386,
+          "endLine": 387,
+          "tokens": 26
+        },
+        {
+          "name": "OpenAIClient.doc_tiers",
+          "kind": "method",
+          "startLine": 389,
+          "endLine": 390,
+          "tokens": 36
+        },
+        {
+          "name": "OpenAIClient._note_limits",
+          "kind": "method",
+          "startLine": 392,
+          "endLine": 399,
+          "tokens": 106
+        },
+        {
+          "name": "OpenAIClient._post",
+          "kind": "method",
+          "startLine": 401,
+          "endLine": 450,
+          "tokens": 702
+        },
+        {
+          "name": "OpenAIClient.chat",
+          "kind": "method",
+          "startLine": 452,
+          "endLine": 492,
+          "tokens": 432
+        },
+        {
+          "name": "question_spec",
+          "kind": "fn",
+          "startLine": 495,
+          "endLine": 522,
+          "tokens": 350
+        },
+        {
+          "name": "make_spec",
+          "kind": "fn",
+          "startLine": 535,
+          "endLine": 552,
+          "tokens": 203
+        },
+        {
+          "name": "author_prompt",
+          "kind": "fn",
+          "startLine": 555,
+          "endLine": 593,
+          "tokens": 509
+        },
+        {
+          "name": "check_question",
+          "kind": "fn",
+          "startLine": 596,
+          "endLine": 637,
+          "tokens": 488
+        },
+        {
+          "name": "check_distribution",
+          "kind": "fn",
+          "startLine": 640,
+          "endLine": 659,
+          "tokens": 272
+        },
+        {
+          "name": "parse_document",
+          "kind": "fn",
+          "startLine": 662,
+          "endLine": 676,
+          "tokens": 174
+        },
+        {
+          "name": "options_of",
+          "kind": "fn",
+          "startLine": 679,
+          "endLine": 685,
+          "tokens": 90
+        },
+        {
+          "name": "labels",
+          "kind": "fn",
+          "startLine": 688,
+          "endLine": 690,
+          "tokens": 60
+        },
+        {
+          "name": "solve_prompt",
+          "kind": "fn",
+          "startLine": 693,
+          "endLine": 699,
+          "tokens": 110
+        }
+      ],
+      "symbolSource": "ts",
+      "skeleton": "class Client:\n    def __init__(self, url: str, key: str, model: str | None = None) -> None:\n    def _get(self, path: str) -> dict:\n    def begin_doc(self) -> None:\n    def end_doc(self) -> None:\n    def doc_tiers(self) -> None:\n    def chat(\ndef request_usd(usage: dict, tier: str | None) -> float:\nclass BudgetReached(RuntimeError):\nclass Spend:\n    def __init__(self, path: Path) -> None:\n    def add(self, entry: dict) -> None:\n    def usd(self) -> float:\nclass OpenAIClient:\n    def __init__(\n    def begin_doc(self) -> None:\n    def end_doc(self) -> float:\n    def doc_tiers(self) -> str:\n    def _note_limits(self, headers) -> None:\n    def _post(self, body: dict) -> dict:\n    def chat(\ndef question_spec(rng: random.Random, family: str) -> dict:\ndef make_spec(\ndef author_prompt(spec: dict) -> str:\ndef check_question(raw: dict, qspec: dict) -> dict | None:\ndef check_distribution(dist, item: dict) -> dict | None:\ndef parse_document(text: str, spec: dict) -> tuple[str | dict, list[dict | None]] | None:\ndef options_of(question: dict) -> list[tuple[str, str]]:\ndef labels(n: int) -> list[str]:\ndef solve_prompt(item: dict) -> str:",
+      "importance": 0.0378
+    },
+    "training/temp_choice.py": {
+      "description": "Compare temperature settings on held-out data only (never on JevBench items).",
+      "tokens": 710,
+      "hash": "00bb9984b286e0df",
+      "size": 2482,
+      "mtimeMs": 1790665417687.2231,
+      "updatedAt": "2026-09-29T07:03:54.145Z",
+      "source": "scan",
+      "symbols": [
+        {
+          "name": "softmax_t",
+          "kind": "fn",
+          "startLine": 24,
+          "endLine": 27,
+          "tokens": 42
+        },
+        {
+          "name": "main",
+          "kind": "fn",
+          "startLine": 30,
+          "endLine": 57,
+          "tokens": 430
+        }
+      ],
+      "symbolSource": "ts",
+      "imports": [
+        "training/lora.py",
+        "training/order_avg.py",
+        "jevk5/runtime.py"
+      ],
+      "importance": 0.0378
+    },
+    "IDEAS.md": {
+      "description": "Ideas (parked)",
+      "tokens": 757,
+      "hash": "25197ee7292a3e73",
+      "size": 3029,
+      "mtimeMs": 1790684794642.064,
+      "updatedAt": "2026-09-29T12:26:34.696Z",
+      "source": "hook"
+    },
+    "jevk5/decompose.py": {
+      "description": "Logical forms for `jevk5.tractatus`, written by an LLM on an OpenAI-compatible server.",
+      "tokens": 2418,
+      "hash": "482bf9f65dd7b02b",
+      "size": 8463,
+      "mtimeMs": 1790684736903.8708,
+      "updatedAt": "2026-09-29T12:25:36.959Z",
+      "source": "hook",
+      "symbols": [
+        {
+          "name": "reply",
+          "kind": "fn",
+          "startLine": 55,
+          "endLine": 68,
+          "tokens": 225
+        },
+        {
+          "name": "chat",
+          "kind": "fn",
+          "startLine": 69,
+          "endLine": 73,
+          "tokens": 67
+        },
+        {
+          "name": "parse",
+          "kind": "fn",
+          "startLine": 74,
+          "endLine": 85,
+          "tokens": 120
+        },
+        {
+          "name": "Decomposer",
+          "kind": "class",
+          "startLine": 86,
+          "endLine": 167,
+          "tokens": 1134
+        }
+      ]
+    },
+    "bench/tractatus_eval.py": {
+      "description": "JevK5 through a logical form (jevk5.tractatus) on JevBench's public items, against its single pass.",
+      "tokens": 3168,
+      "hash": "52b5c2df720d920d",
+      "size": 11087,
+      "mtimeMs": 1790691338654.8677,
+      "updatedAt": "2026-09-29T14:15:38.780Z",
+      "source": "hook",
+      "symbols": [
+        {
+          "name": "labelled",
+          "kind": "fn",
+          "startLine": 39,
+          "endLine": 45,
+          "tokens": 86
+        },
+        {
+          "name": "retried",
+          "kind": "fn",
+          "startLine": 46,
+          "endLine": 55,
+          "tokens": 87
+        },
+        {
+          "name": "direct",
+          "kind": "fn",
+          "startLine": 56,
+          "endLine": 62,
+          "tokens": 106
+        },
+        {
+          "name": "mcnemar",
+          "kind": "fn",
+          "startLine": 63,
+          "endLine": 71,
+          "tokens": 76
+        },
+        {
+          "name": "summarize",
+          "kind": "fn",
+          "startLine": 72,
+          "endLine": 99,
+          "tokens": 403
+        },
+        {
+          "name": "load",
+          "kind": "fn",
+          "startLine": 100,
+          "endLine": 129,
+          "tokens": 464
+        },
+        {
+          "name": "main",
+          "kind": "fn",
+          "startLine": 130,
+          "endLine": 221,
+          "tokens": 1495
+        }
+      ]
+    },
+    "tests/test_tractatus.py": {
+      "description": "The Tractatus readout in jevk5.tractatus (and the decomposer's parsing), checked against models with",
+      "tokens": 2098,
+      "hash": "1fa574c6b90329af",
+      "size": 7343,
+      "mtimeMs": 1790684538480.2507,
+      "updatedAt": "2026-09-29T12:22:18.612Z",
+      "source": "hook",
+      "symbols": [
+        {
+          "name": "Model",
+          "kind": "class",
+          "startLine": 22,
+          "endLine": 36,
+          "tokens": 179
+        },
+        {
+          "name": "test_formula_reads_and_or_not",
+          "kind": "fn",
+          "startLine": 37,
+          "endLine": 47,
+          "tokens": 107
+        },
+        {
+          "name": "test_formula_rejects_anything_else",
+          "kind": "fn",
+          "startLine": 48,
+          "endLine": 52,
+          "tokens": 31
+        },
+        {
+          "name": "test_noul_multiplies_independent_atoms",
+          "kind": "fn",
+          "startLine": 53,
+          "endLine": 59,
+          "tokens": 97
+        },
+        {
+          "name": "test_shared_atoms_are_evaluated_jointly",
+          "kind": "fn",
+          "startLine": 60,
+          "endLine": 66,
+          "tokens": 118
+        },
+        {
+          "name": "test_decision_list_takes_the_first_rule_that_holds",
+          "kind": "fn",
+          "startLine": 67,
+          "endLine": 91,
+          "tokens": 378
+        },
+        {
+          "name": "test_validate_rejects_forms_the_composer_cannot_read",
+          "kind": "fn",
+          "startLine": 92,
+          "endLine": 96,
+          "tokens": 42
+        },
+        {
+          "name": "test_without_a_form_the_question_is_read_whole",
+          "kind": "fn",
+          "startLine": 97,
+          "endLine": 102,
+          "tokens": 62
+        },
+        {
+          "name": "test_compose_judges_each_atom_once",
+          "kind": "fn",
+          "startLine": 103,
+          "endLine": 114,
+          "tokens": 167
+        },
+        {
+          "name": "test_checklist_reads_once_with_the_atoms_appended",
+          "kind": "fn",
+          "startLine": 115,
+          "endLine": 122,
+          "tokens": 115
+        },
+        {
+          "name": "test_a_supplied_form_that_does_not_fit_raises",
+          "kind": "fn",
+          "startLine": 123,
+          "endLine": 127,
+          "tokens": 55
+        },
+        {
+          "name": "test_parse_finds_the_json_object_in_a_reply",
+          "kind": "fn",
+          "startLine": 128,
+          "endLine": 134,
+          "tokens": 69
+        },
+        {
+          "name": "replying",
+          "kind": "fn",
+          "startLine": 135,
+          "endLine": 140,
+          "tokens": 46
+        },
+        {
+          "name": "test_decomposer_returns_only_forms_the_composer_can_read",
+          "kind": "fn",
+          "startLine": 141,
+          "endLine": 148,
+          "tokens": 105
+        },
+        {
+          "name": "test_a_blind_decomposer_never_sends_the_evidence",
+          "kind": "fn",
+          "startLine": 149,
+          "endLine": 156,
+          "tokens": 98
+        },
+        {
+          "name": "test_a_score_form_is_a_decision_list_over_the_levels",
+          "kind": "fn",
+          "startLine": 157,
+          "endLine": 170,
+          "tokens": 212
+        },
+        {
+          "name": "test_answer_reads_the_option_id",
+          "kind": "fn",
+          "startLine": 171,
+          "endLine": 174,
+          "tokens": 52
+        }
+      ]
+    },
+    "jevk5/tractatus.py": {
+      "description": "Decisions through a logical form: the answer as a truth-function of elementary propositions.",
+      "tokens": 2181,
+      "hash": "da9922454d061dea",
+      "size": 7631,
+      "mtimeMs": 1790684501579.9468,
+      "updatedAt": "2026-09-29T12:21:41.658Z",
+      "source": "hook",
+      "symbols": [
+        {
+          "name": "formula",
+          "kind": "fn",
+          "startLine": 38,
+          "endLine": 72,
+          "tokens": 418
+        },
+        {
+          "name": "validate",
+          "kind": "fn",
+          "startLine": 73,
+          "endLine": 104,
+          "tokens": 464
+        },
+        {
+          "name": "_pick",
+          "kind": "fn",
+          "startLine": 105,
+          "endLine": 115,
+          "tokens": 165
+        },
+        {
+          "name": "compose",
+          "kind": "fn",
+          "startLine": 116,
+          "endLine": 124,
+          "tokens": 135
+        },
+        {
+          "name": "checklist",
+          "kind": "fn",
+          "startLine": 125,
+          "endLine": 130,
+          "tokens": 96
+        },
+        {
+          "name": "Tractatus",
+          "kind": "class",
+          "startLine": 131,
+          "endLine": 162,
+          "tokens": 444
+        }
+      ]
+    },
+    "bench/tractatus_pilot.py": {
+      "description": "Pilot: the 4B analyses its own uncertain answers, all local (llama.cpp), on JevBench's public items.",
+      "tokens": 2586,
+      "hash": "7db64ea9a264a884",
+      "size": 9051,
+      "mtimeMs": 1790683879523.5928,
+      "updatedAt": "2026-09-29T12:11:19.587Z",
+      "source": "hook",
+      "symbols": [
+        {
+          "name": "top",
+          "kind": "fn",
+          "startLine": 38,
+          "endLine": 41,
+          "tokens": 25
+        },
+        {
+          "name": "think",
+          "kind": "fn",
+          "startLine": 42,
+          "endLine": 56,
+          "tokens": 243
+        },
+        {
+          "name": "analyse",
+          "kind": "fn",
+          "startLine": 57,
+          "endLine": 81,
+          "tokens": 349
+        },
+        {
+          "name": "decide",
+          "kind": "fn",
+          "startLine": 82,
+          "endLine": 95,
+          "tokens": 162
+        },
+        {
+          "name": "summarize",
+          "kind": "fn",
+          "startLine": 96,
+          "endLine": 128,
+          "tokens": 574
+        },
+        {
+          "name": "main",
+          "kind": "fn",
+          "startLine": 129,
+          "endLine": 176,
+          "tokens": 739
+        }
+      ]
+    },
+    "training/tractatus_data.py": {
+      "description": "Tractatus supervision for teacher questions: the teacher's logical form of each kept question, with ",
+      "tokens": 1496,
+      "hash": "b5bd67c7b54e288b",
+      "size": 5234,
+      "mtimeMs": 1790690051476.2678,
+      "updatedAt": "2026-09-29T13:54:11.522Z",
+      "source": "hook",
+      "symbols": [
+        {
+          "name": "tractatus",
+          "kind": "fn",
+          "startLine": 37,
+          "endLine": 54,
+          "tokens": 227
+        },
+        {
+          "name": "main",
+          "kind": "fn",
+          "startLine": 55,
+          "endLine": 104,
+          "tokens": 747
+        }
+      ]
+    },
+    "docs/tractatus-lora.md": {
+      "description": "Tractatus-supervised LoRA: plan and acceptance criteria",
+      "tokens": 814,
+      "hash": "bfb0fc0308c06a58",
+      "size": 3255,
+      "mtimeMs": 1790684792853.069,
+      "updatedAt": "2026-09-29T12:26:32.915Z",
+      "source": "hook"
+    },
+    "training/mock.py": {
+      "description": "A tiny, randomly initialised stand-in for JevK5: same architecture, tokenizer and layer pattern as t",
+      "tokens": 592,
+      "hash": "6d143b6854ae02fe",
+      "size": 2072,
+      "mtimeMs": 1790685006607.8318,
+      "updatedAt": "2026-09-29T12:30:06.658Z",
+      "source": "hook",
+      "symbols": [
+        {
+          "name": "main",
+          "kind": "fn",
+          "startLine": 32,
+          "endLine": 57,
+          "tokens": 302
+        }
+      ]
+    },
+    "training/build_tractatus.py": {
+      "description": "Training rows for the Tractatus-supervised LoRA, or for its answer-only control, from tractatus_data",
+      "tokens": 1021,
+      "hash": "8430e1226b25130f",
+      "size": 3572,
+      "mtimeMs": 1790685051676.8618,
+      "updatedAt": "2026-09-29T12:30:51.732Z",
+      "source": "hook",
+      "symbols": [
+        {
+          "name": "held_out",
+          "kind": "fn",
+          "startLine": 27,
+          "endLine": 30,
+          "tokens": 37
+        },
+        {
+          "name": "rows",
+          "kind": "fn",
+          "startLine": 31,
+          "endLine": 48,
+          "tokens": 285
+        },
+        {
+          "name": "main",
+          "kind": "fn",
+          "startLine": 49,
+          "endLine": 76,
+          "tokens": 367
+        }
+      ]
+    },
+    "tests/test_lora_text.py": {
+      "description": "lora.py's text loss (the Tractatus form rows) equals transformers' own causal-LM loss on the target ",
+      "tokens": 458,
+      "hash": "d03b02717ec9eb0f",
+      "size": 1603,
+      "mtimeMs": 1790685391923.7002,
+      "updatedAt": "2026-09-29T12:36:31.969Z",
+      "source": "hook"
+    },
+    "training/tractatus_pipeline.sh": {
+      "description": "The Tractatus LoRA pipeline, end to end: rows -> both LoRAs (Tractatus and answer-only control) -> G",
+      "tokens": 530,
+      "hash": "d0aabfc57ac14bf2",
+      "size": 1985,
+      "mtimeMs": 1790685530008.2612,
+      "updatedAt": "2026-09-29T12:38:50.070Z",
+      "source": "hook"
+    },
+    "bench/acceptance.py": {
+      "description": "The acceptance test of docs/tractatus-lora.md: v0.3, the answer-only control and the Tractatus LoRA,",
+      "tokens": 1998,
+      "hash": "d02fdb5d3c2ad789",
+      "size": 6991,
+      "mtimeMs": 1790686669359.8003,
+      "updatedAt": "2026-09-29T12:57:49.408Z",
+      "source": "hook",
+      "symbols": [
+        {
+          "name": "logits",
+          "kind": "fn",
+          "startLine": 28,
+          "endLine": 33,
+          "tokens": 90
+        },
+        {
+          "name": "at",
+          "kind": "fn",
+          "startLine": 34,
+          "endLine": 40,
+          "tokens": 69
+        },
+        {
+          "name": "nll",
+          "kind": "fn",
+          "startLine": 41,
+          "endLine": 44,
+          "tokens": 46
+        },
+        {
+          "name": "ece",
+          "kind": "fn",
+          "startLine": 45,
+          "endLine": 53,
+          "tokens": 101
+        },
+        {
+          "name": "run",
+          "kind": "fn",
+          "startLine": 54,
+          "endLine": 71,
+          "tokens": 272
+        },
+        {
+          "name": "scored",
+          "kind": "fn",
+          "startLine": 72,
+          "endLine": 81,
+          "tokens": 105
+        },
+        {
+          "name": "compare",
+          "kind": "fn",
+          "startLine": 82,
+          "endLine": 124,
+          "tokens": 710
+        },
+        {
+          "name": "main",
+          "kind": "fn",
+          "startLine": 125,
+          "endLine": 146,
+          "tokens": 264
+        }
+      ]
+    },
+    "training/replay.py": {
+      "description": "A small public replay for the Tractatus LoRA: train splits of openly licensed multiple-choice and ye",
+      "tokens": 1370,
+      "hash": "0a9e6a81908e1eff",
+      "size": 4794,
+      "mtimeMs": 1790690244346.0767,
+      "updatedAt": "2026-09-29T13:57:24.408Z",
+      "source": "hook",
+      "symbols": [
+        {
+          "name": "shingles",
+          "kind": "fn",
+          "startLine": 42,
+          "endLine": 46,
+          "tokens": 53
+        },
+        {
+          "name": "row",
+          "kind": "fn",
+          "startLine": 47,
+          "endLine": 58,
+          "tokens": 180
+        },
+        {
+          "name": "main",
+          "kind": "fn",
+          "startLine": 59,
+          "endLine": 99,
+          "tokens": 541
+        }
+      ]
+    }
+  },
+  "preamble": [
+    "> Project structure index. Auto-maintained by OpenWolf hooks and daemon.",
+    "> Run `openwolf scan` to generate, or wait for the first Claude Code session.",
+    "> Status: Pending initial scan"
+  ]
+}

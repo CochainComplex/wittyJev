@@ -191,6 +191,7 @@ PROB_SOLVE_SYSTEM = (
 # Output-token cap per solution (reasoning included). OpenAI reserves the full cap against the
 # tokens-per-minute limit, so --max-solve-tokens trades headroom for parallel documents.
 SOLVE_MAX_TOKENS = 12000
+AUTHOR_MAX_TOKENS = 14000
 BANDS = {
     "noul": ["0.60-0.75", "0.75-0.90"],
     "choice": ["0.40-0.55", "0.55-0.70", "0.70-0.85"],
@@ -253,8 +254,8 @@ SOLVE_SYSTEM_WIDE = SOLVE_SYSTEM.replace("'Answer: <letter>'", "'Answer: <option
 
 
 class Client:
-    def __init__(self, url: str, key: str, model: str | None = None) -> None:
-        self.url, self.key = url.rstrip("/"), key
+    def __init__(self, url: str, key: str, model: str | None = None, effort: str | None = None) -> None:
+        self.url, self.key, self.effort = url.rstrip("/"), key, effort
         self.model = model or self._get("/v1/models")["data"][0]["id"]
 
     def _get(self, path: str) -> dict:
@@ -293,6 +294,7 @@ class Client:
             "temperature": temperature,
             "top_p": 0.95,
             "chat_template_kwargs": {"enable_thinking": thinking},
+            **({"reasoning_effort": self.effort} if thinking and self.effort else {}),
         }
         request = urllib.request.Request(
             self.url + "/v1/chat/completions",
@@ -786,7 +788,7 @@ def make_document(client: Client, spec: dict, solves: int) -> list[dict]:
             AUTHOR_SYSTEM,
             author_prompt(spec),
             thinking=True,
-            max_tokens=14000 if isinstance(client, Client) else 16000,
+            max_tokens=AUTHOR_MAX_TOKENS if isinstance(client, Client) else 16000,
             temperature=0.8,
             stage="author",
         )
@@ -937,6 +939,9 @@ def main(argv: list[str] | None = None) -> int:
         f"(extra: {', '.join(EXTRA_FAMILIES)}, paraphrase)",
     )
     parser.add_argument("--provider", choices=["vllm", "openai"], default="vllm")
+    parser.add_argument("--served-model", help="vllm: model id on the server (default: its first model)")
+    parser.add_argument("--served-effort", help="vllm: reasoning_effort for thinking calls (e.g. xhigh)")
+    parser.add_argument("--max-author-tokens", type=int, default=AUTHOR_MAX_TOKENS)
     parser.add_argument("--model", default="gpt-6-luna", help="openai model")
     parser.add_argument("--service-tier", default="flex")
     parser.add_argument("--effort-author", default="high", help="openai reasoning effort")
@@ -952,6 +957,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--max-solve-tokens", type=int, default=SOLVE_MAX_TOKENS)
     args = parser.parse_args(argv)
     globals()["SOLVE_MAX_TOKENS"] = args.max_solve_tokens
+    globals()["AUTHOR_MAX_TOKENS"] = args.max_author_tokens
     families, weights = [], []
     for part in args.families.split(","):
         name, _, weight = part.partition(":")
@@ -990,7 +996,7 @@ def main(argv: list[str] | None = None) -> int:
             flush=True,
         )
     else:
-        client = Client(args.url, os.environ.get("TEACHER_KEY", "EMPTY"))
+        client = Client(args.url, os.environ.get("TEACHER_KEY", "EMPTY"), args.served_model, args.served_effort)
         spend, tag, prefix = None, args.teacher_tag or client.model, ""
     rng = random.Random(args.seed)
     specs = [

@@ -1,0 +1,54 @@
+{
+ "direct": {
+  "n": 231,
+  "accuracy": 0.896,
+  "easy": 1.0,
+  "original": 1.0,
+  "hard": 0.784,
+  "hard_families": {
+   "adversarial": 1.0,
+   "ambiguous": 0.857,
+   "judge_hard": 0.941,
+   "long_policy": 0.842,
+   "multi_hop": 0.778,
+   "probability": 0.7,
+   "routing_hard": 1.0,
+   "temporal_numeric": 0.267,
+   "tradeoff": 0.833,
+   "trap": 1.0
+  },
+  "hard_ece": 0.194,
+  "families": {
+   "adequacy": 1.0,
+   "adversarial": 1.0,
+   "ambiguous": 0.857,
+   "extraction": 1.0,
+   "fact": 1.0,
+   "intent": 1.0,
+   "judge_hard": 0.941,
+   "long_policy": 0.842,
+   "multi_hop": 0.778,
+   "ordinal": 1.0,
+   "policy": 1.0,
+   "probability": 0.7,
+   "routing": 1.0,
+   "routing_hard": 1.0,
+   "temporal_numeric": 0.267,
+   "tool_selection": 1.0,
+   "tradeoff": 0.833,
+   "trap": 1.0
+  },
+  "ece": 0.092,
+  "brier": 0.208,
+  "with_form": 0,
+  "fixed_vs_holistic": 0,
+  "broken_vs_holistic": 0,
+  "mcnemar_p": 1.0
+ },
+ "form_source": {
+  "blind": false,
+  "effort": null,
+  "template": true
+ },
+ "rejected_forms": {}
+}

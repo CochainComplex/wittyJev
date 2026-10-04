@@ -79,6 +79,36 @@ def encode_items(dm: JevK5, items: list[dict], max_len: int) -> list[dict]:
     return out
 
 
+def encode_lm(dm: JevK5, items: list[dict], max_len: int) -> list[dict]:
+    """Rows that teach the model to write text (the Tractatus form): its chat prompt, then the target."""
+    out = []
+    for item in items:
+        prompt = dm.tok.apply_chat_template(
+            item["lm"]["messages"], tokenize=False, add_generation_prompt=True, enable_thinking=False
+        )
+        head = dm.tok.encode(prompt, add_special_tokens=False)
+        tail = dm.tok.encode(item["lm"]["target"] + "<|im_end|>", add_special_tokens=False)
+        if len(head) + len(tail) <= max_len:
+            out.append({"ids": head + tail, "start": len(head), "source": item["source"], "id": item.get("id")})
+    return out
+
+
+def lm_loss(dm: JevK5, rows: list[dict]) -> torch.Tensor:
+    """Mean token cross-entropy of each row's target, read from the hidden states at the target positions
+    only, so the prompt never costs full-vocabulary logits."""
+    lengths = [len(r["ids"]) for r in rows]
+    ids = torch.zeros((len(rows), max(lengths)), dtype=torch.long)
+    for i, r in enumerate(rows):
+        ids[i, : len(r["ids"])] = torch.tensor(r["ids"])
+    ids = ids.to(dm.device)
+    hidden = dm.model.model(input_ids=ids, use_cache=False).last_hidden_state
+    losses = [
+        F.cross_entropy(dm.model.lm_head(hidden[i, r["start"] - 1 : n - 1]).float(), ids[i, r["start"] : n])
+        for i, (r, n) in enumerate(zip(rows, lengths, strict=True))
+    ]
+    return torch.stack(losses).mean()
+
+
 def batch_logits(dm: JevK5, rows: list[dict]) -> torch.Tensor:
     lengths = torch.tensor([len(r["ids"]) for r in rows], device=dm.device)
     ids = torch.zeros((len(rows), int(lengths.max())), dtype=torch.long)
@@ -155,6 +185,9 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--warmup", type=int, default=50)
     parser.add_argument("--seed", type=int, default=0)
     parser.add_argument("--eval-before", action="store_true")
+    parser.add_argument("--device", default="cuda")
+    parser.add_argument("--lm-weight", type=float, default=0.5, help="weight of the form-writing rows' loss")
+    parser.add_argument("--steps", type=int, help="train exactly this many steps (overrides --epochs)")
     args = parser.parse_args(argv)
     from peft import LoraConfig, get_peft_model
 
@@ -165,11 +198,13 @@ def main(argv: list[str] | None = None) -> int:
 
     torch.manual_seed(args.seed)
     rng = np.random.default_rng(args.seed)
-    dm = JevK5(args.base, graphs=False, temperature=1.0)  # SemIf prompt, as at inference
+    dm = JevK5(args.base, device=args.device, graphs=False, temperature=1.0)  # SemIf prompt, as at inference
     load = lambda name: [json.loads(x) for x in (args.data / name).open()]  # noqa: E731
-    train = encode_items(dm, load("train.jsonl")[: args.limit], args.max_len)
+    items = load("train.jsonl")[: args.limit]
+    train = encode_items(dm, [i for i in items if "lm" not in i], args.max_len)
+    train_lm = encode_lm(dm, [i for i in items if "lm" in i], args.max_len)
     dev = encode_items(dm, load("dev.jsonl"), args.max_len)
-    print(f"train {len(train)}, dev {len(dev)} decisions", flush=True)
+    print(f"train {len(train)} decisions, {len(train_lm)} texts; dev {len(dev)} decisions", flush=True)
     log: dict = {"args": {k: str(v) for k, v in vars(args).items()}, "steps": []}
     if args.eval_before:
         log["before"] = evaluate(dm, dev)["report"]
@@ -188,39 +223,54 @@ def main(argv: list[str] | None = None) -> int:
     dm.model.train()
     params = [p for p in model.parameters() if p.requires_grad]
     optimizer = torch.optim.AdamW(params, lr=args.lr, weight_decay=0.0)
-    lengths = np.array([len(r["ids"]) for r in train])
-    plans = []
-    for _ in range(math.ceil(args.epochs)):
-        plan = plan_batches(
-            (lengths + rng.integers(0, 16, len(lengths))).tolist(),
-            token_budget=args.token_budget,
-            max_batch=64,
-            bucket=16,
-            max_length=10**6,
-        )
+    def epoch_plan() -> list[tuple[str, list[int]]]:
+        """One shuffled pass over all rows as (kind, row indices); every batch holds one kind of row."""
+        plan = []
+        for kind, data in (("decision", train), ("text", train_lm)):
+            if not data:
+                continue
+            lengths = np.array([len(r["ids"]) for r in data])
+            batches = plan_batches(
+                (lengths + rng.integers(0, 16, len(lengths))).tolist(),
+                token_budget=args.token_budget,
+                max_batch=64,
+                bucket=16,
+                max_length=10**6,
+            )
+            plan += [(kind, rows) for rows in batches]
         rng.shuffle(plan)
-        plans += plan
-    total = int(len(plans) * args.epochs / math.ceil(args.epochs))
+        return plan
+
+    plans = epoch_plan()
+    per_epoch = len(plans)
+    # --steps fixes the budget (the answer-only control matches the Tractatus LoRA's step count)
+    target = args.steps or per_epoch * math.ceil(args.epochs)
+    while len(plans) < target:
+        plans += epoch_plan()
+    total = args.steps or int(per_epoch * args.epochs)
+    log["total_steps"] = total
     schedule = lambda s: min(1.0, (s + 1) / args.warmup) * 0.5 * (1 + math.cos(math.pi * s / total))  # noqa: E731
     scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, schedule)
     started, window = time.perf_counter(), []
-    for step, rows in enumerate(plans[:total]):
-        batch = [train[i] for i in rows]
-        with torch.autocast("cuda", dtype=torch.bfloat16):
-            loss = loss_of(batch_logits(dm, batch), batch)
+    for step, (kind, rows) in enumerate(plans[:total]):
+        with torch.autocast(torch.device(args.device).type, dtype=torch.bfloat16):
+            if kind == "decision":
+                batch = [train[i] for i in rows]
+                loss = loss_of(batch_logits(dm, batch), batch)
+            else:
+                loss = args.lm_weight * lm_loss(dm, [train_lm[i] for i in rows])
         optimizer.zero_grad(set_to_none=True)
         loss.backward()
         torch.nn.utils.clip_grad_norm_(params, 1.0)
         optimizer.step()
         scheduler.step()
-        window.append(loss.item())
+        window.append((kind, loss.item()))
         if (step + 1) % 25 == 0:
             eta = (total - step - 1) * (time.perf_counter() - started) / (step + 1) / 60
-            log["steps"].append({"step": step + 1, "loss": float(np.mean(window))})
-            print(
-                f"step {step + 1}/{total} loss {np.mean(window):.4f} ~{eta:.0f} min left",
-                flush=True,
-            )
+            losses = {k: float(np.mean([v for w, v in window if w == k])) for k in {w for w, _ in window}}
+            log["steps"].append({"step": step + 1, **{f"loss_{k}": v for k, v in losses.items()}})
+            shown = ", ".join(f"{k} {v:.4f}" for k, v in sorted(losses.items()))
+            print(f"step {step + 1}/{total} loss {shown} ~{eta:.0f} min left", flush=True)
             window = []
     dm.model.gradient_checkpointing_disable()
     merged = model.merge_and_unload()

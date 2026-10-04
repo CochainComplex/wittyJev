@@ -73,6 +73,7 @@ class JevK5GGUF:
             knockout_temperature = float(values["knockout_temperature"])
         self.knockout_temperature = knockout_temperature
         self.missing = 0  # decisions where an option letter fell outside top_k
+        self.last_seconds = 0.0
 
     @staticmethod
     def _config(config: str | None) -> dict:
@@ -120,6 +121,20 @@ class JevK5GGUF:
             (timings.get("prompt_ms", 0.0) + timings.get("predicted_ms", 0.0)) / 1000,
         )
 
+    def letters(self, prompt: str, count: int) -> tuple[list[float], int]:
+        """The calibrated distribution over the first `count` answer letters after `prompt` (chat
+        template included), and the prompt's token count."""
+        seen, tokens, seconds = self._logprobs(prompt)
+        self.last_seconds += seconds
+        floor = min(seen.values(), default=0.0) - MISSING_MARGIN
+        logprobs = [seen.get(LETTERS[i], floor) for i in range(count)]
+        if any(LETTERS[i] not in seen for i in range(count)):
+            self.missing += 1
+        top = max(logprobs)
+        weights = [math.exp((z - top) / self.temperature) for z in logprobs]
+        total = sum(weights)
+        return [w / total for w in weights], tokens
+
     def probabilities(self, state, question: dict) -> tuple[dict[str, float], int]:
         """Calibrated probability per option id, and the input token count (summed over passes
         when a question has more than 16 options; the longest pass is `last_pass_tokens`)."""
@@ -128,19 +143,10 @@ class JevK5GGUF:
 
         def read(texts: list[str]) -> list[float]:
             nonlocal tokens
-            prompt = prompt_text(state, question["instructions"], texts)
-            seen, count, seconds = self._logprobs(prompt)
+            probs, count = self.letters(prompt_text(state, question["instructions"], texts), len(texts))
             tokens += count
             self.last_pass_tokens = max(self.last_pass_tokens, count)
-            self.last_seconds += seconds
-            floor = min(seen.values(), default=0.0) - MISSING_MARGIN
-            logprobs = [seen.get(LETTERS[i], floor) for i in range(len(texts))]
-            if any(LETTERS[i] not in seen for i in range(len(texts))):
-                self.missing += 1
-            top = max(logprobs)
-            weights = [math.exp((z - top) / self.temperature) for z in logprobs]
-            total = sum(weights)
-            return [w / total for w in weights]
+            return probs
 
         second = self.knockout_temperature if self.method == "knockout" else None
         probs = spread(read, [text for _, text in options], self.method, second)

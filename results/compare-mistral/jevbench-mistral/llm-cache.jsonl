@@ -1,0 +1,231 @@
+{"key": "431e920500f056a308f421ca62389bb3b70418545fcb56f9f0963dceab467e90", "reply": "```json\n{\"answer\": \"cancel_order\"}\n```"}
+{"key": "6f865a6af78334e162e14c0272b25c0207eaf0098fe7b941dbd28bb7421a0be4", "reply": "```json\n{\"answer\": \"track_order: Wants to know where an order is or when it arrives\"}\n```"}
+{"key": "5fdc3f0d9edd6eace194961e64bfd541e05656e66ce3c36a86500ef8d2626f4b", "reply": "```json\n{\n  \"answer\": \"track_order\"\n}\n```"}
+{"key": "3c6c04d875a6891f0e25838f14ce90c32e977ab88184721960617a7cffa36591", "reply": "```json\n{\"answer\": \"change_address\"}\n```"}
+{"key": "a4e38ce7978de47a753118709a1c3545fa609dcd4c6baba21a697c5b0beefd4f", "reply": "```json\n{\"answer\": \"report_damage\"}\n```"}
+{"key": "7c34fa9f2276be0fab56957f4b2f502d1198eef8323a78040184c09d09fbe014", "reply": "```json\n{\"answer\": \"set_alarm\"}\n```"}
+{"key": "cd4e9037dfaf9811fdba7167db6bb5462b6ba04d4ee74d14c722073a0bcac3d0", "reply": "```json\n{\"answer\": \"billing_question\"}\n```"}
+{"key": "8ab0042ebaa3c5047dd02c038d876b8760d544f3a1dc19d93bf86d189b494dc1", "reply": "```json\n{\"answer\": \"play_music: Play a song, album, artist or playlist\"}\n```"}
+{"key": "75045b6ab6aa9576ae4c479be1ee86dc0cab8a6f118fbac91fd2552f0acd299a", "reply": "```json\n{\"answer\": \"weather\"}\n```"}
+{"key": "7d69e96b97529ab4ad8d46b53a0cccbea49285374c8e0fa5b6512f8231d2926e", "reply": "```json\n{\"answer\": \"send_message\"}\n```"}
+{"key": "0190e6c3da48d3ec8d57eeff0e9116a4be697af88ff3086056b2098fa5e81ef2", "reply": "```json\n{\n  \"answer\": \"true: The text states that this is so\"\n}\n```"}
+{"key": "091d3f24cf66e050262649c65ed0bef4e1f1ac95052878d95a4d7d5d7e59def4", "reply": "```json\n{\"answer\": \"turn_off_lights\"}\n```"}
+{"key": "5f8bc297add184c2954298f2b096315352ed850fe08011231fe60f8ad6cf988d", "reply": "```json\n{\"answer\": \"false: The text states that this is not so\"}\n```"}
+{"key": "561cb23a405a7e5e0bc1bb76ddc8a11635474743a8d986724acc99c78416bb46", "reply": "```json\n{\"answer\": \"set_alarm\"}\n```"}
+{"key": "09164bf21cd3b3fd9887d4c5241bc9b32d49f2f201e11e1af542077ef5c3a8ce", "reply": "```json\n{\"answer\": \"true: The text states that this is so\"}\n```"}
+{"key": "264d6d4217cc42ec7ef83fed8dbbef9b02d7cb66c8e485b8182fff309b94e0bd", "reply": "```json\n{\n  \"answer\": \"false: The text states that this is not so\"\n}\n```"}
+{"key": "2963b59eb827296efb17febc2cce26b4010621d1b9483780ae669ac39c728995", "reply": "```json\n{\"answer\": \"true: The text states that this is so\"}\n```"}
+{"key": "390c5c7df0a12fe99bc82ebfbaf32d97042f8846b5989a0999a06b7e8db70748", "reply": "```json\n{\n  \"answer\": \"false: The text states that this is not so\"\n}\n```"}
+{"key": "ee86a053b842d324447f960337923e712ce7198e53beb839e2c4837e354f9a48", "reply": "```json\n{\"answer\": \"true: The text states that this is so\"}\n```"}
+{"key": "063f4567366ad0345b96f27df734c590bc5097a5744bedb6bd7e254b8b03b854", "reply": "```json\n{\"answer\": \"true: The text states that this is so\"}\n```"}
+{"key": "55022683eafb60f06961162fb3842433e11f5138c0df1dcebaf9cb8eaafced34", "reply": "```json\n{\n  \"answer\": \"false: The text states that this is not so\"\n}\n```"}
+{"key": "d3ba0170ad03dbe82438e80ae39af209fe9addc436c4e0099fe557c49fbf6fb7", "reply": "```json\n{\n  \"answer\": \"true: The text states that this is so\"\n}\n```"}
+{"key": "b47c270f0113acf2348b4dc4ff725cb0f0a66c80c3cd94eb4fe57bab43a7d8d6", "reply": "```json\n{\n  \"answer\": \"false: The text states that this is not so\"\n}\n```"}
+{"key": "98035c4ae15d4c5a6ef748eb907d2d3bd7713a011b69b425c243597eedf5844d", "reply": "```json\n{\"answer\": \"false: The text states that this is not so\"}\n```"}
+{"key": "70a6ad3a2af3a383bb0808a038311775c07721eb7fd2b4fa87441fc3a0afd4df", "reply": "```json\n{\"answer\": \"cash\"}\n```"}
+{"key": "fb71e98ae611a1fbff28c884f948fb4e08f4f52b6632df16d0be45e92a59ce71", "reply": "```json\n{\"answer\": \"paypal\"}\n```"}
+{"key": "1231eb094bcc16975f577c9eb8ee7ccbdcc0ae623825ec1f7b80e4bdbe05f1da", "reply": "```json\n{\"answer\": \"low\"}\n```"}
+{"key": "c793719da8587e99d66d6b1fdda36a033a315bdf9ba726c028a48fbcc7b374fd", "reply": "```json\n{\"answer\": \"bank_transfer\"}\n```"}
+{"key": "cdec3a19dd7810941ade3d7415972d8d62badb98165b1032fc2264e18ead86d6", "reply": "```json\n{\"answer\": \"high\"}\n```"}
+{"key": "bf165ebf4874453f1430d2b502bff8d6ce623cbe82c1bf316d26e204b9391983", "reply": "```json\n{\"answer\": \"urgent\"}\n```"}
+{"key": "a6268bddf649e3e4a7ba7e91fd9db0a1f46a021433587b5684a763b1091d265c", "reply": "```json\n{\"answer\": \"thursday\"}\n```"}
+{"key": "9d15953c76a7f3061549bf1625c0e1310c75ef4bf81768eaee637817414ad6c0", "reply": "```json\n{\"answer\": \"4\"}\n```"}
+{"key": "ae2a245fe0584404cc80ccce4cac29a34033f6f86765f91ae607782438f9c9ec", "reply": "```json\n{\"answer\": \"M\"}\n```"}
+{"key": "38b3aba07bc846c73b6e8fcfbedbf953a614801d677629407ef3131bc1aeaea7", "reply": "```json\n{\"answer\": \"monday\"}\n```"}
+{"key": "d9e02413bcb6f2e774468ba50badbaea521a8a13eb74e3990a027c38ed4d029c", "reply": "```json\n{\"answer\": \"friday\"}\n```"}
+{"key": "9de2aaed1ae5ca6993b6033b065ae6ac169b93f487b6d595690cd4d57d73fd92", "reply": "```json\n{\"answer\": \"3\"}\n```"}
+{"key": "9fc9fc036432a4af53ca7bc3840ca0b023b5dbd165d4ee9afe2f241ebbf95b39", "reply": "```json\n{\n  \"answer\": \"credit_card\"\n}\n```"}
+{"key": "5cdefe4b9da5f4466962500475cbf9644fac5bf1a8a3efc4380ded7ac3d40ce9", "reply": "```json\n{\"answer\": \"send_email\"}\n```"}
+{"key": "b6e4f90734c36d908990a5ee2b92fdce629876683f0f09b8ac9577b94f96907f", "reply": "```json\n{\"answer\": \"translate_text: Translate text into another language\"}\n```"}
+{"key": "1021d4326d37c888f18b1fdf75d5ce456a00e348e4a7009fa5232d28a6bd60ea", "reply": "```json\n{\"answer\": \"1\"}\n```"}
+{"key": "1f18e802ab2259cef24297bfce6af0cd4df5d3d2fc87a71c84a2c0099a5e0968", "reply": "```json\n{\"answer\": \"3\"}\n```"}
+{"key": "e178a31432d8a5ef3d6e3d7077bf656a00eb436c70db2917b476b4173ed19031", "reply": "```json\n{\"answer\": \"1\"}\n```"}
+{"key": "618387147373c55f349f0a991784bd1af59a75970086b845dab82eb4ce8fbd7b", "reply": "```json\n{\"answer\": \"book_restaurant: Reserve a table at a restaurant\"}\n```"}
+{"key": "9cf7aa64b26643d937f9d81be05ac9fdffbea88a423e82c1958fb2b79a22fa4f", "reply": "```json\n{\"answer\": \"0\"}\n```"}
+{"key": "02b9453ba4d52c3e2360eaabecba76a685df0063b75c8a14160e262133e9c5ad", "reply": "```json\n{\"answer\": \"get_stock_price\"}\n```"}
+{"key": "176bda2bbce6f1719cbfe67e8086ef48a8411732078577351cbcbc6420c37e3b", "reply": "```json\n{\"answer\": \"set_reminder\"}\n```"}
+{"key": "f78d40b9c405ddf12d6ec7022a9572d98f34bb791e668a632c5eda05b3e736b1", "reply": "```json\n{\"answer\": \"call_taxi: Order a taxi to a location\"}\n```"}
+{"key": "1ed56d10c315cd0525f1d78550ad08a5fcbf2b5dfc1bcf2678bdd49b2368aa5a", "reply": "```json\n{\"answer\": \"set_reminder\"}\n```"}
+{"key": "f18b0c6c9b526fe9a849131e19e1be9822098d52ba45e90362f1f680c729967b", "reply": "```json\n{\n  \"answer\": \"false: A condition is missing or a prohibition applies.\"\n}\n```"}
+{"key": "78477c56ca336a983c6ab611422300b2071f5bc3522a3aa1b2e3758b3e8b9897", "reply": "```json\n{\"answer\": \"false: A condition is missing or a prohibition applies.\"}\n```"}
+{"key": "bcdb8c3c080448972dfc4eb21716727eddc2dc9bd18eec0a5818dad1d36b555a", "reply": "```json\n{\"answer\": \"true: Every required condition is established and no prohibition applies.\"}\n```"}
+{"key": "b9f9277e3ade00cece893866da3e649f250d3bcf4ab13c7cfc0b3824000b9e66", "reply": "```json\n{\"answer\": \"true: Every required condition is established and no prohibition applies.\"}\n```"}
+{"key": "1afaf24fa59b75e2656cef72cbb86415c9aac7f771ae8f2abab903d14ad54a23", "reply": "```json\n{\"answer\": \"true: Every required condition is established and no prohibition applies.\"}\n```"}
+{"key": "534ea528ad06a1c03d4f87bdeaa11767e1f00c07bcc800941935772e5c3e97c0", "reply": "```json\n{\"answer\": \"true: Every required condition is established and no prohibition applies.\"}\n```"}
+{"key": "6d542c3210393408a0ecda29c030b8568c5ed34657966bd8792f8ae9d88b4377", "reply": "```json\n{\"answer\": \"false: A condition is missing or a prohibition applies.\"}\n```"}
+{"key": "f228adbe379cbd9867e049d3b9873bfe04673ce1ceb16c832f857770f4002564", "reply": "```json\n{\n  \"answer\": \"false: A condition is missing or a prohibition applies.\"\n}\n```"}
+{"key": "113ab94b612f5d1790cdcd74066699788050db2a141a8b313978709d6cffa9fb", "reply": "```json\n{\"answer\": \"false: A condition is missing or a prohibition applies.\"}\n```"}
+{"key": "bb9e2132b7797dfee07bd4b2e53741d043b204eff35faefc4d5b2b0edaeaaa7a", "reply": "```json\n{\"answer\": \"true: Every required condition is established and no prohibition applies.\"}\n```"}
+{"key": "8e3f439407d572674f56bb12f531e62d6325406d0f742ed4f1fba5719979974a", "reply": "```json\n{\"answer\": \"false: A condition is missing or a prohibition applies.\"}\n```"}
+{"key": "3cdeaecbfd00b021912dc3ee905ac82f55512529b079e400f4a03f75b8196dea", "reply": "```json\n{\"answer\": \"true: Every required condition is established and no prohibition applies.\"}\n```"}
+{"key": "4d75125f11bf2e51daedb662917c1c4127ed73f172c1d9428abb81ebd735801c", "reply": "{\"answer\": \"refund\"}"}
+{"key": "66465044a3a42ef76ca8fda37ac69749330abdf8c36b884c387921a9d01292f2", "reply": "```json\n{\n  \"answer\": \"refund\"\n}\n```"}
+{"key": "a7ccc1b0bcf195efb4a3cb59571dce2e83291c81a0167bdac2ca904900b61b80", "reply": "```json\n{\"answer\": \"status\"}\n```"}
+{"key": "f852e21cca33ea6b0a2395936509e7465daa82d8bd3f438706051d799b62d4aa", "reply": "```json\n{\"answer\": \"status\"}\n```"}
+{"key": "1cd91c7d54f9c25ffb99edd08dee9d1b320c045465278f06a7935e3123d67344", "reply": "```json\n{\"answer\": \"change_address\"}\n```"}
+{"key": "bb07f8309365b0be1aa51dae9b13447c3e4e37c2554bdc6170a49ccdfd2c0118", "reply": "```json\n{\"answer\": \"change_address\"}\n```"}
+{"key": "c9c9d2fc2f701478e4fc0ec74ae88d64fe4e11025f79923778334a027be2ad52", "reply": "```json\n{\"answer\": \"cancel\"}\n```"}
+{"key": "aa5747566598f5b4671d7dd0975a4172918cf2865972658780ed396704cfad3c", "reply": "```json\n{\"answer\": \"cancel\"}\n```"}
+{"key": "6e89eb9dbc73e49cf3c1cd60b8f0540b2a95685d783a7156c48bce891838c700", "reply": "```json\n{\"answer\": \"other\"}\n```"}
+{"key": "681cd0bc6c6f112a5454fde0b0e46b066a60c30c2bd27519a4ba64ea3cd6458a", "reply": "```json\n{\"answer\": \"refund\"}\n```"}
+{"key": "13def495dbf498aa787b679990b88df80a5309eadd02545feb0300c2714d7296", "reply": "```json\n{\"answer\": \"status\"}\n```"}
+{"key": "b41a73aed479d0b90bece1d158cfa2b1710921337014ddef971e10ebc7f29dd2", "reply": "```json\n{\"answer\": \"status\"}\n```"}
+{"key": "e5a43f67422f8c8ae30a946306f56cc1fc0439930be5dd88083f985ccd5eeb4d", "reply": "```json\n{\"answer\": \"0: No function impaired; cosmetic only\"}\n```"}
+{"key": "acf20bdcdbf9fcadd700a8071a32d55e2b8dd6afcf6670ded229b6b6bfe9c2f2", "reply": "```json\n{\"answer\": \"0\"}\n```"}
+{"key": "b5d79aaab540d14a259ac255289e931ac1d19a0e70a76dac725be0ac514cfd70", "reply": "```json\n{\"answer\": \"1\"}\n```"}
+{"key": "3881673d4777bbdb99ad12ff9f24c85de1eb1f1bc54189c29cad1340b2e4813f", "reply": "```json\n{\"answer\": \"1\"}\n```"}
+{"key": "49d7fd47ebe4ce5b2ae047f196e08e92b9a9983f1d2a741f0c4617e1a4dd6f76", "reply": "```json\n{\"answer\": \"2\"}\n```"}
+{"key": "f0405c54d1c0a01890dfb21d94148ec59b3e6575f3f535a7422a24864b92d2e9", "reply": "```json\n{\"answer\": \"2\"}\n```"}
+{"key": "fb49c5198e44562aeaa68b597c2bb063823f414aa582b796509bd5ce6fe6716b", "reply": "```json\n{\"answer\": \"3\"}\n```"}
+{"key": "a8f45003094d757fbddd9f320cffa837f2ecf99f44e3eb1dd92183309d26fc0f", "reply": "```json\n{\"answer\": \"3\"}\n```"}
+{"key": "2314b8f9920a2fe1a237b618c340cca37dde7a1eddb34210def5d562812fcc39", "reply": "```json\n{\"answer\": \"0\"}\n```"}
+{"key": "10d13914e9b9ce22abe62dd1877116517fefe0544c028e7313cb4cbec1d2cfa0", "reply": "```json\n{\"answer\": \"pickup: Customer pickup\"}\n```"}
+{"key": "75a31697f6c43bab69e733f4da4afd59935424ddaa7de891165949e9888d8ab4", "reply": "```json\n{\"answer\": \"0: No function impaired; cosmetic only\"}\n```"}
+{"key": "268a33b3bc4172a43abe1d6341ba6168fefbb6f27434f428ea1fd0d427ff143d", "reply": "```json\n{\"answer\": \"2\"}\n```"}
+{"key": "892db27619493957f37a9193edb6408b95e3893e0339b8566d2c2e0a0f436927", "reply": "```json\n{\"answer\": \"2\"}\n```"}
+{"key": "e862799e969680ecf15fc82b81d8b7c869b0d28a42311064b02bea1c6ebcea88", "reply": "```json\n{\"answer\": \"pickup: Customer pickup\"}\n```"}
+{"key": "a42c12ffd54cacc1a45c5288ab0941b30ec65f94533caa568453d27b0cf67d9f", "reply": "```json\n{\"answer\": \"unknown: No final confirmed method\"}\n```"}
+{"key": "c473efc8104d96fa3b35cdf671dbbdd8eebd8b040f8191b281be822628814ee3", "reply": "```json\n{\"answer\": \"courier: Courier delivery\"}\n```"}
+{"key": "4c3ea2400530b841c6a793e03206cacb195c2c0e136f837a53b5213fece6b006", "reply": "```json\n{\"answer\": \"courier: Courier delivery\"}\n```"}
+{"key": "d8f73427b5b5d19221fdf901f8236ded4f29ce18dcc07aef1635b524fe5a0712", "reply": "```json\n{\"answer\": \"post\"}\n```"}
+{"key": "24d2689999e13dea8aef80579bc1cdce3ab55f51d231595fc0758de7b21e57c7", "reply": "```json\n{\"answer\": \"post: Postal service\"}\n```"}
+{"key": "ecd93977dbb5ea80924a6916af5ce2f5334bb14d12e0bdbd9d345d0bf5aa3b78", "reply": "```json\n{\"answer\": \"unknown\"}\n```"}
+{"key": "320045903a0319b98a7d8f9615fd75b87fabf63404a1d7d3850f96e8eed1569e", "reply": "```json\n{\"answer\": \"unknown: No final confirmed method\"}\n```"}
+{"key": "9f51cbcf7247f122a5694947424a98753179e2bd60743a11a5cee8e00c16d261", "reply": "```json\n{\"answer\": \"unknown\"}\n```"}
+{"key": "ad2c358a214801e6735e5cfe023e71ccdce764aeda91c6e7e7eef81e3c2ec54d", "reply": "{\"answer\": \"courier: Courier delivery\"}"}
+{"key": "113888ca2883723be87028769cb3c7c13537d6e988c3684c96bd3d9ac8994769", "reply": "```json\n{\n  \"answer\": \"courier: Courier delivery\"\n}\n```"}
+{"key": "6b1708696245f4d739014ace64a75ae15d55f7df427a7d5609d67f7deb39aa16", "reply": "```json\n{\"answer\": \"true: Correct, complete, and follows all explicit constraints\"}\n```"}
+{"key": "b7939a95ebb80a83ace0abf089cdbd016dd76941a6a7910ffbc8dec1deb5e097", "reply": "```json\n{\"answer\": \"true: Correct, complete, and follows all explicit constraints\"}\n```"}
+{"key": "ceeed358a4f03b8b7be4f56242ddf75a6bda18cb6da01d687085d1d4d7d38ffe", "reply": "```json\n{\"answer\": \"false: Wrong, incomplete, unsupported or violates a constraint\"}\n```"}
+{"key": "89b6844098d60e1c66c8f6ac55dc4907e288e5ef76ffcddb1c72fae9159bf520", "reply": "```json\n{\"answer\": \"false: Wrong, incomplete, unsupported or violates a constraint\"}\n```"}
+{"key": "768c3aff2a2b1305afcbebc74427e6dc61fc56775b729a8ddf18a694f4840bb1", "reply": "```json\n{\"answer\": \"false: Wrong, incomplete, unsupported or violates a constraint\"}\n```"}
+{"key": "09bfb7db8a6fdd10a61a07691ce620e021a5951e2001300f57db8b23e28c5cce", "reply": "```json\n{\"answer\": \"true: Correct, complete, and follows all explicit constraints\"}\n```"}
+{"key": "2aa7f76e40894e30e3ef55645b7fac752ae1b5962ce6d8344525fbe2e1c4b444", "reply": "```json\n{\"answer\": \"true: Correct, complete, and follows all explicit constraints\"}\n```"}
+{"key": "641355c8220f8d0bc12ad7f95b1faf89d2d1ddf0c799eb931f81a183aabc9287", "reply": "```json\n{\"answer\": \"false: Wrong, incomplete, unsupported or violates a constraint\"}\n```"}
+{"key": "53ee2b41de301d6b257e6e305bf48c233f481b00c38f1e0abca45f6e84a05cd3", "reply": "```json\n{\"answer\": \"false: Wrong, incomplete, unsupported or violates a constraint\"}\n```"}
+{"key": "b7a6d7459e0013220d5b9d9f5970525356c2e19baf138b33b29af2e3bb48981b", "reply": "```json\n{\"answer\": \"true: Correct, complete, and follows all explicit constraints\"}\n```"}
+{"key": "d13e275ab395fb5742b02529526e49ae0fc30769ddef114c4896a548dcdbe7de", "reply": "```json\n{\"answer\": \"math\"}\n```"}
+{"key": "0e9cf1c683e6c965fc54cfeef34896c0e8e2e300cd05195630da3214f68492c4", "reply": "```json\n{\n  \"answer\": \"true: Correct, complete, and follows all explicit constraints\"\n}\n```"}
+{"key": "39af94f6df6db6975c38af070a4a1c5e9c215b49e06e0671dd1327471bc74d4d", "reply": "```json\n{\"answer\": \"math\"}\n```"}
+{"key": "ddb303cb97e105da00233ef7e9424da35338c2ec4d3b68f957103c8b3f96dd87", "reply": "{\"answer\": \"coding\"}"}
+{"key": "c545bf1fa43ce59084f0ccf5d6b35c013bfc52279742bf28ba001a2bc2f252ff", "reply": "```json\n{\"answer\": \"coding_agent\"}\n```"}
+{"key": "d7cf76e74c023c26e306b378a26fb052282dad35665a9ae9432ceaaf61c24934", "reply": "```json\n{\"answer\": \"coding_agent\"}\n```"}
+{"key": "fbf36affa87f36f827758dc0fd7c235e3ea27f321300d534865bf5c003e59658", "reply": "```json\n{\n  \"answer\": \"document\"\n}\n```"}
+{"key": "14667e34362bfdff98d6e28f90569f14d8a18bf349d6c55b7bcf67d1f92ba9b0", "reply": "```json\n{\"answer\": \"general\"}\n```"}
+{"key": "9ba623ca09506a78106aca76b777467e3d0c97dbfa415b8a4f9967febe847551", "reply": "```json\n{\"answer\": \"document\"}\n```"}
+{"key": "05b0368f2bdd28d300d21816f66b7c53a1a9b816ac194717d0c5109d3bf13c41", "reply": "```json\n{\"answer\": \"coding_agent\"}\n```"}
+{"key": "ceb2f0e40bb9a2cc43af0c0f328c8c7fdb7792b401a438661ed28d773d48f6fd", "reply": "```json\n{\"answer\": \"tools\"}\n```"}
+{"key": "377f7160f315e3398fe7778af2f55c9a03faad4383f459187bd8cec9b7f7649b", "reply": "```json\n{\"answer\": \"general\"}\n```"}
+{"key": "24c16d988a497f58e27f571f4ff70d4ebc70d1d672ddc2fe3d598590b9ec2e94", "reply": "```json\n{\"answer\": \"general\"}\n```"}
+{"key": "9fd1e3f53a0f3770312e9cbe7d897a2b750c7afc3300c727fd34cd48e59d23cf", "reply": "```json\n{\"answer\": \"true: Correct, complete, and follows all explicit constraints\"}\n```"}
+{"key": "e26185703a821368e2b44310c087bffd0822561c4ce2475abb535cc46a23931a", "reply": "{\"answer\": \"license_required: An individual licence must be obtained before shipment; no exception is available.\"}"}
+{"key": "396d1127e6dc2810406c2824690d9d8ae4c83ee9a784f7ab20fd0dc388174d91", "reply": "```json\n{\"answer\": \"true: The dispute was validly raised and the merchant's representment does not contain compelling evidence under the rules, so the cardholder keeps the credit.\"}\n```"}
+{"key": "39e23b4c4a9831136e85329aaffc2a69271bb33367a48d3d2469f3672df5c8ff", "reply": "```json\n{\"answer\": \"cfo\"}\n```"}
+{"key": "615ddfbff7d0f24cce7d486b98df323da2c8f81a5367ecd577b48788447cf406", "reply": "{\"answer\": \"false: The claim is excluded (e.g. Pre-existing Condition without waiver) or otherwise not covered.\"}"}
+{"key": "19753215e71e348e651ce4aef25685a4e0e8179a12b689b3283aa338f23c7cec", "reply": "```json\n{\"answer\": \"parts_covered_labour_charged\"}\n```"}
+{"key": "20323660b0e45716a9efad493644f5abe5727ebd94ea6ce1e4ecd461a2769ba8", "reply": "```json\n{\n  \"answer\": \"pay_subject_to_15000_sublimit\"\n}\n```"}
+{"key": "e43958f1124ff0b255b44efe0618d8e7876fb5552cf5c4781aa05e326dae3c18", "reply": "```json\n{\"answer\": \"database_oncall: Page the Data Platform on-call.\"}\n```"}
+{"key": "e2184aea73de7ba19429cc84756154bc63c8dbd03e3e9523890b5eb525e83ac7", "reply": "```json\n{\"answer\": \"true: All eligibility conditions in clause 3.1 (as amended) are met.\"}\n```"}
+{"key": "c113a2b632426419402e81e5936adb40d66409115b6940f78653bdd14a88d6d6", "reply": "```json\n{\n  \"answer\": \"false: The claim was reported after the warranty period ended.\"\n}\n```"}
+{"key": "9af96e24bd1601243967e643db9797607e5b3cca3692f23e8469037272fc8350", "reply": "```json\n{\"answer\": \"false: Its gross weight, computed as LR-7 prescribes, exceeds 2,500 kg.\"}\n```"}
+{"key": "660caaba919c48e29bdf8376787010ec280a2ed3bfa518a9ac25b45a1ffcf6e9", "reply": "```json\n{\n  \"answer\": \"0\"\n}\n```"}
+{"key": "94aac291cf41fc9b84c74f07affce429389bb18849a988d2a7074cc82cc524b0", "reply": "```json\n{\n  \"answer\": \"false: The passenger makes the connection.\"\n}\n```"}
+{"key": "758b9552bff04cc5691a3693069990eb7ec84212a7ee5e159199999de9ab9cee", "reply": "```json\n{\"answer\": \"escalated\"}\n```"}
+{"key": "fec91380456f1d520d4036015127db7ab4853e82baf59ac17ab5c11739262f87", "reply": "```json\n{\"answer\": \"false_positive\"}\n```"}
+{"key": "9853074a5cdd8c96568cfdd6446d6e383086c6dc893b5d48d48db6b2cdfbf36c", "reply": "```json\n{\"answer\": \"time_barred: Even using the latest knowledge date consistent with the client's account, filing on the planned date is more than 3 years later.\"}\n```"}
+{"key": "6ad7842f97dd9c357d474825b70f547fe477d810c9017238fc90c56441b2e632", "reply": "```json\n{\"answer\": \"false: It was taken fewer than 11 or more than 13 hours of real elapsed time after the previous dose.\"}\n```"}
+{"key": "5a56719fe4090f8d02f07b742059eb4d850048f88c3e074d9cf9bdbf7f2c7c42", "reply": "```json\n{\"answer\": \"within_policy\"}\n```"}
+{"key": "cdedf0f79683964af89072dfee8c3e6d040b45207951238ab70b749eedc57cd8", "reply": "{\"answer\": \"grade_correct: The recorded B is the correct certified grade under the outline.\"}"}
+{"key": "75fecb529da20c5cb0f6ff24fcc322791e9498bf1f8e77df3c0387da6b2eca47", "reply": "```json\n{\"answer\": \"sep_26\"}\n```"}
+{"key": "18e81d1f385766771d23d272a6d153fc78d46ea845a091e77b9c9a01bd2ca06d", "reply": "```json\n{\n  \"answer\": \"cannot_determine: FA-2 gives no valid basis for the allocation yet; the recorded ratio is missing.\"\n}\n```"}
+{"key": "b04377331ff3bc7765488211f511bfdb804d274f03ac043693b2abe6476bd634", "reply": "```json\n{\"answer\": \"legitimate: The interactive sign-ins pass all rubric tests.\"}\n```"}
+{"key": "f074b09ff0cb6c2010b7fd879c0566ba8625a57343f6572e4adebc79d19f5e72", "reply": "```json\n{\n  \"answer\": \"ask_user_which_alex\"\n}\n```"}
+{"key": "fbbd8167e12d75fce583d7f367614d8481a0bc9716bf1610fba01db3eb8245c5", "reply": "```json\n{\"answer\": \"2\"}\n```"}
+{"key": "7f603e986a88f4561bec4d69e13f3a7adeebdca499f6cbf19395641c4bf5e93f", "reply": "```json\n{\"answer\": \"on_time: Delivered on the promised day.\"}\n```"}
+{"key": "1bccfd6de697890fc32ed3513583091ceffabc779aeed338ac95d4e4a04cc350", "reply": "{\"answer\": \"2: Level 2 \u2014 EUR 1,200\"}"}
+{"key": "b2be99dd223fa3cff68cbba3704f2c7b112bf0f690b783a17b14873f33916ca7", "reply": "```json\n{\"answer\": \"chen: Page Chen.\"}\n```"}
+{"key": "2c0648a402d90223af47e72acd5eaca4639ab59dcab79fc95732bee1f7d0912b", "reply": "```json\n{\n  \"answer\": \"true: All controls in 7.1 and 7.2 are satisfied, so under 7.3 the payment is released.\"\n}\n```"}
+{"key": "cb8b24903deb87dbc12b712d77215d07de4b259cccba1f0c2fa6b7d92540fed2", "reply": "```json\n{\"answer\": \"order_b: Order B (frozen scallops under penalty contract) gets the slot.\"}\n```"}
+{"key": "4dd1d819e6c3b970331dd1822b7b5e5c923d7e0c73818f83282747848e6d29a3", "reply": "```json\n{\"answer\": \"attended\"}\n```"}
+{"key": "31e93e3be408d198eb479f21c9943d18ff8af74d111e785e9a9e60df9f68a865", "reply": "```json\n{\n  \"answer\": \"true: The invoice will be paid after its due date.\"\n}\n```"}
+{"key": "0955eb3aa6849cd202f3097621c093c0d6d3e74f51c853b38fc9857f31c4ea3b", "reply": "```json\n{\"answer\": \"upstream_provider\"}\n```"}
+{"key": "04f5b72a94a409b9898c96c2addac58b59719fa898dea9675c2c96019ff12ed4", "reply": "```json\n{\"answer\": \"escalate_to_engineering: R3 is the highest-ranked applicable rule: a reproducible functional defect from a Business/Enterprise org.\"}\n```"}
+{"key": "f839459f23fbb6faa21d1f7a041d3a2071b67d35ed9f6ff553d7d487e5578216", "reply": "```json\n{\"answer\": \"false: At least one condition of the applicable agreement is not met (or the applicable rules provide no top-up).\"}\n```"}
+{"key": "d98131fff4b55205795fb8a533bbb8a13e8f32ee2516c5ab7931d4934a8b4367", "reply": "```json\n{\"answer\": \"credit_20_percent: 20 % of the monthly fee.\"}\n```"}
+{"key": "e11614bbdeb3b760e1a5c906824598fedf8cbe000d2d93e92b649541a8449d6c", "reply": "```json\n{\"answer\": \"merchant_wins\"}\n```"}
+{"key": "603d8e4dc43396280938a240c50d2850110dd3a578ac0d1bfa2c28f4b36b2a75", "reply": "```json\n{\"answer\": \"true: The requested new deadline is reachable using only the instructor's discretion plus the automatic accommodation extension.\"}\n```"}
+{"key": "4b1199fdc2ac57370d613a37efb5ebec66e14fbc64b8e5f8c3452227b11f2394", "reply": "```json\n{\n  \"answer\": \"refund_now\"\n}\n```"}
+{"key": "5bcc577599851f94946609b78e164e66db13522fc0f25935988b021c63c03e24", "reply": "```json\n{\"answer\": \"p0_fix_24h: Active exploitation in production, or CVSS \u2265 9.0 and reachable in production without authentication.\"}\n```"}
+{"key": "40187b983dd2372f7cefd8751a2d4d16eb08ebbe340626dfc42f3c4e3b025929", "reply": "```json\n{\"answer\": \"3\"}\n```"}
+{"key": "a7d087d2672a55850f72c76e622b06b21a362def2c059a4fad4f689b991c3c16", "reply": "```json\n{\"answer\": \"eur_692_00\"}\n```"}
+{"key": "199bb1863d5c6db73d72e5ecb6181b92b7906cbc450cee6db944d5863f863944", "reply": "{\"answer\": \"erase_but_retain_transaction_records\"}"}
+{"key": "b7e7623ba11bd9b967ca21cf5ec65862d6f17e8607a80115ddc2e9ff9022c76b", "reply": "```json\n{\"answer\": \"1: SEV-3\"}\n```"}
+{"key": "6f760fc6f96ea9f493a5394d58f3beb7cc2c4ad68bdb7796f56f9d19f5965ef2", "reply": "{\"answer\": \"2\"}"}
+{"key": "92522dc0b74b5b20741c34027a88117f414cd7d85c1f6a70cf73989fea0e316c", "reply": "```json\n{\"answer\": \"false: At least one of 4.1, 4.2 or 4.3 is breached.\"}\n```"}
+{"key": "52505c8ef0f6b17fae37f314a28cad315d0f70e3679b1d1693e2d33ff65fc965", "reply": "```json\n{\n  \"answer\": \"false: The condition is not established by trusted facts under the stated rule.\"\n}\n```"}
+{"key": "a175b0c102b3747a4a88fe125550d7605163f7ea1bedbaaaaaac46bb244129b4", "reply": "```json\n{\n  \"answer\": \"deny_missing_approval: A required manager approval is absent.\"\n}\n```"}
+{"key": "aa812c3578224cfbf50e6e9926c5f6efb2a8748fdbab368a112328b65c5ab346", "reply": "```json\n{\"answer\": \"false: The appeal is inadmissible (out of time, no admissible ground, or another bar in Sections 2-5).\"}\n```"}
+{"key": "c38922f3d607e68241cd007e38327b5259231a00dbf2abbce4e9f754f0e49b4a", "reply": "```json\n{\"answer\": \"kuznets_technik\"}\n```"}
+{"key": "be8818fe3f7f4ea26d029720a5a1b70ece847d310ba2ee5dc4efc678efdeb7c0", "reply": "```json\n{\"answer\": \"eur_0\"}\n```"}
+{"key": "63aadad0a7933e6ac03924f80067cf2b45150794349d113f7c86c95964b9af9f", "reply": "{\"answer\": \"credit_minus_restocking_fee\"}"}
+{"key": "5c0a811549638596a845539d3d48e4aece32ed038b2c216b27329f46169f2387", "reply": "```json\n{\"answer\": \"tier3_cfo: Route to Tier 3 (CFO).\"}\n```"}
+{"key": "c63ad7b570b3236e7d1430b26b1f6660818de0e37d94f7e26ad1dcf1dfc036cc", "reply": "```json\n{\"answer\": \"true: Trusted evidence satisfies the stated decision condition.\"}\n```"}
+{"key": "03977b712573505514f2ae1d96d4e3342a2237a8c2bb875708dca31dee4b80b2", "reply": "```json\n{\"answer\": \"retain_until_2031: Keep through the seven-year period ending in 2031.\"}\n```"}
+{"key": "bf882c9af6faffa622c5c256c2a0a5929adfae62f912c47ba4b628f6ec521cbd", "reply": "{\"answer\": \"1: Routine degradation.\"}"}
+{"key": "ad779d4253ed1c47880f47b53218120faac51f33810d29e2f6cc8d6c0a5bc1bd", "reply": "{\"answer\": \"eur_498_81\"}"}
+{"key": "88626274acfb912c805c233f9bdb53782e86f70f4114d29cbc982fe9b685fd63", "reply": "```json\n{\"answer\": \"accept_s2_dusk\"}\n```"}
+{"key": "5e2a328aa7046d5cf42c556c893816d7cca671b88053f48bfb08d193ef453442", "reply": "```json\n{\n  \"answer\": \"standard_research: Research at or below $50,000 with no trusted participant flag.\"\n}\n```"}
+{"key": "47cf40bcd3915b76ecd2182de3f7ae4cde15bacc699b125c38f587d8540f171f", "reply": "```json\n{\"answer\": \"security_primary: Severity S2 routing.\"}\n```"}
+{"key": "d6b4207f067a3770218a270893a748b4f9b408546e5b1490496f6086a2b5424d", "reply": "```json\n{\"answer\": \"require_director\"}\n```"}
+{"key": "c28b4083258bb7635116213d158000a490412c79b81c61842fd4a1327bc0703c", "reply": "```json\n{\"answer\": \"central_engineering: Adjusted downtime is at least 30 minutes.\"}\n```"}
+{"key": "e8157a57bb644c366ed4df6d94cec94ea187df16dcabef3899eeba3800558335", "reply": "```json\n{\n  \"answer\": \"expired_30_month_cap\"\n}\n```"}
+{"key": "d23d5c9b95638fe59e8e86e21fcc55f01c63948a2a54d46753c690f1b195df8d", "reply": "```json\n{\n  \"answer\": \"sep_18_book_set\"\n}\n```"}
+{"key": "e79fc5a2bac1ad9d0673a0d4fb91f17aee12ecd6a85159b2f5859f1b33e0de5c", "reply": "```json\n{\n  \"answer\": \"false: The stated condition is not satisfied under the operative facts.\"\n}\n```"}
+{"key": "c46b491a630980ebc7d45daf6825bd8ffab146cf3bfa4f855fb9e2aae16221f7", "reply": "```json\n{\n  \"answer\": \"false: The stated condition is not satisfied under the operative facts.\"\n}\n```"}
+{"key": "1976932c1c722da6e34fec7ad307900a81ec19869296414c571a7127f3c943dc", "reply": "```json\n{\"answer\": \"blocked_second_review\"}\n```"}
+{"key": "12fa177e653079f833d344fd7bcc8f17d019bd995e0eefcff718f45b64f329f7", "reply": "```json\n{\"answer\": \"approve_45_days\"}\n```"}
+{"key": "b0824578cb150faa72b7f8ab7eddd24de4ef662f8775a860ea14c00775b0f97a", "reply": "{\"answer\": \"admit: All adjusted requirements are met.\"}"}
+{"key": "bb3060a715d3e0a80bd616f7c2a7aaa02c75a71f38ba9fd0b68d52a74ca77b00", "reply": "```json\n{\"answer\": \"keep_open_unresolved: Keep open because customer reports the issue persists.\"}\n```"}
+{"key": "61729aa4ef49d86330c8c8865cc6e5bc9a9919a46505782a4caa98f3e5ce9f20", "reply": "```json\n{\"answer\": \"false: The condition in the question is not established by the operative facts.\"}\n```"}
+{"key": "5b03eac6bfcf82a1e271a0e5fc7f810f7a11b1cce2de9044c698d3a15b1766a5", "reply": "```json\n{\"answer\": \"expired\"}\n```"}
+{"key": "cb5aa796049f824f7e266c529e1ff2fc3f9d812254f9edef1e6b70fe212c2bf2", "reply": "```json\n{\"answer\": \"0\"}\n```"}
+{"key": "6dc0e2eba0c1c7e1f0283a639ac00d6b6a0f4f081374e0583bbe46b3b89b4419", "reply": "```json\n{\"answer\": \"late: Authoritative actual arrival is after 18:00.\"}\n```"}
+{"key": "372a0a414d86d7213eac8b932f00d3bf9d7eaa7f7ca300704a5980f82bbcc708", "reply": "```json\n{\n  \"answer\": \"true: The response fully and correctly satisfies every explicit request, including method, edge cases, units, formatting, and retained facts.\"\n}\n```"}
+{"key": "56969a407c033ce280ebc054fa0d967d5e69a08101e261f86aa07bc6ba15dc89", "reply": "```json\n{\n  \"answer\": \"false: The condition in the question is not established by the operative facts.\"\n}\n```"}
+{"key": "ec5f3e03f5b597e824a20afb5ecea7071be3a228e863b9dad8846d99b9fc7f20", "reply": "```json\n{\"answer\": \"true: The response fully and correctly satisfies every explicit request, including method, edge cases, units, formatting, and retained facts.\"}\n```"}
+{"key": "4f6437c9ee4911601d0c687295ca92ead873b8c4ff25c5f046af149f0eb1d52a", "reply": "```json\n{\"answer\": \"true: The response fully and correctly satisfies every explicit request, including method, edge cases, units, formatting, and retained facts.\"}\n```"}
+{"key": "17a25b8e8fc6d565e022cd8b459aaa9f2ff75bc9bfa53ab1d9d4bdcaf2bb4597", "reply": "```json\n{\"answer\": \"switch_l4\"}\n```"}
+{"key": "f7636f0fdbc944ac1a1cb0310fc461e49aa4faf7cfd8f7254291a0464b019c39", "reply": "```json\n{\"answer\": \"false: The response has any substantive error or misses any explicit requirement.\"}\n```"}
+{"key": "9526f78bddc950c49b8967930534e52d8cb6f259db738e2d29242dd5b6ab2068", "reply": "```json\n{\"answer\": \"false: The response has any substantive error or misses any explicit requirement.\"}\n```"}
+{"key": "6408a2ca2f20da4c9cf02123d1c64e69b2d5717c51cbe5f60f47cb3313aa2ab0", "reply": "```json\n{\"answer\": \"true: The response fully and correctly satisfies every explicit request, including method, edge cases, units, formatting, and retained facts.\"}\n```"}
+{"key": "e0881465780f312019748f5b40f49d6d085b985b9f347821be693365a06a50a4", "reply": "```json\n{\n  \"answer\": \"false: The response has any substantive error or misses any explicit requirement.\"\n}\n```"}
+{"key": "f1923ed6c5cd7d31c0383753064a2a4fe9738b934ee772647d10d665011d5378", "reply": "```json\n{\n  \"answer\": \"ledger_reconciliation: Reconciles provider transactions against internal settled ledger entries and corrects duplicate internal postings.\"\n}\n```"}
+{"key": "849336c519456be492380bcf12db1499bc34acccab32c5827aedff1694f88e2d", "reply": "```json\n{\"answer\": \"release_notarization: Handles notarization submission, status, stapling, and Gatekeeper distribution acceptance.\"}\n```"}
+{"key": "5eb3c41a2467e82762e5f02a84e5e1fd70144b0b3ce482c1b4678c859e6a5219", "reply": "```json\n{\"answer\": \"office_file_repair: Inspects and repairs XLSX ZIP/XML relationships, content types, styles, and corrupted workbook packages while preserving recoverable content.\"}\n```"}
+{"key": "3732ec5abca2a8cbbe4594496ed3ee255cef7fd0f0109b096e1f7e36d11d0405", "reply": "```json\n{\"answer\": \"network_dns: Troubleshoots enterprise recursive resolvers, split-horizon/conditional zones, and resolver caches.\"}\n```"}
+{"key": "15d753e2c29bf1af8c68c978519bd5058562723eb4a9d2600e62d7de697a8d52", "reply": "```json\n{\"answer\": \"false: At least one eligibility condition is not met.\"}\n```"}
+{"key": "72ab2fedec21e88f2a30ec10b1ac695d2f38a181675ae6630829cca6156fb60a", "reply": "```json\n{\"answer\": \"source_access\"}\n```"}
+{"key": "fe4bc1447f7d7b31035c93a157dc5d9bc3a4e7954a9712bb1f3f49bccbbfd293", "reply": "{\"answer\": \"deny_current_export\"}"}
+{"key": "0f87ad87b3af3a62ad4a79a1935cb501d76f26bee4bb215871b551091a6f7ebd", "reply": "```json\n{\"answer\": \"true: The response is fully correct and satisfies every explicit constraint.\"}\n```"}
+{"key": "1ae4bb2735e88a64fd4e1efe5f67830560060550e586bc83946efad5ab44a16f", "reply": "```json\n{\"answer\": \"9_credits\"}\n```"}
+{"key": "cbdeaa2f8dac12e71097ff056e0df29d30ffcf2c5172b50996ced74d80f85678", "reply": "```json\n{\"answer\": \"pass\"}\n```"}
+{"key": "afe5531e7be5cc7d1e032562ac1ee8f7520c986cf60455c0773a3f807326313e", "reply": "```json\n{\"answer\": \"usd_2335_00\"}\n```"}
+{"key": "d3b49637a9938e0999cf149474d9913f093c220071e60375feb961ab343f9606", "reply": "```json\n{\n  \"answer\": \"late_by_under_2h\"\n}\n```"}
+{"key": "5d62de19578866056158b1bb6ed54f10227c29bd551bc62b1689e1467927cbd1", "reply": "```json\n{\"answer\": \"false: The response contains any substantive error or misses an explicit constraint.\"}\n```"}
+{"key": "04d01ba2f6e2ad050dd93d7cd9732b431a84afa895c882ae8ecb2586cd329763", "reply": "{\"answer\": \"east_ward: The case results in east ward under all controlling provisions.\"}"}
+{"key": "9bdc1fe021c393fbc252d4b1fd5e5c455db3d938dee2983e949d54462cf7d7e6", "reply": "```json\n{\"answer\": \"false: The response contains a substantive error; conditions on the invoiced row must appear in the JOIN clause, not the WHERE clause, to preserve customers with zero matching invoices. The LEFT JOIN is undermined by filtering in WHERE, causing such customers to be excluded despite the join type.\"}\n```"}
+{"key": "c5cb3c7e01886fffa492b6d8175ec6039cd38a5e20447d9bcdbfac4d4ca3b30b", "reply": "```json\n{\"answer\": \"delete_profile_omar_april_and_table\"}\n```"}
+{"key": "f7c073ff9dabe1fc04d00d9a1c297ba0285a77e86c7e73db630542b9f777963c", "reply": "```json\n{\"answer\": \"over_limit\"}\n```"}
+{"key": "6c86987ee8a07cb6cb2c209a17d52d7089933a81990bd2b32064dc7eff07ea0e", "reply": "```json\n{\"answer\": \"true: The response is fully correct and satisfies every explicit constraint.\"}\n```"}
+{"key": "71857d195aa8df496bd11dd91bb7688342f460df028d9cd467e653ec24951862", "reply": "{\"answer\": \"false: The response contains any substantive error or misses an explicit constraint.\"}"}
+{"key": "991cbd6ed29a90ccab62547061e188ac3a6409940cc216f7a9f2d911dc71de33", "reply": "```json\n{\"answer\": \"bus_substitution: Bus substitution is the final disposition.\"}\n```"}
+{"key": "421cf10fec3bc0726d74ba71f836f601748ce6afdee59e2a7636eb6b4aaf6dc8", "reply": "{\"answer\": \"true: The response is fully correct and satisfies every explicit constraint.\"}"}
+{"key": "f5cdc48f73899272d314fb17f810391158a8f8c4e2d72d249c9b0b8c76c8212e", "reply": "{\"answer\": \"true: The response is fully correct and satisfies every explicit constraint.\"}"}
+{"key": "9fcec921170ace9a4f297938a21a8f6c9c759ca50385771d27349f80bbe2b43d", "reply": "```json\n{\"answer\": \"programme_review: Programme review is the final disposition.\"}\n```"}
+{"key": "8d997cc19f7227b272fce2b469fbb38e47f259bd6eb71b35dc26dd2637bec5c9", "reply": "```json\n{\"answer\": \"coverage_excluded\"}\n```"}
+{"key": "66530fb0242b68a2959b4567e9651fbf29ee6c1bd4117a5e9d6c3d0eba96d910", "reply": "{\"answer\": \"false: The response has any substantive error or misses any explicit requirement.\"}"}
+{"key": "e1861d1607015370f4a103d5388b6d616250bb7c57143448821d0a622844d056", "reply": "```json\n{\"answer\": \"conservation_hold: Conservation hold is the final disposition.\"}\n```"}
+{"key": "c8dafa1958fddd1943c22242895e42107db72552fc2956a0745cad5ca3d04320", "reply": "```json\n{\"answer\": \"normal_release: Normal release is the final disposition.\"}\n```"}
+{"key": "ad5c346dd99d9ee34304ad58b8f2c386c003d57e319440ff41d94481f416d176", "reply": "```json\n{\n  \"answer\": \"approve_all: The case results in approve all under all controlling provisions.\"\n}\n```"}
+{"key": "f1cc13f65c9ea06789d3337affb2aa21aac5a024981771be04d88c7b7ac634d3", "reply": "```json\n{\"answer\": \"false: The response contains any substantive error or misses an explicit constraint.\"}\n```"}
+{"key": "2b67db33965e38f7f6550d0f030323ecc99ae72b9c3a0324efb2df7085fccbd1", "reply": "{\"answer\": \"false: The response contains any substantive error or misses an explicit constraint.\"}"}

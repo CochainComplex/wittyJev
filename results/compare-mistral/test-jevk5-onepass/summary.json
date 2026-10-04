@@ -1,0 +1,36 @@
+{
+ "holistic": {
+  "n": 574,
+  "accuracy": 0.817,
+  "easy": null,
+  "original": null,
+  "hard": null,
+  "hard_families": {},
+  "hard_ece": 0.0,
+  "families": {
+   "adversarial": 0.727,
+   "ambiguous": 0.907,
+   "extraction": 0.984,
+   "judge": 0.714,
+   "long_policy": 0.796,
+   "multi_hop": 0.793,
+   "routing": 0.864,
+   "rubric": 0.885,
+   "temporal_numeric": 0.62,
+   "tradeoff": 0.854,
+   "trap": 0.803
+  },
+  "ece": 0.052,
+  "brier": 0.253,
+  "with_form": 0,
+  "fixed_vs_holistic": 0,
+  "broken_vs_holistic": 0,
+  "mcnemar_p": 1.0
+ },
+ "form_source": {
+  "blind": false,
+  "effort": "medium",
+  "template": true
+ },
+ "rejected_forms": {}
+}

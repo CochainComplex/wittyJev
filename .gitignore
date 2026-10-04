@@ -8,3 +8,6 @@ ISSUE_DRAFT.md
 .env
 LIFT_REQUEST_DRAFT.md
 INDEX_V03_REQUEST_DRAFT.md
+# machine-local agent hooks (absolute paths)
+.claude/settings.json
+.codex/hooks.json
